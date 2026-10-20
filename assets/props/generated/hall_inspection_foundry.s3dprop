@@ -1,0 +1,11 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop hall_inspection_foundry
+draft 0
+id hall_inspection_foundry
+authoring 1 0
+bounds -0.135 -0.545 -0.68 0.09 0.545 0.68
+piece housing 0 0 0 0.14 1.05 1.32 prop_foundry_press 0.81 0.81 0.81 0 0 0 0 0 0 1 "" 0 0
+piece lid -0.09 0 0 0.05 0.87 1.1 prop_service_cabinet 0.68 0.68 0.68 0 0 0 0 0 0 1 "" 0 0
+source_piece housing 0 0 0 0.14 1.05 1.32 foundry_panel 0.81 0.81 0.81 0 0 0 0 0 0 1 "" 0 0
+source_piece lid -0.09 0 0 0.05 0.87 1.1 foundry_wall 0.68 0.68 0.68 0 0 0 0 0 0 1 "" 0 0

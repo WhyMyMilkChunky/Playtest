@@ -1,0 +1,12 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop reactor_bus
+draft 0
+id reactor_bus
+authoring 1 0
+bounds -1.13 -0.02 -1.13 1.13 2.02 1.18
+piece body 0 1 0 2.2 2 2.2 machinery 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece lower_band 0 0.12 0 2.24 0.24 2.24 prop_foundry_press 0.6 0.6 0.6 0 0 0 0 0 0 1 "" 0 0
+piece upper_band 0 1.89 0 2.24 0.24 2.24 prop_foundry_press 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece meter_panel 0 1 1.13 1.4 1.22 0.08 prop_instrument_panel 0.85 0.85 0.85 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 1 0 2.2 2 2.2 machinery 1 1 1 1 0 0 0 0 0 1 "" 0 0

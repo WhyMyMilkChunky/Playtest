@@ -1,0 +1,35 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop storage_rack
+draft 0
+id storage_rack
+authoring 1 0
+bounds -2.155 -0.02 0.015 2.155 3.52 1.49
+piece upright_-1_0 -2.05 1.75 0.12 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+piece upright_-1_1 -2.05 1.75 1.37 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+piece upright_1_0 2.05 1.75 0.12 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+piece upright_1_1 2.05 1.75 1.37 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+piece back_tie 0 3.36 0.12 4.1 0.13 0.13 cyber_structure 0.68 0.68 0.68 0 0 0 0 0 0 1 "" 0 0
+piece tray_0 0 0.28 0.76 4.24 0.12 1.42 cyber_structure 0.75 0.75 0.75 1 0 0 0 0 0 1 "" 0 0
+piece case_0_-1 -1 0.66 0.72 1.43 0.63 1.05 prop_freight_case 0.89 0.89 0.89 1 0 0 0 0 0 1 "" 0 0
+piece case_0_1 1 0.66 0.72 1.43 0.63 1.05 prop_freight_case 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+piece tray_1 0 1.44 0.76 4.24 0.12 1.42 cyber_structure 0.75 0.75 0.75 1 0 0 0 0 0 1 "" 0 0
+piece case_1_-1 -1 1.82 0.72 1.43 0.63 1.05 prop_freight_case 0.89 0.89 0.89 1 0 0 0 0 0 1 "" 0 0
+piece case_1_1 1 1.82 0.72 1.43 0.63 1.05 prop_freight_case 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+piece tray_2 0 2.6 0.76 4.24 0.12 1.42 cyber_structure 0.75 0.75 0.75 1 0 0 0 0 0 1 "" 0 0
+piece case_2_-1 -1 2.98 0.72 1.43 0.63 1.05 prop_freight_case 0.89 0.89 0.89 1 0 0 0 0 0 1 "" 0 0
+piece case_2_1 1 2.98 0.72 1.43 0.63 1.05 prop_freight_case 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+source_piece upright_-1_0 -2.05 1.75 0.12 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+source_piece upright_-1_1 -2.05 1.75 1.37 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+source_piece upright_1_0 2.05 1.75 0.12 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+source_piece upright_1_1 2.05 1.75 1.37 0.17 3.5 0.17 cyber_structure 0.77 0.77 0.77 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+source_piece back_tie 0 3.36 0.12 4.1 0.13 0.13 cyber_structure 0.68 0.68 0.68 0 0 0 0 0 0 1 "" 0 0
+source_piece tray_0 0 0.28 0.76 4.24 0.12 1.42 cyber_structure 0.75 0.75 0.75 1 0 0 0 0 0 1 "" 0 0
+source_piece case_0_-1 -1 0.66 0.72 1.43 0.63 1.05 panel 0.89 0.89 0.89 1 0 0 0 0 0 1 "" 0 0
+source_piece case_0_1 1 0.66 0.72 1.43 0.63 1.05 panel 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+source_piece tray_1 0 1.44 0.76 4.24 0.12 1.42 cyber_structure 0.75 0.75 0.75 1 0 0 0 0 0 1 "" 0 0
+source_piece case_1_-1 -1 1.82 0.72 1.43 0.63 1.05 panel 0.89 0.89 0.89 1 0 0 0 0 0 1 "" 0 0
+source_piece case_1_1 1 1.82 0.72 1.43 0.63 1.05 panel 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+source_piece tray_2 0 2.6 0.76 4.24 0.12 1.42 cyber_structure 0.75 0.75 0.75 1 0 0 0 0 0 1 "" 0 0
+source_piece case_2_-1 -1 2.98 0.72 1.43 0.63 1.05 panel 0.89 0.89 0.89 1 0 0 0 0 0 1 "" 0 0
+source_piece case_2_1 1 2.98 0.72 1.43 0.63 1.05 panel 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0

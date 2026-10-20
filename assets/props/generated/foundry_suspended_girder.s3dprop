@@ -1,0 +1,13 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop foundry_suspended_girder
+draft 0
+id foundry_suspended_girder
+authoring 1 0
+bounds -8.02 -0.77 -0.53 8.02 0.02 0.53
+piece beam 0 -0.39 0 0.78 0.72 16 foundry_structure 0.82 0.82 0.82 0 0 90 0 0 0 1 "builtin://architecture/i_beam" 0 0
+piece anchor_-1 -7.65 -0.22 0 0.46 0.44 1.02 foundry_structure 0.71 0.71 0.71 0 0 0 0 0 0 1 "" 0 0
+piece anchor_1 7.65 -0.22 0 0.46 0.44 1.02 foundry_structure 0.71 0.71 0.71 0 0 0 0 0 0 1 "" 0 0
+source_piece beam 0 -0.39 0 0.78 0.72 16 foundry_structure 0.82 0.82 0.82 0 0 90 0 0 0 1 "builtin://architecture/i_beam" 0 0
+source_piece anchor_-1 -7.65 -0.22 0 0.46 0.44 1.02 foundry_structure 0.71 0.71 0.71 0 0 0 0 0 0 1 "" 0 0
+source_piece anchor_1 7.65 -0.22 0 0.46 0.44 1.02 foundry_structure 0.71 0.71 0.71 0 0 0 0 0 0 1 "" 0 0

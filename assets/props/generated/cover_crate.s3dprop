@@ -1,0 +1,17 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop cover_crate
+draft 0
+id cover_crate
+authoring 1 0
+bounds -1.005 -0.02 -1.005 1.005 1.32 1.06
+piece body 0 0.65 0 1.95 1.3 1.95 prop_freight_case 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece lid_band 0 1.25 0 1.99 0.12 1.99 prop_freight_case 0.48 0.48 0.48 0 0 0 0 0 0 1 "" 0 0
+piece bottom_band 0 0.08 0 1.99 0.14 1.99 prop_freight_case 0.4 0.4 0.4 0 0 0 0 0 0 1 "" 0 0
+piece corner_-0.94_-0.94 -0.94 0.67 -0.94 0.11 1.04 0.11 prop_stainless_fittings 0.48 0.48 0.48 0 0 0 0 0 0 1 "" 0 0
+piece corner_-0.94_0.94 -0.94 0.67 0.94 0.11 1.04 0.11 prop_stainless_fittings 0.48 0.48 0.48 0 0 0 0 0 0 1 "" 0 0
+piece corner_0.94_-0.94 0.94 0.67 -0.94 0.11 1.04 0.11 prop_stainless_fittings 0.48 0.48 0.48 0 0 0 0 0 0 1 "" 0 0
+piece corner_0.94_0.94 0.94 0.67 0.94 0.11 1.04 0.11 prop_stainless_fittings 0.48 0.48 0.48 0 0 0 0 0 0 1 "" 0 0
+piece handle_-0.5 -0.5 0.68 1.005 0.26 0.08 0.09 prop_stainless_fittings 0.42 0.42 0.42 0 0 0 0 0 0 1 "" 0 0
+piece handle_0.5 0.5 0.68 1.005 0.26 0.08 0.09 prop_stainless_fittings 0.42 0.42 0.42 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0.65 0 1.95 1.3 1.95 crate 1 1 1 1 0 0 0 0 0 1 "" 0 0

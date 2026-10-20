@@ -1,0 +1,15 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop ceiling_cassette_industrial
+draft 0
+id ceiling_cassette_industrial
+authoring 1 0
+bounds -4.02 -0.675 -0.37 4.02 0.01 0.37
+piece cassette 0 -0.48 0 8 0.18 0.7 cyber_structure 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+piece hanger_-1 -3.82 -0.22 0 0.12 0.42 0.455 cyber_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+piece hanger_1 3.82 -0.22 0 0.12 0.42 0.455 cyber_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+piece cable 0 -0.6 0 7.7 0.11 0.3 prop_cable_harness 0.57 0.57 0.57 0 0 0 0 0 0 1 "" 0 0
+source_piece cassette 0 -0.48 0 8 0.18 0.7 cyber_structure 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+source_piece hanger_-1 -3.82 -0.22 0 0.12 0.42 0.455 cyber_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+source_piece hanger_1 3.82 -0.22 0 0.12 0.42 0.455 cyber_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+source_piece cable 0 -0.6 0 7.7 0.11 0.3 machinery 0.57 0.57 0.57 0 0 0 0 0 0 1 "" 0 0

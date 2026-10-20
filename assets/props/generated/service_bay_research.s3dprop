@@ -1,0 +1,25 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop service_bay_research
+draft 0
+id service_bay_research
+authoring 1 0
+bounds -1.82 -1.295 0.217 1.82 1.295 0.982
+piece backplate 0 0 0.307 3.6 2.55 0.14 cryo_panel 0.78 0.78 0.78 1 0 0 0 0 0 1 "" 0 0
+piece frame_-1 -1.74 0 0.367 0.12 2.55 0.23 cryo_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0
+piece frame_1 1.74 0 0.367 0.12 2.55 0.23 cryo_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0
+piece canister_-1 -0.91 -0.17 0.667 0.48 1.36 0.46 prop_cryo_vessel 0.92 0.92 0.92 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece canister_1 0.91 -0.17 0.667 0.48 1.36 0.46 prop_cryo_vessel 0.92 0.92 0.92 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece regulator 0 -0.08 0.467 0.64 0.8 0.19 prop_service_cabinet 0.82 0.82 0.82 1 0 0 0 0 0 1 "" 0 0
+piece retaining_rail 0 -0.18 0.917 2.55 0.1 0.09 cryo_structure 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
+piece coolant_manifold 0 -0.99 0.477 2.48 0.15 0.2 prop_stainless_fittings 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
+piece status 0 0.9945 0.387 1.728 0.045 0.035 emissive 0.36 0.36 0.36 0 0 0 0 0 0 1 "" 0 0
+source_piece backplate 0 0 0.307 3.6 2.55 0.14 cryo_panel 0.78 0.78 0.78 1 0 0 0 0 0 1 "" 0 0
+source_piece frame_-1 -1.74 0 0.367 0.12 2.55 0.23 cryo_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0
+source_piece frame_1 1.74 0 0.367 0.12 2.55 0.23 cryo_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0
+source_piece canister_-1 -0.91 -0.17 0.667 0.48 1.36 0.46 cryo_machinery 0.92 0.92 0.92 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece canister_1 0.91 -0.17 0.667 0.48 1.36 0.46 cryo_machinery 0.92 0.92 0.92 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece regulator 0 -0.08 0.467 0.64 0.8 0.19 cryo_machinery 0.82 0.82 0.82 1 0 0 0 0 0 1 "" 0 0
+source_piece retaining_rail 0 -0.18 0.917 2.55 0.1 0.09 cryo_structure 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
+source_piece coolant_manifold 0 -0.99 0.477 2.48 0.15 0.2 cryo_machinery 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
+source_piece status 0 0.9945 0.387 1.728 0.045 0.035 emissive 0.36 0.36 0.36 0 0 0 0 0 0 1 "" 0 0

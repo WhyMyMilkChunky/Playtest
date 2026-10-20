@@ -1,0 +1,11 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop wall_light
+draft 0
+id wall_light
+authoring 1 0
+bounds -0.72 -0.37 -0.005 0.72 0.37 0.2775
+piece housing 0 0 0.105 1.4 0.7 0.18 panel 0.48 0.51 0.54 0 0 0 0 0 0 1 "" 0 0
+piece lens 0 0 0.23 1.15 0.24 0.055 emissive 1 1 1 0 0 0 0 0 0 1 "" 0 0
+source_piece housing 0 0 0.105 1.4 0.7 0.18 panel 0.48 0.51 0.54 0 0 0 0 0 0 1 "" 0 0
+source_piece lens 0 0 0.23 1.15 0.24 0.055 emissive 1 1 1 0 0 0 0 0 0 1 "" 0 0

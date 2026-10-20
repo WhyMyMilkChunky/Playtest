@@ -1,0 +1,15 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop low_barrier
+draft 0
+id low_barrier
+authoring 1 0
+bounds -1.53 -0.02 -0.52 1.53 1.03 0.585
+piece body 0 0.5 0 3 1 1 prop_freight_case 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece top_guard 0 0.96 0 3.04 0.12 1.02 prop_freight_case 0.45 0.45 0.45 0 0 0 0 0 0 1 "" 0 0
+piece access_plate 0 0.5 0.54 0.8 0.4 0.07 prop_foundry_press 0.72 0.72 0.72 0 0 0 0 0 0 1 "" 0 0
+piece foot_-1.12 -1.12 0.07 0 0.55 0.14 1.02 prop_foundry_press 0.55 0.55 0.55 0 0 0 0 0 0 1 "" 0 0
+piece foot_1.12 1.12 0.07 0 0.55 0.14 1.02 prop_foundry_press 0.55 0.55 0.55 0 0 0 0 0 0 1 "" 0 0
+piece rib_-0.96 -0.96 0.5 0.51 0.12 0.78 0.1 prop_stainless_fittings 0.38 0.38 0.38 0 0 0 0 0 0 1 "" 0 0
+piece rib_0.96 0.96 0.5 0.51 0.12 0.78 0.1 prop_stainless_fittings 0.38 0.38 0.38 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0.5 0 3 1 1 crate 1 1 1 1 0 0 0 0 0 1 "" 0 0

@@ -1,0 +1,19 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop advertisement_lightbox
+draft 0
+id advertisement_lightbox
+authoring 1 0
+bounds -1.195 -1.195 -0.01 1.195 1.195 0.225
+piece body 0 0 0.09 2.35 2.35 0.16 panel 0.31 0.34 0.36 0 0 0 0 0 0 1 "" 0 0
+piece face 0 0 0.185 2.21 2.21 0.01 ad_screen_sumpbrau 1 1 1 0 0 0 0 0 0 1 "assets/models/props/advertisement_face.obj" 0 0
+piece frame_x_-1 -1.14 0 0.185 0.07 2.35 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+piece frame_y_-1 0 -1.14 0.185 2.21 0.07 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+piece frame_x_1 1.14 0 0.185 0.07 2.35 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+piece frame_y_1 0 1.14 0.185 2.21 0.07 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0 0.09 2.35 2.35 0.16 panel 0.31 0.34 0.36 0 0 0 0 0 0 1 "" 0 0
+source_piece face 0 0 0.185 2.21 2.21 0.01 ad_screen_sumpbrau 1 1 1 0 0 0 0 0 0 1 "assets/models/props/advertisement_face.obj" 0 0
+source_piece frame_x_-1 -1.14 0 0.185 0.07 2.35 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+source_piece frame_y_-1 0 -1.14 0.185 2.21 0.07 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+source_piece frame_x_1 1.14 0 0.185 0.07 2.35 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0
+source_piece frame_y_1 0 1.14 0.185 2.21 0.07 0.04 panel 0.24 0.27 0.29 0 0 0 0 0 0 1 "" 0 0

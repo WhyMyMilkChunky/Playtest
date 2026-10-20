@@ -1,0 +1,25 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop industrial_press
+draft 0
+id industrial_press
+authoring 1 0
+bounds -2.47 -0.02 0.03 2.47 4.48 1.77
+piece bed 0 0.18 0.9 4.9 0.36 1.7 prop_foundry_press 0.69 0.69 0.69 1 0 0 0 0 0 1 "" 0 0
+piece column_-1 -2.1 2.2 0.9 0.5 4.1 0.62 foundry_structure 0.78 0.78 0.78 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+piece ram_-1 -0.8 3.35 0.9 0.32 1.65 0.32 prop_stainless_fittings 0.77 0.77 0.77 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece column_1 2.1 2.2 0.9 0.5 4.1 0.62 foundry_structure 0.78 0.78 0.78 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+piece ram_1 0.8 3.35 0.9 0.32 1.65 0.32 prop_stainless_fittings 0.77 0.77 0.77 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece crosshead 0 4.15 0.9 0.72 0.5 4.82 foundry_structure 0.76 0.76 0.76 1 0 90 0 0 0 1 "builtin://architecture/i_beam" 0 0
+piece die 0 0.64 0.9 2.45 0.55 1.36 prop_foundry_press 0.67 0.67 0.67 1 0 0 0 0 0 1 "" 0 0
+piece head 0 2.7 0.9 2.7 0.42 1.48 prop_foundry_press 0.76 0.76 0.76 1 0 0 0 0 0 1 "" 0 0
+piece feed 0 4.38 0.28 4.4 0.16 0.16 foundry_machinery 0.63 0.63 0.63 0 0 0 0 0 0 1 "" 0 0
+source_piece bed 0 0.18 0.9 4.9 0.36 1.7 foundry_structure 0.69 0.69 0.69 1 0 0 0 0 0 1 "" 0 0
+source_piece column_-1 -2.1 2.2 0.9 0.5 4.1 0.62 foundry_structure 0.78 0.78 0.78 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+source_piece ram_-1 -0.8 3.35 0.9 0.32 1.65 0.32 foundry_machinery 0.77 0.77 0.77 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece column_1 2.1 2.2 0.9 0.5 4.1 0.62 foundry_structure 0.78 0.78 0.78 1 0 0 0 0 0 1 "builtin://architecture/i_column" 0 0
+source_piece ram_1 0.8 3.35 0.9 0.32 1.65 0.32 foundry_machinery 0.77 0.77 0.77 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece crosshead 0 4.15 0.9 0.72 0.5 4.82 foundry_structure 0.76 0.76 0.76 1 0 90 0 0 0 1 "builtin://architecture/i_beam" 0 0
+source_piece die 0 0.64 0.9 2.45 0.55 1.36 foundry_machinery 0.67 0.67 0.67 1 0 0 0 0 0 1 "" 0 0
+source_piece head 0 2.7 0.9 2.7 0.42 1.48 foundry_machinery 0.76 0.76 0.76 1 0 0 0 0 0 1 "" 0 0
+source_piece feed 0 4.38 0.28 4.4 0.16 0.16 foundry_machinery 0.63 0.63 0.63 0 0 0 0 0 0 1 "" 0 0

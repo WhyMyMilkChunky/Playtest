@@ -1,0 +1,13 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop portal_frame_industrial
+draft 0
+id portal_frame_industrial
+authoring 1 0
+bounds -3.92 -0.02 -0.04 3.92 5.445 0.24
+piece jamb_-1 -3.74 2.5 0.1 0.32 5 0.22 cyber_structure 0.86 0.86 0.86 0 0 0 0 0 0 1 "" 0 0
+piece jamb_1 3.74 2.5 0.1 0.32 5 0.22 cyber_structure 0.86 0.86 0.86 0 0 0 0 0 0 1 "" 0 0
+piece lintel 0 5.25 0.1 7.8 0.35 0.24 cyber_structure 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+source_piece jamb_-1 -3.74 2.5 0.1 0.32 5 0.22 cyber_structure 0.86 0.86 0.86 0 0 0 0 0 0 1 "" 0 0
+source_piece jamb_1 3.74 2.5 0.1 0.32 5 0.22 cyber_structure 0.86 0.86 0.86 0 0 0 0 0 0 1 "" 0 0
+source_piece lintel 0 5.25 0.1 7.8 0.35 0.24 cyber_structure 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0

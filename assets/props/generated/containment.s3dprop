@@ -1,0 +1,39 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop containment
+draft 0
+id containment
+authoring 1 0
+bounds -2.495 -0.02 -0.035 2.495 4.13 1.68
+piece left_plinth -1.45 0.14 0.87 2.05 0.28 1.58 cryo_structure 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+piece left_vessel -1.45 1.75 0.84 1.4 2.92 1.3 prop_cryo_vessel 0.98 0.98 0.98 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece left_lower_collar -1.45 0.55 0.84 1.58 0.18 1.44 prop_stainless_fittings 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece left_upper_collar -1.45 2.95 0.84 1.58 0.18 1.44 prop_stainless_fittings 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece left_feed -1.45 3.47 0.5 0.18 0.74 0.18 prop_stainless_fittings 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece right_plinth 1.45 0.14 0.87 2.05 0.28 1.58 cryo_structure 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+piece right_vessel 1.45 1.75 0.84 1.4 2.92 1.3 prop_cryo_vessel 0.98 0.98 0.98 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece right_lower_collar 1.45 0.55 0.84 1.58 0.18 1.44 prop_stainless_fittings 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece right_upper_collar 1.45 2.95 0.84 1.58 0.18 1.44 prop_stainless_fittings 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece right_feed 1.45 3.47 0.5 0.18 0.74 0.18 prop_stainless_fittings 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece header 0 3.72 0.35 0.2 4.35 0.2 prop_stainless_fittings 0.76 0.76 0.76 0 0 0 90 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece header_mount_left -1.45 3.72 0.14 0.18 0.3 0.3 cryo_structure 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+piece header_mount_right 1.45 3.72 0.14 0.18 0.3 0.3 cryo_structure 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+piece control_panel 0 3.99 0.035 1.55 0.24 0.1 cryo_panel 0.89 0.89 0.89 0 0 0 0 0 0 1 "" 0 0
+piece status_bezel 0 3.99 0.065 1.39 0.16 0.06 cryo_structure 0.64 0.64 0.64 0 0 0 0 0 0 1 "" 0 0
+piece status 0 3.99 0.105 1.25 0.055 0.035 emissive 0.32 0.32 0.32 0 0 0 0 0 0 1 "" 0 0
+source_piece left_plinth -1.45 0.14 0.87 2.05 0.28 1.58 cryo_structure 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+source_piece left_vessel -1.45 1.75 0.84 1.4 2.92 1.3 cryo_panel 0.98 0.98 0.98 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece left_lower_collar -1.45 0.55 0.84 1.58 0.18 1.44 cryo_structure 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece left_upper_collar -1.45 2.95 0.84 1.58 0.18 1.44 cryo_structure 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece left_feed -1.45 3.47 0.5 0.18 0.74 0.18 cryo_machinery 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece right_plinth 1.45 0.14 0.87 2.05 0.28 1.58 cryo_structure 0.74 0.74 0.74 1 0 0 0 0 0 1 "" 0 0
+source_piece right_vessel 1.45 1.75 0.84 1.4 2.92 1.3 cryo_panel 0.98 0.98 0.98 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece right_lower_collar 1.45 0.55 0.84 1.58 0.18 1.44 cryo_structure 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece right_upper_collar 1.45 2.95 0.84 1.58 0.18 1.44 cryo_structure 0.74 0.74 0.74 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece right_feed 1.45 3.47 0.5 0.18 0.74 0.18 cryo_machinery 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece header 0 3.72 0.35 0.2 4.35 0.2 cryo_machinery 0.76 0.76 0.76 0 0 0 90 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece header_mount_left -1.45 3.72 0.14 0.18 0.3 0.3 cryo_structure 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+source_piece header_mount_right 1.45 3.72 0.14 0.18 0.3 0.3 cryo_structure 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+source_piece control_panel 0 3.99 0.035 1.55 0.24 0.1 cryo_panel 0.89 0.89 0.89 0 0 0 0 0 0 1 "" 0 0
+source_piece status_bezel 0 3.99 0.065 1.39 0.16 0.06 cryo_structure 0.64 0.64 0.64 0 0 0 0 0 0 1 "" 0 0
+source_piece status 0 3.99 0.105 1.25 0.055 0.035 emissive 0.32 0.32 0.32 0 0 0 0 0 0 1 "" 0 0

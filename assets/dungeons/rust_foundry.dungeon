@@ -1,0 +1,90 @@
+# S3D dungeon theme variant
+inherit assets/dungeons/cyber_industrial.dungeon
+theme rust_foundry Rusted Foundry
+materials foundry_floor foundry_wall foundry_ceiling foundry_panel foundry_door_security foundry_door_security emissive
+architecture foundry
+detail_materials foundry_catwalk_floor foundry_stair_floor foundry_structure
+environment 0.020 0.012 0.008 0.075 0.040 0.022 1.000 0.370 0.120 0.900 0.100 0.040
+
+# Theme-specific prop skins retain the base geometry and placement rules.
+prop_material cover_crate foundry_crate
+prop_material low_barrier foundry_crate
+prop_material security_locker locker
+prop_material floor_console foundry_machinery
+prop_material pipe_bank foundry_machinery
+prop_material wall_duct pipes
+prop_material machine_block foundry_machinery
+prop_material support_column foundry_machinery
+
+# Warmer, more hazardous room-lighting rhythm.
+room_layout combat_standard 28 26 38 36 10.0 4.2 heavy
+room_layout combat_crossfire 30 26 42 36 11.0 3.0 heavy
+room_layout combat_perimeter 32 28 44 40 11.0 2.4 perimeter
+room_layout combat_arena 36 34 50 48 20.0 2.0 heavy
+room_layout arena_overlook 36 32 48 44 20.0 1.5 alternating
+room_layout machine_chamber 32 30 46 42 20.0 1.7 machine
+room_layout assembly_chamber 32 30 46 42 20.0 1.5 structural
+room_layout boss_reactor 42 40 54 52 18.0 1.0 structural
+room_style combat_standard split production flat warning 2 4 4.5
+room_style combat_crossfire stepped production flat warning 2 4 5.0
+room_style combat_perimeter split production sunken warning 2 4 5.0
+room_style combat_arena atrium production multi warning 2 4 5.5
+room_style arena_overlook stepped production multi reactor 2 4 5.5
+room_style machine_chamber split power catwalk reactor 2 4 5.0
+room_style assembly_chamber atrium power catwalk reactor 2 4 5.0
+room_style routing_room split power raised low_power 1 3 4.5
+room_style routing_relay checkpoint power raised low_power 1 3 4.5
+room_style storage_loading stepped storage flat service 1 2 4.5
+room_style transit_junction atrium transit flat warning 2 4 5.0
+room_style utility_maintenance split maintenance raised warning 1 3 4.0
+room_style boss_reactor reactor command raised reactor 1 3 6.0
+
+# Foundry circulation favors broad, tall industrial lanes.
+hall_layout industrial_l industrial 9.0 7.0 3.2 1 1
+hall_layout security_boulevard wide 12.0 7.5 1.2 1 1
+hall_layout service_corridor service 6.5 5.5 1.7 0 0
+hall_layout segmented_transfer industrial 10.0 7.0 1.5 1 1
+hall_layout industrial_passage wide 13.0 8.0 1.0 1 1
+# Room-purpose palettes: floor, wall, ceiling, service panel.
+room_materials entry_checkpoint foundry_security_floor foundry_security_wall foundry_security_ceiling foundry_panel
+room_materials combat_standard foundry_production_floor foundry_production_wall foundry_production_ceiling foundry_panel
+room_materials combat_crossfire foundry_security_floor foundry_security_wall foundry_security_ceiling foundry_panel
+room_materials combat_perimeter foundry_transit_floor foundry_transit_wall foundry_transit_ceiling foundry_panel
+room_materials combat_arena foundry_production_floor foundry_production_wall foundry_production_ceiling foundry_panel
+room_materials arena_overlook foundry_security_floor foundry_security_wall foundry_security_ceiling foundry_panel
+room_materials machine_chamber foundry_power_floor foundry_power_wall foundry_power_ceiling foundry_panel
+room_materials assembly_chamber foundry_production_floor foundry_production_wall foundry_service_ceiling foundry_panel
+room_materials routing_room foundry_power_floor foundry_power_wall foundry_power_ceiling foundry_panel
+room_materials routing_relay foundry_security_floor foundry_security_wall foundry_security_ceiling foundry_panel
+room_materials secure_storage foundry_storage_floor foundry_storage_wall foundry_storage_ceiling foundry_panel
+room_materials storage_loading foundry_storage_floor foundry_service_wall foundry_storage_ceiling foundry_panel
+room_materials service_transition foundry_transit_floor foundry_transit_wall foundry_transit_ceiling foundry_panel
+room_materials transit_junction foundry_transit_floor foundry_security_wall foundry_transit_ceiling foundry_panel
+room_materials hidden_cache foundry_service_floor foundry_service_wall foundry_service_ceiling foundry_panel
+room_materials boss_reactor foundry_power_floor foundry_security_wall foundry_power_ceiling foundry_panel
+room_materials utility_power foundry_power_floor foundry_power_wall foundry_power_ceiling foundry_panel
+room_materials utility_maintenance foundry_service_floor foundry_service_wall foundry_service_ceiling foundry_panel
+
+# Corridors keep a coherent palette for their entire route, including elbows.
+hall_materials industrial_l foundry_transit_floor foundry_production_wall foundry_transit_ceiling foundry_structure
+hall_materials security_boulevard foundry_security_floor foundry_security_wall foundry_security_ceiling foundry_structure
+hall_materials service_corridor foundry_service_floor foundry_service_wall foundry_service_ceiling foundry_structure
+hall_materials segmented_transfer foundry_transit_floor foundry_transit_wall foundry_transit_ceiling foundry_structure
+hall_materials industrial_passage foundry_production_floor foundry_production_wall foundry_production_ceiling foundry_structure
+hall_materials freight_lift foundry_transit_floor foundry_transit_wall foundry_transit_ceiling foundry_structure
+
+# Foundry variants: broader process aisles and recessed industrial bays.
+room_layout service_workshop 24 20 34 28 9.0 1.5 machine
+room_layout process_gallery 28 22 42 32 12.0 1.9 heavy
+room_layout freight_staging 24 22 38 32 10.0 1.3 perimeter
+room_layout containment_annex 26 24 36 32 11.0 1.1 puzzle
+room_style service_workshop split maintenance raised service 1 3 4.5
+room_style process_gallery split production sunken warning 2 4 5.0
+room_style freight_staging stepped storage flat service 1 2 4.5
+room_style containment_annex split power raised low_power 1 3 4.5
+hall_style industrial_l sparse 0 10.0
+hall_style industrial_passage alternating 1 10.0
+room_materials service_workshop foundry_service_floor foundry_service_wall foundry_service_ceiling foundry_panel
+room_materials process_gallery foundry_production_floor foundry_production_wall foundry_transit_ceiling foundry_panel
+room_materials freight_staging foundry_storage_floor foundry_storage_wall foundry_service_ceiling foundry_panel
+room_materials containment_annex foundry_security_floor foundry_production_wall foundry_power_ceiling foundry_panel

@@ -1,0 +1,14 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop floor_console
+draft 0
+id floor_console
+authoring 1 0
+bounds -0.98 -0.02 -0.455 0.98 1.51 0.529332
+piece body 0 0.625 0 1.9 1.25 0.85 prop_service_cabinet 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece foot_plinth 0 0.07 0 1.94 0.14 0.89 prop_foundry_press 0.55 0.55 0.55 0 0 0 0 0 0 1 "" 0 0
+piece instrument_deck 0 1.32 0.23 1.6 0.07 0.55 prop_instrument_panel 1 1 1 0 24 0 0 0 0 1 "" 0 0
+piece cheek_-0.86 -0.86 1.27 0.23 0.1 0.12 0.58 prop_foundry_press 0.62 0.62 0.62 0 24 0 0 0 0 1 "" 0 0
+piece cheek_0.86 0.86 1.27 0.23 0.1 0.12 0.58 prop_foundry_press 0.62 0.62 0.62 0 24 0 0 0 0 1 "" 0 0
+piece rear_visor 0 1.44 -0.04 1.8 0.12 0.12 prop_foundry_press 0.62 0.62 0.62 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0.625 0 1.9 1.25 0.85 machinery 1 1 1 1 0 0 0 0 0 1 "" 0 0

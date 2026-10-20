@@ -1,0 +1,14 @@
+# Paths are relative to this folder. One WAV, MP3, OGG or FLAC filename per line.
+# Songs may also live in subfolders. Lines starting with # are comments.
+# Gameplay uses a shuffled bag, with a random 10-60 second gap after each song.
+# Boss tracks loop until leaving the boss level; there are no gaps during a boss.
+
+[gameplay]
+s3d song0.mp3
+s3d song1.mp3
+s3d song2.mp3
+s3d song3.mp3
+s3d song4.mp3
+
+[boss]
+boss_theme.mp3

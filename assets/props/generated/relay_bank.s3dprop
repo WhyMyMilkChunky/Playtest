@@ -1,0 +1,23 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop relay_bank
+draft 0
+id relay_bank
+authoring 1 0
+bounds -1.97 0.155 0.02 1.97 4.11 0.905
+piece case_-1 -1 1.85 0.45 1.3 3.35 0.75 prop_service_cabinet 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece inset_-1 -1 2.22 0.85 0.98 1.55 0.07 cyber_structure 0.58 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece case_1 1 1.85 0.45 1.3 3.35 0.75 prop_service_cabinet 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece inset_1 1 2.22 0.85 0.98 1.55 0.07 cyber_structure 0.58 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece shutter_head 0 3.85 0.44 3.9 0.48 0.8 cyber_structure 0.79 0.79 0.79 1 0 0 0 0 0 1 "" 0 0
+piece bus 0 0.32 0.35 3.5 0.22 0.22 prop_cable_harness 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+piece status_bezel 0 3.86 0.82 1.84 0.16 0.06 cyber_structure 0.64 0.64 0.64 0 0 0 0 0 0 1 "" 0 0
+piece status 0 3.86 0.86 1.7 0.055 0.035 emissive 0.32 0.32 0.32 0 0 0 0 0 0 1 "" 0 0
+source_piece case_-1 -1 1.85 0.45 1.3 3.35 0.75 panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+source_piece inset_-1 -1 2.22 0.85 0.98 1.55 0.07 cyber_structure 0.58 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+source_piece case_1 1 1.85 0.45 1.3 3.35 0.75 panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+source_piece inset_1 1 2.22 0.85 0.98 1.55 0.07 cyber_structure 0.58 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+source_piece shutter_head 0 3.85 0.44 3.9 0.48 0.8 cyber_structure 0.79 0.79 0.79 1 0 0 0 0 0 1 "" 0 0
+source_piece bus 0 0.32 0.35 3.5 0.22 0.22 machinery 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+source_piece status_bezel 0 3.86 0.82 1.84 0.16 0.06 cyber_structure 0.64 0.64 0.64 0 0 0 0 0 0 1 "" 0 0
+source_piece status 0 3.86 0.86 1.7 0.055 0.035 emissive 0.32 0.32 0.32 0 0 0 0 0 0 1 "" 0 0

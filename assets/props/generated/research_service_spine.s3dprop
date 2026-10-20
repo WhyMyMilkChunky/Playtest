@@ -1,0 +1,15 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop research_service_spine
+draft 0
+id research_service_spine
+authoring 1 0
+bounds -8.02 -0.405 -0.34 8.02 0.02 0.34
+piece spine 0 -0.16 0 16 0.28 0.42 cryo_panel 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+piece conduit 0 -0.34 0 15.6 0.09 0.2 prop_cable_harness 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
+piece mount_-1 -7.8 -0.19 0 0.24 0.38 0.64 cryo_panel 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+piece mount_1 7.8 -0.19 0 0.24 0.38 0.64 cryo_panel 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+source_piece spine 0 -0.16 0 16 0.28 0.42 cryo_panel 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+source_piece conduit 0 -0.34 0 15.6 0.09 0.2 cryo_panel 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
+source_piece mount_-1 -7.8 -0.19 0 0.24 0.38 0.64 cryo_panel 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+source_piece mount_1 7.8 -0.19 0 0.24 0.38 0.64 cryo_panel 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0

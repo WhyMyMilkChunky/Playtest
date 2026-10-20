@@ -1,0 +1,177 @@
+# Surface identity, independent of albedo brightness. Values are normalized.
+# profile name specular smoothness metallic normal_detail normal_relief slope_limit grime_roughness variation exposed_metal anisotropy frost repeat
+# Paint, concrete, rubber and ice remain dielectric. Rust/grime reduce exposed metal.
+profile concrete .36 .20 0 .65 1.35 .48 .18 .045 0 0 0 1
+profile painted_concrete .38 .31 0 .45 1.15 .40 .20 .045 0 0 0 1
+profile sealed_concrete .38 .34 0 .40 1.10 .40 .20 .040 0 0 0 1
+profile rough_concrete .34 .13 0 .80 1.65 .55 .20 .055 0 0 0 1
+profile painted_steel .40 .55 .025 .20 1.10 .38 .23 .045 .28 .04 0 1
+profile worn_steel .42 .61 .72 .22 1.40 .48 .22 .055 .10 .22 0 1
+profile cast_iron .38 .39 .62 .48 1.25 .55 .22 .060 .08 .06 0 1
+profile brushed_steel .42 .72 .82 .12 .80 .32 .18 .035 .06 .40 0 1
+profile tread_steel .40 .56 .74 .25 1.70 .65 .23 .055 .10 .18 0 1
+profile grate_steel .40 .50 .72 .18 2.10 .72 .24 .055 .10 .12 0 1
+profile machine .40 .57 .36 .18 1.35 .45 .25 .055 .24 .15 0 0
+profile rubber .36 .27 0 .30 .65 .32 .13 .040 0 0 0 1
+profile frosted_concrete .40 .35 0 .32 1.35 .44 .18 .060 0 0 .85 1
+profile cryo_enamel .42 .66 .025 .12 .90 .34 .18 .040 .18 .03 .65 1
+profile frosted_steel .42 .64 .56 .18 1.15 .40 .20 .050 .08 .18 .70 1
+profile console .40 .58 .02 .06 .35 .18 .18 .025 .18 .03 0 0
+profile screen .44 .84 0 0 0 0 .025 .010 0 0 0 0
+profile paper .28 .18 0 .03 .03 .04 .035 .010 0 0 0 0
+profile gunmetal .40 .62 .38 .15 .80 .30 .22 .035 .20 .18 0 0
+profile ceiling_beams .42 .54 .48 .12 1.10 .36 .23 .040 .10 .16 0 1
+
+# Cryo labs: smooth dielectric finishes, shallow wear, and restrained local frost.
+# Flecked laminate stays almost flat; grout and gasket seams retain gentle relief.
+profile cryo_ceramic .42 .74 0 .06 1.05 .28 .18 .025 0 0 0 1
+profile cryo_laminate .40 .69 0 .025 .30 .12 .18 .025 0 0 0 1
+profile cryo_wall_enamel .42 .73 .015 .05 .80 .25 .20 .025 .12 .03 .12 1
+profile cryo_ceiling_enamel .40 .64 .015 .04 .65 .24 .20 .025 .10 .03 0 1
+profile cryo_frosted_cladding .42 .61 .015 .10 .90 .30 .20 .030 .10 .03 .48 1
+
+# Dedicated prop finishes: shallow relief avoids embossing printed grime.
+profile prop_case_paint .40 .60 .025 .10 .65 .30 .22 .035 .26 .04 0 1
+profile prop_aged_paint .40 .48 .025 .14 .80 .34 .26 .045 .24 .03 0 1
+profile prop_lab_enamel .42 .73 .015 .06 .45 .24 .20 .025 .14 .02 .18 1
+profile prop_cast_housing .40 .42 .62 .25 .85 .38 .28 .045 .10 .10 0 1
+profile prop_cable_rubber .36 .24 .015 .10 .55 .28 .16 .030 .02 .03 0 1
+profile prop_worktop_rubber .36 .29 0 .08 .42 .23 .15 .025 0 .08 0 1
+profile prop_clean_fittings .42 .78 .84 .06 .35 .23 .16 .025 .04 .45 0 1
+
+# Every registered world material has an explicit finish. Keep game.materials order.
+material floor sealed_concrete
+material wall painted_concrete
+material ceiling ceiling_beams
+material panel painted_steel
+material door_left painted_steel
+material door_right painted_steel
+material crate painted_steel
+material locker painted_steel
+material pipes brushed_steel
+material machinery machine
+material puzzle_circuit screen
+material puzzle_sequence screen
+material puzzle_signal screen
+material puzzle_secret screen
+material prop machine
+material emissive screen
+material foundry_floor tread_steel
+material foundry_wall worn_steel
+material foundry_ceiling cast_iron
+material foundry_panel worn_steel
+material foundry_crate painted_steel
+material foundry_machinery machine
+material cryo_floor cryo_ceramic
+material cryo_wall cryo_wall_enamel
+material cryo_ceiling cryo_ceiling_enamel
+material cryo_panel cryo_wall_enamel
+material cryo_crate cryo_enamel
+material cryo_machinery frosted_steel
+material upgrade_station console
+material upgrade_screen screen
+material terminal console
+material cyber_service_floor sealed_concrete
+material cyber_service_wall concrete
+material cyber_service_ceiling ceiling_beams
+material cyber_security_floor sealed_concrete
+material cyber_security_wall concrete
+material cyber_security_ceiling concrete
+material cyber_production_floor tread_steel
+material cyber_production_wall concrete
+material cyber_production_ceiling ceiling_beams
+material cyber_storage_floor rough_concrete
+material cyber_storage_wall concrete
+material cyber_storage_ceiling concrete
+material cyber_power_floor rubber
+material cyber_power_wall painted_concrete
+material cyber_power_ceiling ceiling_beams
+material cyber_transit_floor sealed_concrete
+material cyber_transit_wall painted_concrete
+material cyber_transit_ceiling ceiling_beams
+material cyber_catwalk_floor grate_steel
+material cyber_stair_floor tread_steel
+material cyber_structure painted_steel
+material foundry_service_floor tread_steel
+material foundry_service_wall grate_steel
+material foundry_service_ceiling cast_iron
+material foundry_security_floor tread_steel
+material foundry_security_wall painted_steel
+material foundry_security_ceiling cast_iron
+material foundry_production_floor tread_steel
+material foundry_production_wall worn_steel
+material foundry_production_ceiling cast_iron
+material foundry_storage_floor rough_concrete
+material foundry_storage_wall worn_steel
+material foundry_storage_ceiling cast_iron
+material foundry_power_floor rubber
+material foundry_power_wall worn_steel
+material foundry_power_ceiling cast_iron
+material foundry_transit_floor tread_steel
+material foundry_transit_wall worn_steel
+material foundry_transit_ceiling cast_iron
+material foundry_catwalk_floor grate_steel
+material foundry_stair_floor tread_steel
+material foundry_structure cast_iron
+material cryo_service_floor tread_steel
+material cryo_service_wall concrete
+material cryo_service_ceiling ceiling_beams
+material cryo_security_floor cryo_laminate
+material cryo_security_wall cryo_wall_enamel
+material cryo_security_ceiling cryo_ceiling_enamel
+material cryo_production_floor cryo_ceramic
+material cryo_production_wall cryo_frosted_cladding
+material cryo_production_ceiling cryo_ceiling_enamel
+material cryo_storage_floor cryo_laminate
+material cryo_storage_wall frosted_concrete
+material cryo_storage_ceiling concrete
+material cryo_power_floor rubber
+material cryo_power_wall cryo_wall_enamel
+material cryo_power_ceiling ceiling_beams
+material cryo_transit_floor cryo_laminate
+material cryo_transit_wall concrete
+material cryo_transit_ceiling cryo_ceiling_enamel
+material cryo_catwalk_floor frosted_steel
+material cryo_stair_floor tread_steel
+material cryo_structure frosted_steel
+material ad_print_sumpbrau paper
+material ad_screen_sumpbrau screen
+material ad_print_vult paper
+material ad_screen_vult screen
+material ad_print_morrows paper
+material ad_screen_morrows screen
+material ad_print_bendwell paper
+material ad_screen_bendwell screen
+material ad_print_nicely paper
+material ad_screen_nicely screen
+material ad_print_lucid paper
+material ad_screen_lucid screen
+
+# Offline-generated weapon assets use the same finish policy.
+material weapon_c7a4 gunmetal
+material weapon_c8a5 gunmetal
+material weapon_c9a4 gunmetal
+material weapon_c14a3 gunmetal
+material weapon_c20a2 gunmetal
+material weapon_c22a2 gunmetal
+material weapon_ca12a1 gunmetal
+material weapon_c6a3 gunmetal
+
+material prop_freight_case prop_case_paint
+material foundry_prop_freight_case prop_aged_paint
+material cryo_prop_freight_case prop_lab_enamel
+material prop_service_cabinet prop_case_paint
+material prop_foundry_press prop_cast_housing
+material prop_cryo_vessel prop_lab_enamel
+material prop_cable_harness prop_cable_rubber
+material prop_workbench_top prop_worktop_rubber
+material prop_stainless_fittings prop_clean_fittings
+material prop_instrument_panel console
+
+material cyber_door_security painted_steel
+material cyber_door_bulkhead worn_steel
+material foundry_door_security painted_steel
+material foundry_door_bulkhead cast_iron
+material cryo_door_security cryo_wall_enamel
+material cryo_door_bulkhead frosted_steel
+material floppy_disk console

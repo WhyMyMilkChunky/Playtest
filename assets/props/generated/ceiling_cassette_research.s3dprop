@@ -1,0 +1,13 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop ceiling_cassette_research
+draft 0
+id ceiling_cassette_research
+authoring 1 0
+bounds -4.02 -0.59 -0.87 4.02 0.01 0.87
+piece cassette 0 -0.48 0 8 0.18 1.7 cryo_panel 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+piece hanger_-1 -3.82 -0.22 0 0.12 0.42 1.105 cryo_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+piece hanger_1 3.82 -0.22 0 0.12 0.42 1.105 cryo_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+source_piece cassette 0 -0.48 0 8 0.18 1.7 cryo_panel 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+source_piece hanger_-1 -3.82 -0.22 0 0.12 0.42 1.105 cryo_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0
+source_piece hanger_1 3.82 -0.22 0 0.12 0.42 1.105 cryo_structure 0.73 0.73 0.73 0 0 0 0 0 0 1 "" 0 0

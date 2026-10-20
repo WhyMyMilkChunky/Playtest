@@ -1,0 +1,141 @@
+# Runtime material-array manifest.
+# Keep the first 16 entries in this order so authored .s3dlevel files remain compatible.
+# Format: material name albedo normal specular smoothness
+# Auto maps use the explicit surface identities in game.finishes. Existing albedo artwork is preserved.
+# Set an individual map path again to use an authored replacement.
+material floor assets/textures/game/floor.png auto auto auto
+material wall assets/textures/game/concrete_slab_painted_vent.png auto auto auto
+material ceiling assets/textures/game/cyber_ceiling_parallel_beams.png auto auto auto
+material panel assets/textures/game/panel.png auto auto auto
+material door_left assets/textures/game/cyber_door_security.png auto auto auto
+material door_right assets/textures/game/cyber_door_security.png auto auto auto
+material crate assets/textures/game/decor_crate.png auto auto auto
+material locker assets/textures/game/decor_locker.png auto auto auto
+material pipes assets/textures/game/decor_pipes.png auto auto auto
+material machinery assets/textures/game/decor_machinery.png auto auto auto
+material puzzle_circuit assets/textures/game/puzzle_circuit.png auto auto auto
+material puzzle_sequence assets/textures/game/puzzle_sequence.png auto auto auto
+material puzzle_signal assets/textures/game/puzzle_signal.png auto auto auto
+material puzzle_secret assets/textures/game/puzzle_secret.png auto auto auto
+material prop assets/textures/game/decor_machinery.png auto auto auto
+material emissive assets/textures/game/puzzle_circuit.png auto auto auto
+
+# Add custom material entries below. Example:
+# material my_panels assets/textures/game/my_panels.png auto auto auto
+material foundry_floor assets/textures/game/foundry_floor.png auto auto auto
+material foundry_wall assets/textures/game/foundry_wall.png auto auto auto
+material foundry_ceiling assets/textures/game/foundry_ceiling.png auto auto auto
+material foundry_panel assets/textures/game/foundry_panel.png auto auto auto
+material foundry_crate assets/textures/game/foundry_crate.png auto auto auto
+material foundry_machinery assets/textures/game/foundry_machinery.png auto auto auto
+material cryo_floor assets/textures/game/cryo_ceramic_tiles.png auto auto auto
+material cryo_wall assets/textures/game/cryo_insulated_panels.png auto auto auto
+material cryo_ceiling assets/textures/game/cryo_ceiling_cassettes.png auto auto auto
+material cryo_panel assets/textures/game/cryo_insulated_panels.png auto auto auto
+material cryo_crate assets/textures/game/cryo_crate.png auto auto auto
+material cryo_machinery assets/textures/game/cryo_machinery.png auto auto auto
+material upgrade_station assets/textures/game/decor_machinery.png auto auto auto
+material upgrade_screen assets/textures/game/puzzle_signal.png auto auto auto
+
+material terminal assets/textures/game/terminal.png auto auto auto
+
+# Area variations. Cryo lab/catwalk replacements keep the existing material order.
+material cyber_service_floor assets/textures/game/cyber_service_floor.png auto auto auto
+material cyber_service_wall assets/textures/game/concrete_slab_vent.png auto auto auto
+material cyber_service_ceiling assets/textures/game/cyber_ceiling_parallel_beams.png auto auto auto
+material cyber_security_floor assets/textures/game/cyber_security_floor.png auto auto auto
+material cyber_security_wall assets/textures/game/concrete_slab_plain.png auto auto auto
+material cyber_security_ceiling assets/textures/game/cyber_ceiling_concrete_slabs.png auto auto auto
+material cyber_production_floor assets/textures/game/cyber_production_floor.png auto auto auto
+material cyber_production_wall assets/textures/game/concrete_slab_vent.png auto auto auto
+material cyber_production_ceiling assets/textures/game/cyber_ceiling_crossed_beams.png auto auto auto
+material cyber_storage_floor assets/textures/game/cyber_storage_floor.png auto auto auto
+material cyber_storage_wall assets/textures/game/concrete_slab_plain.png auto auto auto
+material cyber_storage_ceiling assets/textures/game/cyber_ceiling_concrete_slabs.png auto auto auto
+material cyber_power_floor assets/textures/game/cyber_power_floor.png auto auto auto
+material cyber_power_wall assets/textures/game/concrete_slab_painted_vent.png auto auto auto
+material cyber_power_ceiling assets/textures/game/cyber_ceiling_crossed_beams.png auto auto auto
+material cyber_transit_floor assets/textures/game/cyber_transit_floor.png auto auto auto
+material cyber_transit_wall assets/textures/game/concrete_slab_painted.png auto auto auto
+material cyber_transit_ceiling assets/textures/game/cyber_ceiling_parallel_beams.png auto auto auto
+material cyber_catwalk_floor assets/textures/game/cyber_catwalk_bar_grating.png auto auto auto
+material cyber_stair_floor assets/textures/game/cyber_stair_floor.png auto auto auto
+material cyber_structure assets/textures/game/cyber_structure.png auto auto auto
+material foundry_service_floor assets/textures/game/foundry_service_floor.png auto auto auto
+material foundry_service_wall assets/textures/game/foundry_service_wall.png auto auto auto
+material foundry_service_ceiling assets/textures/game/foundry_service_ceiling.png auto auto auto
+material foundry_security_floor assets/textures/game/foundry_security_floor.png auto auto auto
+material foundry_security_wall assets/textures/game/foundry_security_wall.png auto auto auto
+material foundry_security_ceiling assets/textures/game/foundry_security_ceiling.png auto auto auto
+material foundry_production_floor assets/textures/game/foundry_production_floor.png auto auto auto
+material foundry_production_wall assets/textures/game/foundry_production_wall.png auto auto auto
+material foundry_production_ceiling assets/textures/game/foundry_production_ceiling.png auto auto auto
+material foundry_storage_floor assets/textures/game/foundry_storage_floor.png auto auto auto
+material foundry_storage_wall assets/textures/game/foundry_storage_wall.png auto auto auto
+material foundry_storage_ceiling assets/textures/game/foundry_storage_ceiling.png auto auto auto
+material foundry_power_floor assets/textures/game/foundry_power_floor.png auto auto auto
+material foundry_power_wall assets/textures/game/foundry_power_wall.png auto auto auto
+material foundry_power_ceiling assets/textures/game/foundry_power_ceiling.png auto auto auto
+material foundry_transit_floor assets/textures/game/foundry_transit_floor.png auto auto auto
+material foundry_transit_wall assets/textures/game/foundry_transit_wall.png auto auto auto
+material foundry_transit_ceiling assets/textures/game/foundry_transit_ceiling.png auto auto auto
+material foundry_catwalk_floor assets/textures/game/foundry_catwalk_diamond_grating.png auto auto auto
+material foundry_stair_floor assets/textures/game/foundry_stair_floor.png auto auto auto
+material foundry_structure assets/textures/game/foundry_structure.png auto auto auto
+material cryo_service_floor assets/textures/game/cryo_service_tread.png auto auto auto
+material cryo_service_wall assets/textures/game/cryo_service_pipework.png auto auto auto
+material cryo_service_ceiling assets/textures/game/cryo_ceiling_service_trays.png auto auto auto
+material cryo_security_floor assets/textures/game/cryo_lab_laminate.png auto auto auto
+material cryo_security_wall assets/textures/game/cryo_insulated_panels.png auto auto auto
+material cryo_security_ceiling assets/textures/game/cryo_ceiling_cassettes.png auto auto auto
+material cryo_production_floor assets/textures/game/cryo_ceramic_tiles.png auto auto auto
+material cryo_production_wall assets/textures/game/cryo_frosted_cladding.png auto auto auto
+material cryo_production_ceiling assets/textures/game/cryo_ceiling_cassettes.png auto auto auto
+material cryo_storage_floor assets/textures/game/cryo_lab_laminate.png auto auto auto
+material cryo_storage_wall assets/textures/game/cryo_concrete_continuous.png auto auto auto
+material cryo_storage_ceiling assets/textures/game/cryo_ceiling_slab_tiles.png auto auto auto
+material cryo_power_floor assets/textures/game/cryo_electrical_rubber.png auto auto auto
+material cryo_power_wall assets/textures/game/cryo_insulated_panels.png auto auto auto
+material cryo_power_ceiling assets/textures/game/cryo_ceiling_service_trays.png auto auto auto
+material cryo_transit_floor assets/textures/game/cryo_lab_laminate.png auto auto auto
+material cryo_transit_wall assets/textures/game/cryo_concrete_continuous.png auto auto auto
+material cryo_transit_ceiling assets/textures/game/cryo_ceiling_cassettes.png auto auto auto
+material cryo_catwalk_floor assets/textures/game/cryo_catwalk_slotted_grating.png auto auto auto
+material cryo_stair_floor assets/textures/game/cryo_service_tread.png auto auto auto
+material cryo_structure assets/textures/game/cryo_structure.png auto auto auto
+
+# Fictional commercial brands: printed stock and self-lit electronic panels.
+# Keep these entries appended so existing authored material indices remain stable.
+material ad_print_sumpbrau assets/textures/game/advertisements/sumpbrau.png auto auto auto
+material ad_screen_sumpbrau assets/textures/game/advertisements/sumpbrau.png auto auto auto
+material ad_print_vult assets/textures/game/advertisements/vult.png auto auto auto
+material ad_screen_vult assets/textures/game/advertisements/vult.png auto auto auto
+material ad_print_morrows assets/textures/game/advertisements/morrows.png auto auto auto
+material ad_screen_morrows assets/textures/game/advertisements/morrows.png auto auto auto
+material ad_print_bendwell assets/textures/game/advertisements/bendwell.png auto auto auto
+material ad_screen_bendwell assets/textures/game/advertisements/bendwell.png auto auto auto
+material ad_print_nicely assets/textures/game/advertisements/nicely.png auto auto auto
+material ad_screen_nicely assets/textures/game/advertisements/nicely.png auto auto auto
+material ad_print_lucid assets/textures/game/advertisements/lucid.png auto auto auto
+material ad_screen_lucid assets/textures/game/advertisements/lucid.png auto auto auto
+
+# Dedicated prop skins. Appended to preserve all existing material indices.
+material prop_freight_case assets/textures/game/prop_freight_case.png auto auto auto
+material foundry_prop_freight_case assets/textures/game/prop_foundry_case.png auto auto auto
+material cryo_prop_freight_case assets/textures/game/prop_cryo_case.png auto auto auto
+material prop_service_cabinet assets/textures/game/prop_service_cabinet.png auto auto auto
+material prop_foundry_press assets/textures/game/prop_foundry_press.png auto auto auto
+material prop_cryo_vessel assets/textures/game/prop_cryo_vessel.png auto auto auto
+material prop_cable_harness assets/textures/game/prop_cable_harness.png auto auto auto
+material prop_workbench_top assets/textures/game/prop_workbench_top.png auto auto auto
+material prop_stainless_fittings assets/textures/game/cryo_structure.png auto auto auto
+material prop_instrument_panel assets/textures/game/prop_instrument_panel.png auto auto auto
+
+# Door surfaces repeat at a fixed physical texel density.
+material cyber_door_security assets/textures/game/cyber_door_security.png auto auto auto
+material cyber_door_bulkhead assets/textures/game/cyber_door_bulkhead.png auto auto auto
+material foundry_door_security assets/textures/game/foundry_door_security.png auto auto auto
+material foundry_door_bulkhead assets/textures/game/foundry_door_bulkhead.png auto auto auto
+material cryo_door_security assets/textures/game/cryo_door_security.png auto auto auto
+material cryo_door_bulkhead assets/textures/game/cryo_door_bulkhead.png auto auto auto
+material floppy_disk assets/textures/game/floppy_disk.png auto auto auto
