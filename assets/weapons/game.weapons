@@ -141,7 +141,7 @@ reserve 35
 ammo_type heavy
 rpm 48
 reload_seconds 2.55
-damage 130
+damage 155
 spread 0.0008
 recoil 1.05
 recoil_recovery 0.75
@@ -183,9 +183,9 @@ short_name LONGWATCH DMR
 magazine 20
 reserve 100
 ammo_type medium
-rpm 300
+rpm 240
 reload_seconds 1.95
-damage 54
+damage 50
 spread 0.003
 recoil 0.360
 recoil_recovery 1.25
@@ -227,9 +227,9 @@ short_name SPARROW SIDEARM
 magazine 17
 reserve 102
 ammo_type light
-rpm 520
+rpm 420
 reload_seconds 1.1
-damage 23
+damage 20
 spread 0.015
 recoil 0.135
 recoil_recovery 2.4
@@ -317,9 +317,9 @@ reserve 300
 ammo_type heavy
 rpm 620
 reload_seconds 4.2
-damage 26
+damage 34
 spread 0.014
-recoil 0.225
+recoil 0.285
 recoil_recovery 0.65
 recoil_spread 0.55
 recoil_vertical 0.95

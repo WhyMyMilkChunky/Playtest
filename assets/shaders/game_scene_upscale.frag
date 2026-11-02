@@ -18,35 +18,37 @@ float EdgeDistance(vec3 first, vec3 second)
 	return dot(abs(first - second), vec3(.25, .50, .25));
 }
 
-vec3 DirectionalCell(vec3 a, vec3 b, vec3 c, vec3 d, vec2 fraction,
-	float scaleWeight, float contrast)
+vec3 DirectionalCell(
+    vec3 a, vec3 b, vec3 c, vec3 d, vec2 fraction, float scaleWeight, float contrast, vec3 linear)
 {
-	vec3 linear = mix(mix(a, b, fraction.x), mix(c, d, fraction.x), fraction.y);
+	// These cases have exactly zero directional weight.
+	if (scaleWeight == 0.0 || contrast <= .02) return linear;
 	float mainEdge = EdgeDistance(a, d), otherEdge = EdgeDistance(b, c);
 	float separation = (otherEdge - mainEdge) / max(mainEdge + otherEdge, .0001);
 	float confidence = smoothstep(.15, .65, abs(separation)) * smoothstep(.02, .12, contrast);
 	// Two continuous triangular interpolants follow the more coherent diagonal.
 	// Each matches linear interpolation on the cell boundary; all weights remain positive.
-	vec3 mainDiagonal = fraction.x >= fraction.y ?
-		a * (1.0 - fraction.x) + b * (fraction.x - fraction.y) + d * fraction.y :
-		a * (1.0 - fraction.y) + c * (fraction.y - fraction.x) + d * fraction.x;
+	vec3 mainDiagonal = fraction.x >= fraction.y
+	                        ? a * (1.0 - fraction.x) + b * (fraction.x - fraction.y) + d * fraction.y
+	                        : a * (1.0 - fraction.y) + c * (fraction.y - fraction.x) + d * fraction.x;
 	float sum = fraction.x + fraction.y;
-	vec3 otherDiagonal = sum <= 1.0 ? a * (1.0 - sum) + b * fraction.x + c * fraction.y :
-		b * (1.0 - fraction.y) + c * (1.0 - fraction.x) + d * (sum - 1.0);
+	vec3 otherDiagonal = sum <= 1.0 ? a * (1.0 - sum) + b * fraction.x + c * fraction.y
+	                                : b * (1.0 - fraction.y) + c * (1.0 - fraction.x) + d * (sum - 1.0);
 	vec3 directional = mix(otherDiagonal, mainDiagonal, smoothstep(-.25, .25, separation));
 	return mix(linear, directional, confidence * scaleWeight * .85);
 }
 
-vec3 RestoreContrast(vec3 reconstructed, vec3 linear, vec2 point, vec2 texel,
-	vec3 minimum, vec3 maximum, float scaleWeight, float contrast)
+vec3 RestoreContrast(vec3 reconstructed, vec3 linear, vec2 point, vec2 texel, vec3 minimum, vec3 maximum,
+    float scaleWeight, float contrast)
 {
-	float strength = .24 * scaleWeight * smoothstep(.025, .12, contrast) *
-		(1.0 - smoothstep(.60, 1.40, contrast));
+	float strength =
+	    .24 * scaleWeight * smoothstep(.025, .12, contrast) * (1.0 - smoothstep(.60, 1.40, contrast));
 	if (strength <= .001) return reconstructed;
 	vec3 mean = (textureLod(u_scene, point - vec2(texel.x, 0), 0).rgb +
-		textureLod(u_scene, point + vec2(texel.x, 0), 0).rgb +
-		textureLod(u_scene, point - vec2(0, texel.y), 0).rgb +
-		textureLod(u_scene, point + vec2(0, texel.y), 0).rgb) * .25;
+	                textureLod(u_scene, point + vec2(texel.x, 0), 0).rgb +
+	                textureLod(u_scene, point - vec2(0, texel.y), 0).rgb +
+	                textureLod(u_scene, point + vec2(0, texel.y), 0).rgb) *
+	            .25;
 	// True local contrast leaves a linear ramp unchanged. Bound each channel to the
 	// original cell to keep lamps, railings and pixel textures free of new overshoot halos.
 	vec3 limit = (maximum - minimum) * .12;
@@ -70,7 +72,7 @@ void main()
 	vec2 footprint = fwidth(point) * vec2(size);
 	float scaleWeight = clamp((1.0 - max(footprint.x, footprint.y)) * 2.0, 0.0, 1.0);
 	vec3 linear = mix(mix(a, b, fraction.x), mix(c, d, fraction.x), fraction.y);
-	vec3 color = DirectionalCell(a, b, c, d, fraction, scaleWeight, contrast);
+	vec3 color = DirectionalCell(a, b, c, d, fraction, scaleWeight, contrast, linear);
 	color = RestoreContrast(color, linear, point, 1.0 / vec2(size), minimum, maximum, scaleWeight, contrast);
 	FragColor = vec4(color, 1.0);
 }

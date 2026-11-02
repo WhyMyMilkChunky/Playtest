@@ -9,7 +9,8 @@ S3D_RESOURCE(0, 0) uniform ShadowFrame
 {
 	mat4 viewProjection;
 	vec4 lightPositionFar;
-} shadowFrame;
+}
+shadowFrame;
 
 layout(location = 0) out vec3 worldPosition;
 
@@ -17,5 +18,5 @@ void main()
 {
 	vec4 world = aWorld * vec4(aPosition, 1.0);
 	worldPosition = world.xyz;
-	gl_Position = S3DClipPosition(shadowFrame.viewProjection * world);
+	gl_Position = S3DCubemapClipPosition(shadowFrame.viewProjection * world);
 }

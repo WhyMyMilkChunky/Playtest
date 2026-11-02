@@ -14,9 +14,7 @@ layout(location = 0) out vec4 color;
 
 void main()
 {
-	mat4 viewProjection = mat4(aViewProjection0, aViewProjection1,
-		aViewProjection2, aViewProjection3);
+	mat4 viewProjection = mat4(aViewProjection0, aViewProjection1, aViewProjection2, aViewProjection3);
 	color = aColor;
-	gl_Position = S3DClipPosition(viewProjection *
-		(gl_VertexIndex == 0 ? aStart : aEnd));
+	gl_Position = S3DClipPosition(viewProjection * (gl_VertexIndex == 0 ? aStart : aEnd));
 }

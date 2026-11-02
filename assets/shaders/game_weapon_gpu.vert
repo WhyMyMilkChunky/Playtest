@@ -26,22 +26,25 @@ layout(location = 4) out vec3 bodyPosition;
 layout(location = 5) flat out vec4 woundSpheres[WOUND_COUNT];
 layout(location = 13) flat out vec4 woundRegions[WOUND_REGION_VECTOR_COUNT];
 layout(location = 15) flat out float bodyRegion;
+layout(location = 16) flat out vec4 indirectRed;
+layout(location = 17) flat out vec4 indirectGreen;
+layout(location = 18) flat out vec4 indirectBlue;
 
 void main()
 {
 	mat4 modelView = mat4(aModelView0, aModelView1, aModelView2, aModelView3);
-	mat3 normalMatrix = mat3(aNormalMatrix0.xyz, aNormalMatrix1.xyz,
-		aNormalMatrix2.xyz);
+	mat3 normalMatrix = mat3(aNormalMatrix0.xyz, aNormalMatrix1.xyz, aNormalMatrix2.xyz);
 	vec4 viewPosition = modelView * vec4(aPosition, 1.0);
 	localPosition = viewPosition.xyz;
 	surfaceNormal = normalize(normalMatrix * aNormal);
 	uv = aTcoord;
 	materialSettings = aMaterialSettings;
 	bodyPosition = aPosition;
-	for (int wound = 0; wound < WOUND_COUNT; ++wound)
-		woundSpheres[wound] = vec4(0.0);
-	for (int group = 0; group < WOUND_REGION_VECTOR_COUNT; ++group)
-		woundRegions[group] = vec4(-1.0);
+	for (int wound = 0; wound < WOUND_COUNT; ++wound) woundSpheres[wound] = vec4(0.0);
+	for (int group = 0; group < WOUND_REGION_VECTOR_COUNT; ++group) woundRegions[group] = vec4(-1.0);
 	bodyRegion = -1.0;
+	indirectRed = modelFrame.indirectRed;
+	indirectGreen = modelFrame.indirectGreen;
+	indirectBlue = modelFrame.indirectBlue;
 	gl_Position = S3DClipPosition(modelFrame.projection * viewPosition);
 }

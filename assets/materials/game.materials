@@ -1,6 +1,6 @@
 # Runtime material-array manifest.
 # Keep the first 16 entries in this order so authored .s3dlevel files remain compatible.
-# Format: material name albedo normal specular smoothness
+# Format: material name albedo normal specular smoothness [rod_mask]
 # Auto maps use the explicit surface identities in game.finishes. Existing albedo artwork is preserved.
 # Set an individual map path again to use an authored replacement.
 material floor assets/textures/game/floor.png auto auto auto
@@ -139,3 +139,27 @@ material foundry_door_bulkhead assets/textures/game/foundry_door_bulkhead.png au
 material cryo_door_security assets/textures/game/cryo_door_security.png auto auto auto
 material cryo_door_bulkhead assets/textures/game/cryo_door_bulkhead.png auto auto auto
 material floppy_disk assets/textures/game/floppy_disk.png auto auto auto
+
+# Shared workshop atlas. Keep appended so saved material indices remain stable.
+material prop_workshop_atlas assets/textures/game/prop_workshop_atlas.png assets/textures/game/prop_workshop_atlas_normal.png assets/textures/game/prop_workshop_atlas_specular.png assets/textures/game/prop_workshop_atlas_smoothness.png
+material prop_office_atlas assets/textures/game/prop_office_atlas.png assets/textures/game/prop_office_atlas_normal.png assets/textures/game/prop_office_atlas_specular.png assets/textures/game/prop_office_atlas_smoothness.png
+material prop_furniture_details assets/textures/game/prop_furniture_details.png assets/textures/game/prop_furniture_details_normal.png assets/textures/game/prop_furniture_details_specular.png assets/textures/game/prop_furniture_details_smoothness.png
+material prop_control_details assets/textures/game/prop_control_details.png assets/textures/game/prop_control_details_normal.png assets/textures/game/prop_control_details_specular.png assets/textures/game/prop_control_details_smoothness.png
+material cyber_door_regular assets/textures/game/cyber_door_regular.png auto auto auto
+material cyber_door_keycard assets/textures/game/cyber_door_keycard.png auto auto auto
+material cyber_door_circuit assets/textures/game/cyber_door_circuit.png auto auto auto
+material cyber_door_relay assets/textures/game/cyber_door_relay.png auto auto auto
+material cyber_door_disk assets/textures/game/cyber_door_disk.png auto auto auto
+material foundry_door_regular assets/textures/game/foundry_door_regular.png auto auto auto
+material foundry_door_keycard assets/textures/game/foundry_door_keycard.png auto auto auto
+material foundry_door_circuit assets/textures/game/foundry_door_circuit.png auto auto auto
+material foundry_door_relay assets/textures/game/foundry_door_relay.png auto auto auto
+material foundry_door_disk assets/textures/game/foundry_door_disk.png auto auto auto
+material cryo_door_regular assets/textures/game/cryo_door_regular.png auto auto auto
+material cryo_door_keycard assets/textures/game/cryo_door_keycard.png auto auto auto
+material cryo_door_circuit assets/textures/game/cryo_door_circuit.png auto auto auto
+material cryo_door_relay assets/textures/game/cryo_door_relay.png auto auto auto
+material cryo_door_disk assets/textures/game/cryo_door_disk.png auto auto auto
+material door_control_atlas assets/textures/game/door_control_atlas.png auto auto auto
+material prop_facility_details_1 assets/textures/game/prop_facility_details_1.png assets/textures/game/prop_facility_details_1_normal.png assets/textures/game/prop_facility_details_1_specular.png assets/textures/game/prop_facility_details_1_smoothness.png
+material prop_facility_details_2 assets/textures/game/prop_facility_details_2.png assets/textures/game/prop_facility_details_2_normal.png assets/textures/game/prop_facility_details_2_specular.png assets/textures/game/prop_facility_details_2_smoothness.png

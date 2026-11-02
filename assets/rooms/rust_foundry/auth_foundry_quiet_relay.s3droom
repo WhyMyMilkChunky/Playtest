@@ -1,0 +1,45 @@
+# Editable encounter module; all four approaches retain protected walking space.
+s3droom 4
+id auth_foundry_quiet_relay
+authoring 0 0
+ambience "" 0.3
+bounds -13.0 0 -13.0 13.0 10 13.0
+metadata 9 0 3 0 0 0 2.0 0 99 1 4 1 1 0 authored,encounter,quiet_relay
+rules 4.5 "foundry_floor" "foundry_wall" "foundry_ceiling" "foundry_panel"
+piece floor 0 -0.25 0 26 0.5 26 foundry_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 10.25 0 26 0.5 26 foundry_ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_1 1 0 -13.0 0 0 10 6
+safe_zone entrance_1 -10.0 2.1 0 5.8 4 10
+connection door_2 2 0 13.0 0 0 10 6
+safe_zone entrance_2 10.0 2.1 0 5.8 4 10
+connection door_3 3 0 0 0 -13.0 10 6
+safe_zone entrance_3 0 2.1 -10.0 10 4 5.8
+connection door_4 4 0 0 0 13.0 10 6
+safe_zone entrance_4 0 2.1 10.0 10 4 5.8
+piece pier_-11.9_-11.9 -11.9 5.0 -11.9 0.7 10 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_-11.9_11.9 -11.9 5.0 11.9 0.7 10 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_11.9_-11.9 11.9 5.0 -11.9 0.7 10 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_11.9_11.9 11.9 5.0 11.9 0.7 10 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece lamp_0 0 9.94 -6.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_0 0 9.7 -6.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+piece lamp_1 0 9.94 6.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_1 0 9.7 6.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+light accent -11.0 3 -11.0 1.0 0.3 0.08 10 .55 0 0 -1 0 -1 0 .15 0
+piece forge_feed_-1 -11.0 2.4 11.0 2.6 4.8 2.6 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece forge_warning_-1 -11.0 3.5 9.67 1.5 0.45 0.05 emissive 1.0 0.3 0.08 0 0 0 0 0 0 1 "" 0 0
+piece crane_rail_-1 -10.0 8.2 0 0.5 0.8 24 foundry_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece forge_feed_1 11.0 2.4 11.0 2.6 4.8 2.6 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece forge_warning_1 11.0 3.5 9.67 1.5 0.45 0.05 emissive 1.0 0.3 0.08 0 0 0 0 0 0 1 "" 0 0
+piece crane_rail_1 10.0 8.2 0 0.5 0.8 24 foundry_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -13.0 5.0 0.0 0.5 10.0 26.0 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_2 13.0 5.0 0.0 0.5 10.0 26.0 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_3 0.0 5.0 -13.0 26.0 10.0 0.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_4 0.0 5.0 13.0 26.0 10.0 0.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_-1_-1 -10.0 9.3 -11.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_-1_1 -10.0 9.3 11.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_1_-1 10.0 9.3 -11.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_1_1 10.0 9.3 11.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance relay_diagnostics_-1 "assets/props/facility/rust_foundry/telemetry_kiosk.s3dprop" -11.9 0 7.2 1.06 1.88 0.8 1 -90 "prop" 1 0
+prop_instance relay_equipment_-1 "assets/props/facility/rust_foundry/server_rack.s3dprop" -11.9 0 9 1.12 2.2 0.94 1 -90 "prop" 1 0
+prop_instance relay_diagnostics_1 "assets/props/facility/rust_foundry/telemetry_kiosk.s3dprop" 11.9 0 7.2 1.06 1.88 0.8 1 90 "prop" 1 0
+prop_instance relay_equipment_1 "assets/props/facility/rust_foundry/server_rack.s3dprop" 11.9 0 9 1.12 2.2 0.94 1 90 "prop" 1 0

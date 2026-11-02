@@ -6,7 +6,4 @@ layout(location = 0) out vec4 fragmentColor;
 
 layout(set = 1, binding = 0) uniform sampler2D sourceTexture;
 
-void main()
-{
-	fragmentColor = color * texture(sourceTexture, uv);
-}
+void main() { fragmentColor = color * texture(sourceTexture, uv); }

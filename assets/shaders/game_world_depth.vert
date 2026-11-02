@@ -11,7 +11,6 @@ invariant gl_Position;
 void main()
 {
 	bool compiledSurface = u_surfacePass != 0;
-	vec4 worldPosition = compiledSurface ? vec4(aPosition, 1.0) :
-		aWorld * vec4(aPosition, 1.0);
+	vec4 worldPosition = compiledSurface ? vec4(aPosition, 1.0) : aWorld * vec4(aPosition, 1.0);
 	gl_Position = u_viewProjection * worldPosition;
 }

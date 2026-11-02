@@ -1,0 +1,13 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cyber_industrial_drum_bundle
+authoring 1 0
+ambience "" 0
+bounds -0.75 0 -0.455 0.75 1.42 0.455
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece pallet 0 0.1 0 1.5 0.2 0.91 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/098db9acfe03346e.obj" 0 0
+piece drum_-0.38 -0.38 0.81 0 0.66 1.22 0.66 prop_facility_details_1 0.82 0.86 0.83 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/5d939df5da15d902.obj" 0 0
+piece band_-0.38 -0.38 0.81 0 0.68 0.09 0.68 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/64c30f7c45e3c4e5.obj" 0 0
+piece drum_0.38 0.38 0.81 0 0.66 1.22 0.66 prop_facility_details_1 0.82 0.86 0.83 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/5d939df5da15d902.obj" 0 0
+piece band_0.38 0.38 0.81 0 0.68 0.09 0.68 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/64c30f7c45e3c4e5.obj" 0 0

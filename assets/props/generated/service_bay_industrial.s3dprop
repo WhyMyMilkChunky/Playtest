@@ -5,13 +5,13 @@ draft 0
 id service_bay_industrial
 authoring 1 0
 bounds -1.47 -1.295 0.217 1.47 1.295 0.737
-piece backplate 0 0 0.307 2.9 2.55 0.14 panel 0.78 0.78 0.78 1 0 0 0 0 0 1 "" 0 0
+piece backplate 0 0 0.307 2.9 2.55 0.14 prop_workshop_atlas 0.78 0.78 0.78 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_c3a88e8ecbb06935.obj" 0 0
 piece frame_-1 -1.39 0 0.367 0.12 2.55 0.23 cyber_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0
 piece frame_1 1.39 0 0.367 0.12 2.55 0.23 cyber_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0
-piece relay_case -0.32 -0.06 0.517 1.48 1.02 0.3 prop_service_cabinet 0.84 0.84 0.84 1 0 0 0 0 0 1 "" 0 0
-piece relay_face -0.32 -0.06 0.687 1.18 0.72 0.06 cyber_structure 0.63 0.63 0.63 0 0 0 0 0 0 1 "" 0 0
+piece relay_case -0.32 -0.06 0.517 1.48 1.02 0.3 prop_workshop_atlas 0.84 0.84 0.84 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_9f57500903a6adec.obj" 0 0
+piece relay_face -0.32 -0.06 0.687 1.18 0.72 0.06 prop_control_details 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_697df51fba5a739f.obj" 0 0
 piece cable_riser 1.1 -0.03 0.457 0.23 1.72 0.17 prop_cable_harness 0.7 0.7 0.7 0 0 0 0 0 0 1 "" 0 0
-piece junction 1.1 0.69 0.517 0.45 0.31 0.26 prop_service_cabinet 0.84 0.84 0.84 0 0 0 0 0 0 1 "" 0 0
+piece junction 1.1 0.69 0.517 0.45 0.31 0.26 prop_workshop_atlas 0.84 0.84 0.84 0 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_b9ca504d1593ba9f.obj" 0 0
 piece status 0 0.9945 0.387 1.392 0.045 0.035 emissive 0.36 0.36 0.36 0 0 0 0 0 0 1 "" 0 0
 source_piece backplate 0 0 0.307 2.9 2.55 0.14 panel 0.78 0.78 0.78 1 0 0 0 0 0 1 "" 0 0
 source_piece frame_-1 -1.39 0 0.367 0.12 2.55 0.23 cyber_structure 0.83 0.83 0.83 0 0 0 0 0 0 1 "" 0 0

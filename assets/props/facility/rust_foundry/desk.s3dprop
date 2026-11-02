@@ -1,0 +1,20 @@
+# Reusable facility furniture. Open in Prop Workshop.
+s3droom 4
+id foundry_desk
+authoring 1 0
+ambience "" 0
+bounds -0.9099999999999999 0 -0.52 0.9099999999999999 0.8190000000000001 0.52
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 furniture
+rules 0 "" "" "" ""
+piece desktop 0.0 0.767 0.0 1.8199999999999998 0.10400000000000001 1.04 prop_facility_details_1 0.96 0.96 0.93 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_924d0aecd82db73c.obj" 0 0
+piece pedestal_-1 -0.663 0.35750000000000004 0.065 0.338 0.7150000000000001 0.8125 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_ab1fc893807792d9.obj" 0 0
+piece drawer_seam_-1_0.38 -0.663 0.24700000000000003 -0.34515 0.29900000000000004 0.010400000000000001 0.010400000000000001 prop_facility_details_1 0.22 0.24 0.24 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_3772405477d01ed5.obj" 0 0
+piece drawer_handle_-1_0.38 -0.663 0.325 -0.35815 0.17550000000000002 0.022750000000000003 0.039 prop_facility_details_1 0.85 0.85 0.85 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_f2262fde0775fbb0.obj" 0 0
+piece drawer_seam_-1_0.78 -0.663 0.507 -0.34515 0.29900000000000004 0.010400000000000001 0.010400000000000001 prop_facility_details_1 0.22 0.24 0.24 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_03aabafd26873004.obj" 0 0
+piece drawer_handle_-1_0.78 -0.663 0.5850000000000001 -0.35815 0.17550000000000002 0.022750000000000003 0.039 prop_facility_details_1 0.85 0.85 0.85 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_32ea2a3b3d3a6222.obj" 0 0
+piece pedestal_1 0.663 0.35750000000000004 0.065 0.338 0.7150000000000001 0.8125 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_b79b57153f90aa12.obj" 0 0
+piece drawer_seam_1_0.38 0.663 0.24700000000000003 -0.34515 0.29900000000000004 0.010400000000000001 0.010400000000000001 prop_facility_details_1 0.22 0.24 0.24 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_5fb5e6185a3fd548.obj" 0 0
+piece drawer_handle_1_0.38 0.663 0.325 -0.35815 0.17550000000000002 0.022750000000000003 0.039 prop_facility_details_1 0.85 0.85 0.85 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_e99712c4971c530c.obj" 0 0
+piece drawer_seam_1_0.78 0.663 0.507 -0.34515 0.29900000000000004 0.010400000000000001 0.010400000000000001 prop_facility_details_1 0.22 0.24 0.24 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_8ca4f38e70650ef0.obj" 0 0
+piece drawer_handle_1_0.78 0.663 0.5850000000000001 -0.35815 0.17550000000000002 0.022750000000000003 0.039 prop_facility_details_1 0.85 0.85 0.85 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_fbf00b85acfc7319.obj" 0 0
+piece rear_brace 0.0 0.507 0.42250000000000004 1.04 0.10400000000000001 0.065 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_e39b3d3d035a3765.obj" 0 0

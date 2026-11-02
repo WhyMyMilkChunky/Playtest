@@ -2,6 +2,10 @@
 # profile name specular smoothness metallic normal_detail normal_relief slope_limit grime_roughness variation exposed_metal anisotropy frost repeat
 # Paint, concrete, rubber and ice remain dielectric. Rust/grime reduce exposed metal.
 profile concrete .36 .20 0 .65 1.35 .48 .18 .045 0 0 0 1
+profile chitin .40 .61 0 .25 1.80 .58 .20 .040 0 0 0 1
+profile chitin_legs .40 .49 0 .10 .60 .30 .12 .030 0 .08 0 1
+material spider_shell chitin
+material spider_legs chitin_legs
 profile painted_concrete .38 .31 0 .45 1.15 .40 .20 .045 0 0 0 1
 profile sealed_concrete .38 .34 0 .40 1.10 .40 .20 .040 0 0 0 1
 profile rough_concrete .34 .13 0 .80 1.65 .55 .20 .055 0 0 0 1
@@ -22,6 +26,16 @@ profile paper .28 .18 0 .03 .03 .04 .035 .010 0 0 0 0
 profile gunmetal .40 .62 .38 .15 .80 .30 .22 .035 .20 .18 0 0
 profile ceiling_beams .42 .54 .48 .12 1.10 .36 .23 .040 .10 .16 0 1
 
+# wet tissue relief uses the same generator as the world materials.
+profile gore_soft .52 .74 0 .38 1.25 .42 0 .025 0 0 0 1
+profile gore_hard .28 .38 0 .24 .75 .30 0 .020 0 0 0 1
+profile gore_cut .52 .72 0 .32 1.10 .38 0 .025 0 0 0 0
+material gore_muscle gore_soft
+material gore_fat gore_soft
+material gore_organs gore_soft
+material gore_bone gore_hard
+material gore_cross gore_cut
+
 # Cryo labs: smooth dielectric finishes, shallow wear, and restrained local frost.
 # Flecked laminate stays almost flat; grout and gasket seams retain gentle relief.
 profile cryo_ceramic .42 .74 0 .06 1.05 .28 .18 .025 0 0 0 1
@@ -38,6 +52,7 @@ profile prop_cast_housing .40 .42 .62 .25 .85 .38 .28 .045 .10 .10 0 1
 profile prop_cable_rubber .36 .24 .015 .10 .55 .28 .16 .030 .02 .03 0 1
 profile prop_worktop_rubber .36 .29 0 .08 .42 .23 .15 .025 0 .08 0 1
 profile prop_clean_fittings .42 .78 .84 .06 .35 .23 .16 .025 .04 .45 0 1
+profile prop_workshop_paint .40 .53 .025 .04 .50 .20 .20 .030 .18 .04 0 0
 
 # Every registered world material has an explicit finish. Keep game.materials order.
 material floor sealed_concrete
@@ -175,3 +190,25 @@ material foundry_door_bulkhead cast_iron
 material cryo_door_security cryo_wall_enamel
 material cryo_door_bulkhead frosted_steel
 material floppy_disk console
+material prop_workshop_atlas prop_workshop_paint
+material prop_office_atlas console
+material prop_furniture_details prop_workshop_paint
+material prop_control_details prop_workshop_paint
+material cyber_door_regular painted_steel
+material cyber_door_keycard painted_steel
+material cyber_door_circuit painted_steel
+material cyber_door_relay painted_steel
+material cyber_door_disk painted_steel
+material foundry_door_regular painted_steel
+material foundry_door_keycard painted_steel
+material foundry_door_circuit painted_steel
+material foundry_door_relay painted_steel
+material foundry_door_disk painted_steel
+material cryo_door_regular cryo_wall_enamel
+material cryo_door_keycard cryo_wall_enamel
+material cryo_door_circuit cryo_wall_enamel
+material cryo_door_relay cryo_wall_enamel
+material cryo_door_disk cryo_wall_enamel
+material door_control_atlas screen
+material prop_facility_details_1 prop_workshop_paint
+material prop_facility_details_2 prop_workshop_paint

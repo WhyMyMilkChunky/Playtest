@@ -22,18 +22,16 @@ void main()
 	if (u_directionalHit > 0.0)
 	{
 		vec2 edgeDirection = normalize(centered + vec2(0.0001));
-		float directionalResponse = max(dot(edgeDirection,
-			normalize(u_hitDirection + vec2(0.0001))), 0.0);
+		float directionalResponse = max(dot(edgeDirection, normalize(u_hitDirection + vec2(0.0001))), 0.0);
 		float directionalSquared = directionalResponse * directionalResponse;
 		directionalEdge = directionalSquared * directionalSquared * edge;
 	}
 	float suppressionBlur = edge * smoothstep(0.0, 1.0, u_amount);
 	float hitShockBlur = u_hitBlur * 0.72;
-	float blurAmount = clamp(max(suppressionBlur,
-		hitShockBlur + directionalEdge * u_directionalHit * 0.62), 0.0, 1.0);
+	float blurAmount =
+	    clamp(max(suppressionBlur, hitShockBlur + directionalEdge * u_directionalHit * 0.62), 0.0, 1.0);
 	float effectStrength = max(u_amount, max(u_hitBlur, u_directionalHit));
-	vec2 radius = u_texelSize * mix(3.0, 23.0, effectStrength) *
-		max(blurAmount, u_hitBlur * 0.62);
+	vec2 radius = u_texelSize * mix(3.0, 23.0, effectStrength) * max(blurAmount, u_hitBlur * 0.62);
 
 	vec3 sharp = texture(u_scene, uv).rgb;
 	vec3 blurred = sharp * 4.0;
@@ -46,8 +44,7 @@ void main()
 	blurred += texture(u_scene, uv + vec2(radius.x, -radius.y)).rgb;
 	blurred += texture(u_scene, uv + vec2(-radius.x, radius.y)).rgb;
 	blurred *= 1.0 / 16.0;
-	float mixAmount = clamp(blurAmount * (0.40 + effectStrength * 0.58),
-		0.0, 0.92);
+	float mixAmount = clamp(blurAmount * (0.40 + effectStrength * 0.58), 0.0, 0.92);
 	vec3 color = mix(sharp, blurred, mixAmount);
 	if (u_amount > 0.0)
 	{

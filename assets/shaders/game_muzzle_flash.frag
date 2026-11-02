@@ -10,7 +10,8 @@ S3D_RESOURCE(0, 0) uniform MuzzleFrameBlock
 {
 	mat4 mvp;
 	vec4 settings;
-} u_frame;
+}
+u_frame;
 S3D_RESOURCE(1, 0) uniform sampler2D u_flash;
 #define S3D_MUZZLE_INTENSITY u_frame.settings.x
 #else

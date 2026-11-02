@@ -1,0 +1,45 @@
+# Editable encounter module; all four approaches retain protected walking space.
+s3droom 4
+id auth_cryo_switching_hall
+authoring 0 0
+ambience "" 0.3
+bounds -15.0 0 -15.0 15.0 12 15.0
+metadata 9 0 5 0 0 0 1.35 0 99 1 4 1 1 0 authored,encounter,switching_hall
+rules 4.5 "cryo_floor" "cryo_wall" "cryo_ceiling" "cryo_panel"
+piece floor 0 -0.25 0 30 0.5 30 cryo_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 12.25 0 30 0.5 30 cryo_ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -15.0 6.0 0 0.5 12 30 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_1 1 0 -15.0 0 0 10 6
+safe_zone entrance_1 -12.0 2.1 0 5.8 4 10
+piece portal_wall_2 15.0 6.0 0 0.5 12 30 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_2 2 0 15.0 0 0 10 6
+safe_zone entrance_2 12.0 2.1 0 5.8 4 10
+piece portal_wall_3 0 6.0 -15.0 30 12 0.5 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_3 3 0 0 0 -15.0 10 6
+safe_zone entrance_3 0 2.1 -12.0 10 4 5.8
+piece portal_wall_4 0 6.0 15.0 30 12 0.5 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_4 4 0 0 0 15.0 10 6
+safe_zone entrance_4 0 2.1 12.0 10 4 5.8
+piece pier_-13.9_-13.9 -13.9 6.0 -13.9 0.7 12 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_-13.9_13.9 -13.9 6.0 13.9 0.7 12 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_13.9_-13.9 13.9 6.0 -13.9 0.7 12 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_13.9_13.9 13.9 6.0 13.9 0.7 12 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece lamp_0 0 11.94 -7.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_0 0 11.7 -7.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+piece lamp_1 0 11.94 7.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_1 0 11.7 7.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+light accent -13.0 3 -13.0 0.2 0.72 0.9 10 .55 0 0 -1 0 -1 0 .15 0
+prop_instance switching_bank_-1_0 "assets/props/facility/cryo_research/air_handler.s3dprop" -2.5 .20 -2.15 1.72 2.245 1.1 1 90 "prop" 1 0
+prop_instance switching_bank_-1_1 "assets/props/facility/cryo_research/air_handler.s3dprop" -2.5 .20 0.0 1.72 2.245 1.1 1 90 "prop" 1 0
+prop_instance switching_bank_-1_2 "assets/props/facility/cryo_research/air_handler.s3dprop" -2.5 .20 2.15 1.72 2.245 1.1 1 90 "prop" 1 0
+piece switching_island_plinth_-1 -2.5 0.1 0 2.1 0.2 6.8 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance switching_operator_-1 "assets/props/facility/cryo_research/telemetry_kiosk.s3dprop" -10.5 0 -8 1.06 1.88 0.8 1 -90 "prop" 1 0
+prop_instance switching_tools_-1 "assets/props/facility/cryo_research/tool_trolley.s3dprop" -10.5 0 -10.0 1.19 1.15 0.74 1 -13 "prop" 1 0
+prop_instance switching_bank_1_0 "assets/props/facility/cryo_research/air_handler.s3dprop" 2.5 .20 -2.15 1.72 2.245 1.1 1 -90 "prop" 1 0
+prop_instance switching_bank_1_1 "assets/props/facility/cryo_research/air_handler.s3dprop" 2.5 .20 0.0 1.72 2.245 1.1 1 -90 "prop" 1 0
+prop_instance switching_bank_1_2 "assets/props/facility/cryo_research/air_handler.s3dprop" 2.5 .20 2.15 1.72 2.245 1.1 1 -90 "prop" 1 0
+piece switching_island_plinth_1 2.5 0.1 0 2.1 0.2 6.8 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance switching_operator_1 "assets/props/facility/cryo_research/telemetry_kiosk.s3dprop" 10.5 0 8 1.06 1.88 0.8 1 90 "prop" 1 0
+prop_instance switching_tools_1 "assets/props/facility/cryo_research/tool_trolley.s3dprop" 10.5 0 10.0 1.19 1.15 0.74 1 13 "prop" 1 0
+piece containment_pillar_-1 -13.6 2.2 13.3 1.2 4.4 1.7 cryo_panel 0.88 0.88 0.88 1 0 0 -8 0 0 1 "" 0 0
+piece containment_pillar_1 13.6 2.2 13.3 1.2 4.4 1.7 cryo_panel 0.88 0.88 0.88 1 0 0 8 0 0 1 "" 0 0

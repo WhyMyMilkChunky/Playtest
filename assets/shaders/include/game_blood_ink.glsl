@@ -28,9 +28,9 @@ float BloodInkCoverage(uvec2 tile, uint plane, uint pixel)
 	return 0.0;
 }
 
-float WorldBloodMask(vec3 point, vec3 surfaceNormal)
+float WorldBloodMask(vec3 point, vec4 surface)
 {
-	vec3 n = normalize(surfaceNormal);
+	vec3 n = surface.xyz;
 	vec3 a = abs(n);
 	vec2 uv = a.y > max(a.x, a.z) ? point.xz : (a.x > a.z ? point.zy : point.xy);
 	ivec2 texel = ivec2(floor(uv * 32.0));
@@ -38,15 +38,18 @@ float WorldBloodMask(vec3 point, vec3 surfaceNormal)
 	uint pixel = (uint(texel.y) & 31u) * 32u + (uint(texel.x) & 31u);
 	ivec3 q = ivec3(floor(n * 64.0 + 0.5));
 	uint normalKey = BloodInkHash(uint(q.x)) ^ BloodInkHash(uint(q.y) + 17u) ^ BloodInkHash(uint(q.z) + 37u);
-	float distance = dot(point, n) * 32.0;
+	// keep plane identity flat across the face; texel extrapolation must not select another page.
+	float distance = surface.w * 32.0;
 	int plane = int(floor(distance + 0.5));
 	float coverage = BloodInkCoverage(tile, normalKey ^ BloodInkHash(uint(plane) + 71u), pixel);
 	// CPU ray hits and interpolated GPU positions can round opposite ways exactly
 	// on a plane-quantization boundary. Check its immediate neighbor only there.
-	if (abs(fract(distance) - 0.5) < 0.005)
+	float tolerance = clamp(abs(distance) * 0.000002, 0.005, 0.0625);
+	if (abs(fract(distance) - 0.5) < tolerance)
 	{
 		int neighbor = plane + (fract(distance) < 0.5 ? 1 : -1);
-		coverage = max(coverage, BloodInkCoverage(tile, normalKey ^ BloodInkHash(uint(neighbor) + 71u), pixel));
+		coverage =
+		    max(coverage, BloodInkCoverage(tile, normalKey ^ BloodInkHash(uint(neighbor) + 71u), pixel));
 	}
 	return coverage;
 }

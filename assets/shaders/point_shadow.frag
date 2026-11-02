@@ -7,8 +7,7 @@ uniform float u_farPlane;
 
 void main()
 {
-	float radialDepth = clamp(length(worldPosition - u_lightPosition) / u_farPlane,
-		0.0, 1.0);
+	float radialDepth = clamp(length(worldPosition - u_lightPosition) / u_farPlane, 0.0, 1.0);
 	// The cubemap is deliberately low resolution. A small derivative-based offset
 	// stabilizes nearly edge-on casters without the large peter-panning produced by
 	// front-face culling or a single oversized world-space bias.

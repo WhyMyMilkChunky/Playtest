@@ -24,6 +24,15 @@ layout(location = 5) out float bakedAmbientOcclusion;
 layout(location = 6) flat out vec2 bakedAoFaceSize;
 layout(location = 7) flat out int worldChunkIndex;
 layout(location = 8) out vec3 texturePosition;
+layout(location = 9) flat out vec4 fxgiChart;
+layout(location = 10) flat out vec4 fxgiUvBounds;
+layout(location = 11) flat out int lightingLodMode;
+layout(location = 12) flat out vec4 fxgiRadianceRed;
+layout(location = 13) flat out vec4 fxgiRadianceGreen;
+layout(location = 14) flat out vec4 fxgiRadianceBlue;
+layout(location = 15) flat out vec4 bloodSurface;
+
+invariant gl_Position;
 
 void main()
 {
@@ -31,12 +40,20 @@ void main()
 	position = worldPosition.xyz;
 	texturePosition = fract(aMaterial) > 0.125 ? mat3(aWorld) * aPosition : worldPosition.xyz;
 	normal = normalize(aNormalMatrix * aNormal);
+	bloodSurface = vec4(normal, dot(position, normal));
 	instanceColor = aColor;
 	boxUv = aTcoord;
 	materialIndex = int(round(aMaterial));
-	bakedAmbientOcclusion = texelFetch(u_bakedAo,
-		int(aBakedAoIndex + 0.5) * 24 + gl_VertexIndex).r;
+	if ((int(round(fract(aMaterial) * 16.0)) & 1) != 0)
+		materialIndex += materialIndex < 0 ? -1024 : 1024;
+	bakedAmbientOcclusion = texelFetch(u_bakedAo, int(aBakedAoIndex + 0.5) * 24 + gl_VertexIndex).r;
 	bakedAoFaceSize = vec2(0.0);
 	worldChunkIndex = int(aChunkIndex);
+	lightingLodMode = 0;
+	fxgiChart = vec4(-1.0);
+	fxgiUvBounds = vec4(0.0, 0.0, 1.0, 1.0);
+	fxgiRadianceRed = vec4(0.0);
+	fxgiRadianceGreen = vec4(0.0);
+	fxgiRadianceBlue = vec4(0.0);
 	gl_Position = S3DClipPosition(worldFrame.viewProjection * worldPosition);
 }

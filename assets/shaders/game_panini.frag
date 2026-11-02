@@ -10,11 +10,12 @@ layout(set = 0, binding = 0, std140)
 #else
 layout(binding = 0, std140)
 #endif
-uniform PaniniFrameBlock
+    uniform PaniniFrameBlock
 {
 	vec4 projection;
 	vec4 tuning;
-} paniniFrame;
+}
+paniniFrame;
 S3D_RESOURCE(0, 1) uniform sampler2D u_scene;
 
 void main()
@@ -29,16 +30,18 @@ void main()
 
 	float paniniX = outputNdc.x * edgePanini;
 	float k = paniniX / (distance + 1.0);
-	float phi = atan(k) + asin(clamp(k * distance /
-		sqrt(1.0 + k * k), -1.0, 1.0));
-	float phiCosine = max(cos(phi), 0.0001);
+	// Solve k = sin(phi) / (distance + cos(phi)) directly. This preserves
+	// the projection without atan/asin/cos/tan in every fullscreen fragment.
+	float kSquared = k * k;
+	float cosine = (sqrt(max(1.0 + kSquared * (1.0 - distance * distance), 0.0)) - kSquared * distance) /
+	               (1.0 + kSquared);
+	float phiCosine = max(cosine, 0.0001);
+	float projectedX = k * (distance + cosine) / max(cosine * tanHalfHorizontal, 0.000001);
 
 	vec2 sourceNdc;
-	sourceNdc.x = tan(phi) / tanHalfHorizontal;
-	float verticalScale = (distance + phiCosine) /
-		((distance + 1.0) * phiCosine);
-	sourceNdc.y = outputNdc.y * mix(1.0,
-		verticalScale / edgeVerticalScale, verticalSqueeze);
+	sourceNdc.x = projectedX;
+	float verticalScale = (distance + phiCosine) / ((distance + 1.0) * phiCosine);
+	sourceNdc.y = outputNdc.y * mix(1.0, verticalScale / edgeVerticalScale, verticalSqueeze);
 	sourceNdc *= 1.0 - edgeCrop;
 
 	vec2 sourceUv = clamp(sourceNdc * 0.5 + 0.5, 0.0, 1.0);

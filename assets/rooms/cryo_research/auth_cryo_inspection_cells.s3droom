@@ -1,0 +1,47 @@
+# Editable encounter module; all four approaches retain protected walking space.
+s3droom 4
+id auth_cryo_inspection_cells
+authoring 0 0
+ambience "" 0.3
+bounds -16.0 0 -15.0 16.0 11 15.0
+metadata 1 0 0 0 0 0 1.35 0 99 1 4 1 1 0 authored,encounter,inspection_cells
+rules 4.5 "cryo_floor" "cryo_wall" "cryo_ceiling" "cryo_panel"
+piece floor 0 -0.25 0 32 0.5 30 cryo_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 11.25 0 32 0.5 30 cryo_ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -16.0 5.5 0 0.5 11 30 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_1 1 0 -16.0 0 0 10 6
+safe_zone entrance_1 -13.0 2.1 0 5.8 4 10
+piece portal_wall_2 16.0 5.5 0 0.5 11 30 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_2 2 0 16.0 0 0 10 6
+safe_zone entrance_2 13.0 2.1 0 5.8 4 10
+piece portal_wall_3 0 5.5 -15.0 32 11 0.5 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_3 3 0 0 0 -15.0 10 6
+safe_zone entrance_3 0 2.1 -12.0 10 4 5.8
+piece portal_wall_4 0 5.5 15.0 32 11 0.5 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_4 4 0 0 0 15.0 10 6
+safe_zone entrance_4 0 2.1 12.0 10 4 5.8
+piece pier_-14.9_-13.9 -14.9 5.5 -13.9 0.7 11 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_-14.9_13.9 -14.9 5.5 13.9 0.7 11 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_14.9_-13.9 14.9 5.5 -13.9 0.7 11 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_14.9_13.9 14.9 5.5 13.9 0.7 11 0.7 cryo_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece lamp_0 0 10.94 -7.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_0 0 10.7 -7.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+piece lamp_1 0 10.94 7.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_1 0 10.7 7.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+light accent -14.0 3 -13.0 0.2 0.72 0.9 10 .55 0 0 -1 0 -1 0 .15 0
+piece inspection_cell_back_-1 -8.14 1.75 -10 6.0 3.5 0.28 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece inspection_cell_return_-1 -11 1.75 -7.83 0.28 3.5 4.06 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece inspection_cell_cover_-1 -7.2 0.58 -5 3.6 1.16 0.48 cryo_panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance inspection_station_-1_-1 "assets/props/facility/cryo_research/lab_analyzer.s3dprop" -9.15 0 -7 1.58 1.7 1.0 1 180 "prop" 1 0
+prop_instance inspection_station_-1_1 "assets/props/facility/cryo_research/lab_analyzer.s3dprop" -6.85 0 -7 1.58 1.7 1.0 1 180 "prop" 1 0
+prop_instance inspection_records_-1 "assets/props/facility/cryo_research/tape_library.s3dprop" -9.8 0 -9.3 1.45 1.94 0.801 1 180 "prop" 1 0
+piece inspection_cell_back_1 8.14 1.75 10 6.0 3.5 0.28 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece inspection_cell_return_1 11 1.75 7.83 0.28 3.5 4.06 cryo_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece inspection_cell_cover_1 7.2 0.58 5 3.6 1.16 0.48 cryo_panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance inspection_station_1_-1 "assets/props/facility/cryo_research/lab_analyzer.s3dprop" 6.85 0 7 1.58 1.7 1.0 1 0 "prop" 1 0
+prop_instance inspection_station_1_1 "assets/props/facility/cryo_research/lab_analyzer.s3dprop" 9.15 0 7 1.58 1.7 1.0 1 0 "prop" 1 0
+prop_instance inspection_records_1 "assets/props/facility/cryo_research/tape_library.s3dprop" 9.8 0 9.3 1.45 1.94 0.801 1 0 "prop" 1 0
+prop_instance inspection_stores_-1 "assets/props/facility/cryo_research/heavy_cargo_case.s3dprop" -10.5 0 8.5 6.24 3.48 3.629 1 -12 "prop" 1 0
+prop_instance inspection_stores_1 "assets/props/facility/cryo_research/heavy_cargo_case.s3dprop" 10.5 0 -8.5 6.24 3.48 3.629 1 12 "prop" 1 0
+piece containment_pillar_-1 -14.6 2.2 13.3 1.2 4.4 1.7 cryo_panel 0.88 0.88 0.88 1 0 0 -8 0 0 1 "" 0 0
+piece containment_pillar_1 14.6 2.2 13.3 1.2 4.4 1.7 cryo_panel 0.88 0.88 0.88 1 0 0 8 0 0 1 "" 0 0

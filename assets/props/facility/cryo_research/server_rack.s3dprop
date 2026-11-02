@@ -1,0 +1,14 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cryo_research_server_rack
+authoring 1 0
+ambience "" 0
+bounds -0.56 0 -0.47 0.56 2.2 0.47
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece base 0 0.09 0 1.12 0.18 0.94 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/f28d7141ef4e3fd3.obj" 0 0
+piece case 0 1.18 0 1.04 2.04 0.86 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/eb3385a1b3f0b473.obj" 0 0
+piece rack_face_0 0 0.43 -0.443 0.82 0.39 0.018 prop_facility_details_1 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/e092b60154ae619b.obj" 0 0
+piece rack_face_1 0 0.89 -0.443 0.82 0.39 0.018 prop_workshop_atlas 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/db8b790063e9e621.obj" 0 0
+piece rack_face_2 0 1.35 -0.443 0.82 0.39 0.018 prop_facility_details_1 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/e092b60154ae619b.obj" 0 0
+piece rack_face_3 0 1.81 -0.443 0.82 0.39 0.018 prop_facility_details_1 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/e092b60154ae619b.obj" 0 0

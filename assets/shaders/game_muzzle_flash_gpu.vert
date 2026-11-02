@@ -11,7 +11,8 @@ S3D_RESOURCE(0, 0) uniform MuzzleFrameBlock
 {
 	mat4 mvp;
 	vec4 settings;
-} u_frame;
+}
+u_frame;
 
 void main()
 {

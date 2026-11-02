@@ -13,10 +13,7 @@ float SpecularReflectance(float specularLevel)
 	return mix(0.025, 0.28, smoothstep(0.04, 0.82, specularLevel));
 }
 
-float SurfaceRoughness(float smoothness)
-{
-	return clamp(1.0 - smoothness, 0.12, 0.92);
-}
+float SurfaceRoughness(float smoothness) { return clamp(1.0 - smoothness, 0.12, 0.92); }
 
 float SurfaceFresnel(float reflectance, float cosine)
 {
@@ -32,8 +29,7 @@ vec3 RelayDiffuseParameters(float roughness, float reflectance, float strength)
 	return vec3(a, b, 1.0 - clamp(reflectance * max(strength, 0.0), 0.0, 0.9));
 }
 
-float RelayDiffuse(vec3 normalValue, vec3 viewDirection, vec3 lightDirection,
-	vec3 response, float normalView)
+float RelayDiffuse(vec3 normalValue, vec3 viewDirection, vec3 lightDirection, vec3 response, float normalView)
 {
 	float normalLight = max(dot(normalValue, lightDirection), 0.0);
 	if (normalLight <= 0.0 || normalView <= 0.0) return 0.0;
@@ -47,12 +43,12 @@ float RelayDiffuse(vec3 normalValue, vec3 viewDirection, vec3 lightDirection,
 vec3 BeckmannParameters(float specularLevel, float smoothness)
 {
 	float roughness = SurfaceRoughness(smoothness);
-	return vec3(max(roughness * 0.72, 0.075), max(roughness * 1.28, 0.105),
-		SpecularReflectance(specularLevel));
+	return vec3(
+	    max(roughness * 0.72, 0.075), max(roughness * 1.28, 0.105), SpecularReflectance(specularLevel));
 }
 
-float BeckmannLambda(vec3 direction, vec3 tangentValue, vec3 bitangentValue,
-	vec3 response, float normalDirection)
+float BeckmannLambda(
+    vec3 direction, vec3 tangentValue, vec3 bitangentValue, vec3 response, float normalDirection)
 {
 	vec2 slopes = vec2(dot(direction, tangentValue), dot(direction, bitangentValue)) * response.xy;
 	float slopeSquared = dot(slopes, slopes);
@@ -60,13 +56,11 @@ float BeckmannLambda(vec3 direction, vec3 tangentValue, vec3 bitangentValue,
 	if (normalDirection * normalDirection >= 2.56 * slopeSquared) return 0.0;
 	float a = max(normalDirection, 0.000001) * inversesqrt(max(slopeSquared, 1e-12));
 	float aSquared = a * a;
-	return max(1.0 - 1.259 * a + 0.396 * aSquared, 0.0) /
-		max(3.535 * a + 2.181 * aSquared, 0.000001);
+	return max(1.0 - 1.259 * a + 0.396 * aSquared, 0.0) / max(3.535 * a + 2.181 * aSquared, 0.000001);
 }
 
-vec3 BeckmannReflection(vec3 lightColor, vec3 normalValue, vec3 tangentValue,
-	vec3 bitangentValue, vec3 viewDirection, vec3 lightDirection,
-	vec3 response, float normalView, float viewMask, float strength)
+vec3 BeckmannReflection(vec3 lightColor, vec3 normalValue, vec3 tangentValue, vec3 bitangentValue,
+    vec3 viewDirection, vec3 lightDirection, vec3 response, float normalView, float viewMask, float strength)
 {
 	float normalLight = max(dot(normalValue, lightDirection), 0.0);
 	if (normalLight <= 0.0 || normalView <= 0.0 || strength <= 0.0) return vec3(0.0);
@@ -76,20 +70,20 @@ vec3 BeckmannReflection(vec3 lightColor, vec3 normalValue, vec3 tangentValue,
 	vec2 slopes = vec2(dot(halfway, tangentValue), dot(halfway, bitangentValue)) / response.xy;
 	float normalHalf2 = normalHalf * normalHalf;
 	float distribution = exp(-dot(slopes, slopes) / normalHalf2) /
-		(3.14159265 * response.x * response.y * normalHalf2 * normalHalf2);
-	float geometry = 1.0 / (viewMask + BeckmannLambda(lightDirection,
-		tangentValue, bitangentValue, response, normalLight));
+	                     (3.14159265 * response.x * response.y * normalHalf2 * normalHalf2);
+	float geometry = 1.0 / (viewMask + BeckmannLambda(lightDirection, tangentValue, bitangentValue, response,
+	                                       normalLight));
 	float fresnel = SurfaceFresnel(response.z, dot(viewDirection, halfway));
 	// The incident cosine cancels NdotL in the microfacet denominator.
 	float energy = distribution * geometry * fresnel / max(4.0 * normalView, 0.000001);
 	return lightColor * (energy * strength * 1.25);
 }
 
-vec3 EnvironmentReflection(vec3 environmentColor, float normalView,
-	float reflectance, float smoothness, float strength)
+vec3 EnvironmentReflection(
+    vec3 environmentColor, float normalView, float reflectance, float smoothness, float strength)
 {
-	return environmentColor * SurfaceFresnel(reflectance, normalView) *
-		mix(0.24, 0.72, smoothness) * max(strength, 0.0);
+	return environmentColor * SurfaceFresnel(reflectance, normalView) * mix(0.24, 0.72, smoothness) *
+	       max(strength, 0.0);
 }
 
 vec3 CompressSurfaceReflection(vec3 reflection)

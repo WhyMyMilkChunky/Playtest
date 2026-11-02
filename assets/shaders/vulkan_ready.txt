@@ -1,13 +1,19 @@
 # Shared shader sources validated for Vulkan-style interfaces.
+game_colony.vert
+game_spider.vert
+game_spider.frag
+game_colony.frag
+game_colony_swarm.comp
+game_colony_attached.vert
+game_colony_attached.frag
+game_colony_soft.frag
 game_blood_particle.vert
 game_blood_particle.frag
 level_dynamic.vert
 level_surface.vert
 level.frag
 game_enemy_gpu.vert
-game_enemy_corpse_gpu.vert
-game_enemy_sever_cap.vert
-game_enemy_sever_cap.frag
+game_enemy_gpu.frag
 game_weapon.frag
 game_weapon_gpu.vert
 debug_flat_gpu.vert
@@ -20,6 +26,7 @@ point_shadow_dynamic_gpu.vert
 point_shadow_surface_gpu.vert
 point_shadow_gpu.frag
 fullscreen_gpu.vert
+engine_color_seed.frag
 game_panini.frag
 game_suppression_gpu.frag
 game_scope_glass.frag
@@ -29,3 +36,28 @@ game_muzzle_flash.frag
 
 game_gib.vert
 game_gib.frag
+
+# Portable exposure, bloom, eye/lens effects and final cinematic composite.
+game_post_meter.frag
+game_post_exposure.frag
+game_post_filter.frag
+game_post_composite.frag
+game_theme_grade.frag
+
+# World resolution reconstruction.
+game_scene_upscale_linear.frag
+game_scene_upscale.frag
+game_camera_effects.frag
+game_fog_scatter.frag
+game_fog_composite.frag
+game_depth_gpu.frag
+game_world_depth_dynamic_gpu.vert
+game_world_depth_surface_gpu.vert
+engine_hdr_output.frag
+
+# Closed procedural gore and tissue surfaces.
+game_gore.vert
+game_gore_bake.comp
+game_gore.frag
+game_blast_particle.vert
+game_blast_particle.frag

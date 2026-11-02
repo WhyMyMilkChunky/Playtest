@@ -4,28 +4,30 @@
 
 layout(location = 0) in vec2 uv;
 layout(location = 0) out vec4 FragColor;
-layout(binding = 0, std140) uniform CameraFrameBlock
+layout(std140) S3D_RESOURCE(0, 0) uniform CameraFrameBlock
 {
 	mat4 inverseViewProjection;
 	mat4 previousViewProjection;
 	vec4 projectionSize; // Projection Z coefficients, source width/height.
-	vec4 motion; // Shutter fraction, pixel limit, maximum tap count, reserved.
-	vec4 proximity; // Strength, near/far distance, softening radius in source pixels.
+	vec4 motion;         // Shutter fraction, pixel limit, maximum tap count, reserved.
+	vec4 proximity;      // Strength, near/far distance, softening radius in source pixels.
 	vec4 encoding;
-} cameraFrame;
+}
+cameraFrame;
 
 S3D_RESOURCE(0, 8) uniform sampler2D u_scene;
 S3D_RESOURCE(0, 9) uniform sampler2D u_depth;
 
 vec3 LinearScene(vec2 point)
 {
-	vec3 color = texture(u_scene, point).rgb;
+	vec3 color = texture(u_scene, S3DFramebufferUv(point)).rgb;
 	return cameraFrame.encoding.x > .5 ? color * color : color;
 }
 
 float EyeDepth(float depth)
 {
-	return abs(cameraFrame.projectionSize.y / min(depth * 2.0 - 1.0 + cameraFrame.projectionSize.x, -.000001));
+	return abs(
+	    cameraFrame.projectionSize.y / min(depth * 2.0 - 1.0 + cameraFrame.projectionSize.x, -.000001));
 }
 
 float DepthConfidence(vec2 point, float reciprocalDepth, vec2 gradient)
@@ -35,7 +37,11 @@ float DepthConfidence(vec2 point, float reciprocalDepth, vec2 gradient)
 	// distance incorrectly rejects the very surfaces that sweep past the camera.
 	float expected = reciprocalDepth + dot(gradient, offsetPixels);
 	if (expected <= .000001) return 0.0;
-	float neighbor = 1.0 / EyeDepth(texture(u_depth, point).r);
+	float rawDepth = texture(u_depth, S3DFramebufferUv(point)).r;
+	// Reciprocal eye depth is affine in depth-buffer values. The CPU provides
+	// abs(1/projectionZ) once, avoiding division and inversion for every blur tap.
+	float neighbor =
+	    abs(min(rawDepth * 2.0 - 1.0 + cameraFrame.projectionSize.x, -.000001)) * cameraFrame.encoding.y;
 	float relativeError = abs(neighbor - expected) / max(expected, .000001);
 	float tolerance = max(.018, reciprocalDepth * .025);
 	return 1.0 - smoothstep(tolerance, tolerance * 3.0, relativeError);
@@ -61,14 +67,22 @@ bool InsideScene(vec2 point)
 	return all(greaterThanEqual(point, halfTexel)) && all(lessThanEqual(point, 1.0 - halfTexel));
 }
 
-void GatherMotion(vec2 point, float shutterWeight, float reciprocalDepth, vec2 gradient,
-	inout vec3 sum, inout float weight, inout bool open)
+void GatherMotion(vec2 point, float shutterWeight, float reciprocalDepth, vec2 gradient, inout vec3 sum,
+    inout float weight, inout bool open)
 {
 	if (!open) return;
-	if (!InsideScene(point)) { open = false; return; }
+	if (!InsideScene(point))
+	{
+		open = false;
+		return;
+	}
 	float confidence = DepthConfidence(point, reciprocalDepth, gradient);
 	// Stop this half of the trail at a silhouette instead of sampling past a railing/wall.
-	if (confidence <= .025) { open = false; return; }
+	if (confidence <= .025)
+	{
+		open = false;
+		return;
+	}
 	float contribution = confidence * shutterWeight;
 	sum += LinearScene(point) * contribution;
 	weight += contribution;
@@ -117,16 +131,16 @@ vec3 ProximityResponse(vec3 color, float depth, float reciprocalDepth, vec2 grad
 		softened += LinearScene(point) * confidence;
 		weight += confidence;
 	}
-	return mix(color, softened / weight, amount * .48) * (1.0 - amount * .18);
+	return mix(color, softened / weight, amount * .48) * (1.0 - amount * .28);
 }
 
 void main()
 {
-	float rawDepth = texture(u_depth, uv).r;
+	float rawDepth = texture(u_depth, S3DFramebufferUv(uv)).r;
 	float depth = EyeDepth(rawDepth);
 	float reciprocalDepth = 1.0 / max(depth, .000001);
 	// Derivatives are evaluated before any per-pixel branch; slopes keep planar surfaces coherent.
-	vec2 gradient = vec2(dFdx(reciprocalDepth), dFdy(reciprocalDepth));
+	vec2 gradient = vec2(dFdx(reciprocalDepth), S3D_DFDY(reciprocalDepth));
 	vec3 color = LinearScene(uv);
 	color = MotionResponse(color, CameraTrail(rawDepth), reciprocalDepth, gradient);
 	color = ProximityResponse(color, depth, reciprocalDepth, gradient);
