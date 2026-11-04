@@ -61,3 +61,5 @@ game_gore_bake.comp
 game_gore.frag
 game_blast_particle.vert
 game_blast_particle.frag
+game_grand_flow.vert
+game_grand_flow.frag

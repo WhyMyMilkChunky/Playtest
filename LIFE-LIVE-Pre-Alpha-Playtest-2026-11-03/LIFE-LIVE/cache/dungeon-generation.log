@@ -1,0 +1,20 @@
+seed 1174666641 / theme cyber_industrial / difficulty 1
+floors 1 / rooms per floor 4 / caches 1
+bounds 200 200 / floor height 24
+forced room  / hallway  / floppy 0 / trap -1
+
+draft 1: The mandatory keycard is not in an exploration branch.
+  The mandatory keycard is not in an exploration branch.
+  The mandatory keycard has no puzzle or earlier-key dependency.
+
+draft 2: The mandatory keycard is not in an exploration branch.
+  The mandatory keycard is not in an exploration branch.
+  The mandatory keycard has no puzzle or earlier-key dependency.
+
+draft 3: The mandatory keycard is not in an exploration branch.
+  The mandatory keycard is not in an exploration branch.
+  The mandatory keycard has no puzzle or earlier-key dependency.
+
+Validated seed 1174666641 committed after 4 drafts.
+Warning: Main route crosses an uncommon facility-zone boundary at hall 0.
+Warning: Main route crosses an uncommon facility-zone boundary at hall 1.

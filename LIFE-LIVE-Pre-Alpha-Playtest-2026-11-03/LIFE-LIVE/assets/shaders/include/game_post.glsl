@@ -14,14 +14,14 @@ layout(binding = 0, std140)
 	vec4 adaptation;
 	vec4 tuning;
 	vec4 sourceEncoding;
-	vec4 cinema;            // film, reserved, grain, adaptation state available.
+	vec4 cinema;            // film, cold shock, grain, adaptation state available.
 	vec4 lens;              // Strength, resolution-independent spread, sample count, starburst contribution.
 	vec4 eye;               // scatter strength, reserved, reference pixel scale, tear-film age.
 	vec4 perception;        // twilight strength, cone/contrast response, tear-film principal axis.
 	vec4 ocular;            // Floater opacity, tear-film strength, floater count, framebuffer aspect ratio.
 	vec4 floaterShapes[3];  // centre and size, in units of framebuffer height.
 	vec4 floaterDetails[3]; // rotation cos/sin, opacity, atlas tile.
-	vec4 grading;           // theme LUT row, mix strength, vignette strength, reserved.
+	vec4 grading;           // theme LUT row, mix strength, vignette strength, cold exposure.
 }
 postFrame;
 

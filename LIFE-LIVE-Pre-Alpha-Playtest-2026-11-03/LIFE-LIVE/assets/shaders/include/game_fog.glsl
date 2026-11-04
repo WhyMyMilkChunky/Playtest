@@ -14,6 +14,9 @@ layout(std140) S3D_RESOURCE(0, 0) uniform FogFrame
 	vec4 flashlight;
 	vec4 volumeMinimum[20];
 	vec4 volumeMaximum[20];
+	vec4 grandMinimum;
+	vec4 grandMaximum;
+	vec4 grandStyle;
 }
 fogFrame;
 

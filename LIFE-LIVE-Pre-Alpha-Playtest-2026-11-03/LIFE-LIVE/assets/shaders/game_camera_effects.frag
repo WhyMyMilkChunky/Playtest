@@ -9,9 +9,9 @@ layout(std140) S3D_RESOURCE(0, 0) uniform CameraFrameBlock
 	mat4 inverseViewProjection;
 	mat4 previousViewProjection;
 	vec4 projectionSize; // Projection Z coefficients, source width/height.
-	vec4 motion;         // Shutter fraction, pixel limit, maximum tap count, reserved.
+	vec4 motion;         // shutter fraction, pixel limit, motion taps, cold radial blur.
 	vec4 proximity;      // Strength, near/far distance, softening radius in source pixels.
-	vec4 encoding;
+	vec4 encoding;       // source encoding, reciprocal projection Z, cold blur taps, reserved.
 }
 cameraFrame;
 
@@ -134,6 +134,33 @@ vec3 ProximityResponse(vec3 color, float depth, float reciprocalDepth, vec2 grad
 	return mix(color, softened / weight, amount * .48) * (1.0 - amount * .28);
 }
 
+vec3 ColdRadialResponse(vec3 color)
+{
+	float strength = cameraFrame.motion.w;
+	if (strength <= .0001) return color;
+	vec2 centered = uv - .5;
+	vec2 aspectPoint = centered * vec2(cameraFrame.projectionSize.z / cameraFrame.projectionSize.w, 1.0);
+	float peripheral = smoothstep(.012, .20, dot(aspectPoint, aspectPoint));
+	if (peripheral <= .001) return color;
+	vec2 trail = centered * strength * peripheral;
+	vec2 halfTexel = .5 / cameraFrame.projectionSize.zw;
+	int taps = clamp(int(cameraFrame.encoding.z), 4, 12);
+	float phase = fract(dot(floor(gl_FragCoord.xy), vec2(.754877666, .569840296)));
+	vec3 sum = color;
+	float weight = 1.0;
+	for (int tap = 0; tap < 12; ++tap)
+	{
+		if (tap >= taps) break;
+		float along = (float(tap) + .25 + phase * .5) / float(taps);
+		float contribution = 1.0 - along * .35;
+		vec2 point = clamp(uv - trail * along, halfTexel, 1.0 - halfTexel);
+		sum += LinearScene(point) * contribution;
+		weight += contribution;
+	}
+	// this is optical blur, so silhouettes blur too; depth rejection would leave the railings sharp.
+	return mix(color, sum / weight, min(strength * 11.0, .98) * peripheral);
+}
+
 void main()
 {
 	float rawDepth = texture(u_depth, S3DFramebufferUv(uv)).r;
@@ -144,5 +171,6 @@ void main()
 	vec3 color = LinearScene(uv);
 	color = MotionResponse(color, CameraTrail(rawDepth), reciprocalDepth, gradient);
 	color = ProximityResponse(color, depth, reciprocalDepth, gradient);
+	color = ColdRadialResponse(color);
 	FragColor = vec4(cameraFrame.encoding.x > .5 ? sqrt(max(color, vec3(0.0))) : color, 1.0);
 }

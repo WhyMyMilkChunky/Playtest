@@ -31,7 +31,14 @@ void main()
 	Puff puff = puffs[S3D_INSTANCE_INDEX];
 	vec2 at = corners[vertex];
 	float angle = puff.shape.x + puff.shape.y * .5;
-	vec2 rotated = mat2(cos(angle), -sin(angle), sin(angle), cos(angle)) * at;
+	if (puff.shape.w > 3.5 && puff.shape.w < 4.5) angle = 0;
+	vec2 extent = at;
+	if (puff.shape.w > 4.5)
+	{
+		angle = puff.shape.x;
+		extent.y *= puff.shape.z;
+	}
+	vec2 rotated = mat2(cos(angle), -sin(angle), sin(angle), cos(angle)) * extent;
 	vec3 position = puff.positionSize.xyz +
 	    (frame.right.xyz * rotated.x + frame.up.xyz * rotated.y) * puff.positionSize.w * .5;
 	uv = at;

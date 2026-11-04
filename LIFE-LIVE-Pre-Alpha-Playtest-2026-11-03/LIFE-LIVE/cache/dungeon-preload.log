@@ -1,0 +1,20 @@
+seed 41087242 / theme cryo_research / difficulty 8
+floors 2 / rooms per floor 9 / caches 3
+bounds 230 230 / floor height 24
+forced room  / hallway  / floppy 0 / trap -1
+
+draft 1: Room 14 contains a disconnected floor area.
+  Room 14 contains a disconnected floor area.
+  Room 16 contains a disconnected floor area.
+
+draft 2: A corridor could not be routed with safe junction clearance.
+
+draft 3: A corridor could not be routed with safe junction clearance.
+
+draft 4: Room 2 contains a disconnected floor area.
+  Room 2 contains a disconnected floor area.
+  Room 4 contains a disconnected floor area.
+  Room 6 contains a disconnected floor area.
+
+Validated seed 41087242 committed after 5 drafts.
+Warning: Unsafe shared room joins retained their corridors: Room 16 contains a disconnected floor area.
