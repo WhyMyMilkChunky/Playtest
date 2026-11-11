@@ -1,0 +1,23 @@
+seed 801840116 / theme rust_foundry / difficulty 6
+floors 2 / rooms per floor 7 / caches 2
+bounds 218 218 / floor height 24
+forced room  / hallway  / floppy 0 / trap -1
+
+[12 ms] Draft 1: laying out rooms and routing connections.
+
+[28 ms] Planning progression and room footprints (repair 0).
+
+[43 ms] Building room geometry.
+
+[75 ms] Building hallway geometry.
+
+[90 ms] Furnishing rooms.
+
+[106 ms] Placing doors, objectives and pickups.
+
+[133 ms] Placing traps and room mechanisms.
+
+[135 ms] Validating progression, geometry and walkability.
+
+Validated seed 801840116 committed after 1 drafts.
+Warning: Main route crosses an uncommon facility-zone boundary at hall 7.

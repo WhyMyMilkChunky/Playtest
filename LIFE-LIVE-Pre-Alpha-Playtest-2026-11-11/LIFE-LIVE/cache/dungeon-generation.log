@@ -1,0 +1,24 @@
+seed 801840111 / theme cyber_industrial / difficulty 1
+floors 1 / rooms per floor 4 / caches 1
+bounds 200 200 / floor height 24
+forced room  / hallway  / floppy 0 / trap -1
+
+[5 ms] Draft 1: laying out rooms and routing connections.
+
+[6 ms] Planning progression and room footprints (repair 0).
+
+[10 ms] Building room geometry.
+
+[14 ms] Building hallway geometry.
+
+[18 ms] Furnishing rooms.
+
+[24 ms] Placing doors, objectives and pickups.
+
+[26 ms] Placing traps and room mechanisms.
+
+[29 ms] Validating progression, geometry and walkability.
+
+Validated seed 801840111 committed after 1 drafts.
+Warning: Main route crosses an uncommon facility-zone boundary at hall 0.
+Warning: Main route crosses an uncommon facility-zone boundary at hall 1.
