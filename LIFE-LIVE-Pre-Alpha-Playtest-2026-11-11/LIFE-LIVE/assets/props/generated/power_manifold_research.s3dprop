@@ -1,0 +1,25 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop power_manifold_research
+draft 0
+id power_manifold_research
+authoring 1 0
+bounds -1.92 -0.02 -0.03 1.92 4.09 1.42
+piece base_-1 -1.1 0.17 0.74 1.4 0.34 1.32 cryo_structure 0.72 0.72 0.72 1 0 0 0 0 0 1 "" 0 0
+piece body_-1 -1.1 1.85 0.72 1.05 3.1 1.05 prop_cryo_vessel 0.87 0.87 0.87 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece feed_-1 -1.1 3.65 0.46 0.18 0.7 0.18 prop_stainless_fittings 0.67 0.67 0.67 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece base_1 1.1 0.17 0.74 1.4 0.34 1.32 cryo_structure 0.72 0.72 0.72 1 0 0 0 0 0 1 "" 0 0
+piece body_1 1.1 1.85 0.72 1.05 3.1 1.05 prop_cryo_vessel 0.87 0.87 0.87 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece feed_1 1.1 3.65 0.46 0.18 0.7 0.18 prop_stainless_fittings 0.67 0.67 0.67 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece manifold 0 3.92 0.46 0.24 3.8 0.24 prop_stainless_fittings 0.76 0.76 0.76 0 0 0 90 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece bracket_-1 -1.1 3.92 0.18 0.22 0.3 0.38 cryo_structure 0.72 0.72 0.72 0 0 0 0 0 0 1 "" 0 0
+piece bracket_1 1.1 3.92 0.18 0.22 0.3 0.38 cryo_structure 0.72 0.72 0.72 0 0 0 0 0 0 1 "" 0 0
+source_piece base_-1 -1.1 0.17 0.74 1.4 0.34 1.32 cryo_structure 0.72 0.72 0.72 1 0 0 0 0 0 1 "" 0 0
+source_piece body_-1 -1.1 1.85 0.72 1.05 3.1 1.05 cryo_panel 0.87 0.87 0.87 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece feed_-1 -1.1 3.65 0.46 0.18 0.7 0.18 cryo_machinery 0.67 0.67 0.67 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece base_1 1.1 0.17 0.74 1.4 0.34 1.32 cryo_structure 0.72 0.72 0.72 1 0 0 0 0 0 1 "" 0 0
+source_piece body_1 1.1 1.85 0.72 1.05 3.1 1.05 cryo_panel 0.87 0.87 0.87 1 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece feed_1 1.1 3.65 0.46 0.18 0.7 0.18 cryo_machinery 0.67 0.67 0.67 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece manifold 0 3.92 0.46 0.24 3.8 0.24 cryo_machinery 0.76 0.76 0.76 0 0 0 90 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece bracket_-1 -1.1 3.92 0.18 0.22 0.3 0.38 cryo_structure 0.72 0.72 0.72 0 0 0 0 0 0 1 "" 0 0
+source_piece bracket_1 1.1 3.92 0.18 0.22 0.3 0.38 cryo_structure 0.72 0.72 0.72 0 0 0 0 0 0 1 "" 0 0

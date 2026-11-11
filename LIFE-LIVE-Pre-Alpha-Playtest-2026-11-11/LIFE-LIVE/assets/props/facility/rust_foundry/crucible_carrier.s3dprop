@@ -1,0 +1,20 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id rust_foundry_crucible_carrier
+authoring 1 0
+ambience "" 0
+bounds -0.72 0 -0.58 0.72 1.425 0.58
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece wheel_0 -0.56 0.12 -0.44 0.24 0.1 0.24 prop_facility_details_1 0.74 0.76 0.75 1 0 0 90 0 0 1 "assets/models/props/facility_expansion/f2388ae83dadf1b2.obj" 0 0
+piece wheel_1 -0.56 0.12 0.44 0.24 0.1 0.24 prop_facility_details_1 0.74 0.76 0.75 1 0 0 90 0 0 1 "assets/models/props/facility_expansion/f2388ae83dadf1b2.obj" 0 0
+piece wheel_2 0.56 0.12 -0.44 0.24 0.1 0.24 prop_facility_details_1 0.74 0.76 0.75 1 0 0 90 0 0 1 "assets/models/props/facility_expansion/f2388ae83dadf1b2.obj" 0 0
+piece wheel_3 0.56 0.12 0.44 0.24 0.1 0.24 prop_facility_details_1 0.74 0.76 0.75 1 0 0 90 0 0 1 "assets/models/props/facility_expansion/f2388ae83dadf1b2.obj" 0 0
+piece frame 0 0.36 0 1.44 0.15 1.16 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/5981c5e35101c10c.obj" 0 0
+piece crucible 0 0.9 0 0.93 0.99 0.93 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/9fc9d5dada89d3ba.obj" 0 0
+piece contents 0 1.39 0 0.69 0.035 0.69 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/1c15bde4d8d7830f.obj" 0 0
+piece yoke_-0.59 -0.59 0.88 0 0.1 0.94 0.11 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/b5cb744b365296c9.obj" 0 0
+piece yoke_0.59 0.59 0.88 0 0.1 0.94 0.11 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/b5cb744b365296c9.obj" 0 0
+piece handle_rail_-0.59 -0.59 1.35 0.25 0.07 0.07 0.55 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/9b0eb461b7588ad4.obj" 0 0
+piece handle_rail_0.59 0.59 1.35 0.25 0.07 0.07 0.55 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/9b0eb461b7588ad4.obj" 0 0
+piece handle 0 1.39 0.5 1.24 0.07 0.07 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/773507ba742c4dd6.obj" 0 0

@@ -1,0 +1,9 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop atrium_column
+draft 0
+id atrium_column
+authoring 1 0
+bounds -0.62 -0.02 -0.62 0.62 8.02 0.62
+piece body 0 4 0 1.2 8 1.2 wall 1 1 1 1 0 0 0 0 0 1 "" 0 0
+source_piece body 0 4 0 1.2 8 1.2 wall 1 1 1 1 0 0 0 0 0 1 "" 0 0

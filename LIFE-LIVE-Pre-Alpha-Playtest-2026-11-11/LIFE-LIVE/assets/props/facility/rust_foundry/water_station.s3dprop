@@ -1,0 +1,12 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id rust_foundry_water_station
+authoring 1 0
+ambience "" 0
+bounds -0.36 0 -0.5 0.36 1.82 0.34
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece base 0 0.64 0 0.72 1.28 0.68 prop_facility_details_1 0.85 0.68 0.49 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/151263dc21949905.obj" 0 0
+piece reservoir 0 1.55 0.04 0.5 0.54 0.5 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/45b7f4a3fb7fc65d.obj" 0 0
+piece dispensing_recess 0 0.96 -0.353 0.45 0.37 0.018 prop_facility_details_1 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/e1ab5fbbd1494cad.obj" 0 0
+piece drip_tray 0 0.69 -0.39 0.51 0.07 0.22 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/da6cff19634f3631.obj" 0 0

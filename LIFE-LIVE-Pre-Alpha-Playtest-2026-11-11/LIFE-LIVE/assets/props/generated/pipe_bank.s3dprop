@@ -1,0 +1,16 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop pipe_bank
+draft 0
+id pipe_bank
+authoring 1 0
+bounds -1.645 -0.02 -0.27 1.645 1.97 0.275
+piece body 0 0.975 0 3.25 1.95 0.5 pipes 1 1 1 0 0 0 0 0 0 0 "" 0 0
+piece mounting_plate 0 0.975 -0.2 3.2 1.9 0.08 prop_foundry_press 0.55 0.55 0.55 0 0 0 0 0 0 1 "" 0 0
+piece pipe_0 -1.08 0.975 0.02 0.3 1.8 0.3 prop_stainless_fittings 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece pipe_1 -0.36 0.975 0.02 0.3 1.8 0.3 prop_stainless_fittings 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece pipe_2 0.36 0.975 0.02 0.3 1.8 0.3 prop_stainless_fittings 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece pipe_3 1.08 0.975 0.02 0.3 1.8 0.3 prop_stainless_fittings 0.78 0.78 0.78 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+piece clamp_0.45 0 0.45 0.065 3.12 0.12 0.4 prop_foundry_press 0.75 0.75 0.75 0 0 0 0 0 0 1 "" 0 0
+piece clamp_1.5 0 1.5 0.065 3.12 0.12 0.4 prop_foundry_press 0.75 0.75 0.75 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0.975 0 3.25 1.95 0.5 pipes 1 1 1 0 0 0 0 0 0 1 "" 0 0

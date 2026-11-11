@@ -1,0 +1,18 @@
+# Reusable facility furniture. Open in Prop Workshop.
+s3droom 4
+id cyber_archive_shelf
+authoring 1 0
+ambience "" 0
+bounds -1.4 0 -0.31 1.4 2.1 0.31
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 furniture
+rules 0 "" "" "" ""
+piece back 0 1.05 0.26 2.8 2.1 0.1 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_0a973d88cc4b5e24.obj" 0 0
+piece side_-1 -1.32 1.05 0 0.16 2.1 0.62 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_3712bc5bf2041cdc.obj" 0 0
+piece side_1 1.32 1.05 0 0.16 2.1 0.62 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_e49c11f64d3581bc.obj" 0 0
+piece shelf_0 0 0.12 0 2.6 0.08 0.62 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_0e0705840a90787c.obj" 0 0
+piece shelf_1 0 0.76 0 2.6 0.08 0.62 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_0c21a666c16cfb27.obj" 0 0
+piece shelf_2 0 1.4 0 2.6 0.08 0.62 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_3da80af8b93f161e.obj" 0 0
+piece shelf_3 0 2.02 0 2.6 0.08 0.62 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_fa61da913e06e05d.obj" 0 0
+piece files_0 0.12 0.37 -0.01 2.08 0.42 0.36 prop_facility_details_1 0.92 0.92 0.89 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_40779f70eb2f2f04.obj" 0 0
+piece files_1 -0.18 1.01 -0.01 2.08 0.42 0.36 prop_facility_details_1 0.92 0.92 0.89 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_4c5d3ed6214720f4.obj" 0 0
+piece files_2 0.12 1.65 -0.01 2.08 0.42 0.36 prop_facility_details_1 0.92 0.92 0.89 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_e740dd79967a3bd2.obj" 0 0

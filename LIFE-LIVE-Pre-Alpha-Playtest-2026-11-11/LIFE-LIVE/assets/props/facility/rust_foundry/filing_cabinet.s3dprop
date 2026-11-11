@@ -1,0 +1,17 @@
+# Reusable facility furniture. Open in Prop Workshop.
+s3droom 4
+id foundry_filing_cabinet
+authoring 1 0
+ambience "" 0
+bounds -0.48750000000000004 0 -0.35750000000000004 0.48750000000000004 1.885 0.35750000000000004
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 furniture
+rules 0 "" "" "" ""
+piece housing 0.0 0.9425 0.0 0.9750000000000001 1.885 0.7150000000000001 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_7c333c4c254de879.obj" 0 0
+piece drawer_0 0.0 0.2405 -0.3627 0.8840000000000001 0.39 0.022750000000000003 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_522481f76d711795.obj" 0 0
+piece handle_0 0.0 0.3185 -0.38545 0.273 0.0325 0.039 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_d90479fed4bb125b.obj" 0 0
+piece drawer_1 0.0 0.6890000000000001 -0.3627 0.8840000000000001 0.39 0.022750000000000003 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_bd0692db5b0f4d43.obj" 0 0
+piece handle_1 0.0 0.7670000000000001 -0.38545 0.273 0.0325 0.039 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_b56f701551f358a6.obj" 0 0
+piece drawer_2 0.0 1.1375 -0.3627 0.8840000000000001 0.39 0.022750000000000003 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_465d52f1ec1935e8.obj" 0 0
+piece handle_2 0.0 1.2155 -0.38545 0.273 0.0325 0.039 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_b27ebf110c7910fe.obj" 0 0
+piece drawer_3 0.0 1.586 -0.3627 0.8840000000000001 0.39 0.022750000000000003 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_7b056c3cbd9d546b.obj" 0 0
+piece handle_3 0.0 1.6640000000000001 -0.38545 0.273 0.0325 0.039 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_a3e730f5f2b9fdae.obj" 0 0

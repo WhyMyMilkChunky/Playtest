@@ -1,0 +1,16 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cryo_research_gas_cylinder_rack
+authoring 1 0
+ambience "" 0
+bounds -0.68 0 -0.355 0.68 1.91 0.355
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece base 0 0.1 0 1.36 0.2 0.71 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/747f4ac052725821.obj" 0 0
+piece bottle_-0.43 -0.43 0.97 0 0.34 1.54 0.34 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/d2b0bf9ea865874c.obj" 0 0
+piece valve_-0.43 -0.43 1.82 0 0.09 0.18 0.09 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/f4b2ab86c8b55c85.obj" 0 0
+piece bottle_0 0 0.97 0 0.34 1.54 0.34 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/d2b0bf9ea865874c.obj" 0 0
+piece valve_0 0 1.82 0 0.09 0.18 0.09 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/f4b2ab86c8b55c85.obj" 0 0
+piece bottle_0.43 0.43 0.97 0 0.34 1.54 0.34 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/d2b0bf9ea865874c.obj" 0 0
+piece valve_0.43 0.43 1.82 0 0.09 0.18 0.09 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/f4b2ab86c8b55c85.obj" 0 0
+piece restraint 0 1.08 -0.19 1.27 0.07 0.07 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/9cb0bb139d5ad86b.obj" 0 0

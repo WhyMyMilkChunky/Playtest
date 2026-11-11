@@ -1,0 +1,11 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop hall_access_hatch
+draft 0
+id hall_access_hatch
+authoring 1 0
+bounds -2.27 -0.2175 -2.27 2.27 0.02 2.27
+piece hatch 0 -0.08 0 4.5 0.16 4.5 prop_service_cabinet 0.84 0.84 0.84 0 0 0 0 0 0 1 "" 0 0
+piece seam 0 -0.18 0 4.25 0.035 0.07 panel 0.57 0.57 0.57 0 0 0 0 0 0 1 "" 0 0
+source_piece hatch 0 -0.08 0 4.5 0.16 4.5 panel 0.84 0.84 0.84 0 0 0 0 0 0 1 "" 0 0
+source_piece seam 0 -0.18 0 4.25 0.035 0.07 panel 0.57 0.57 0.57 0 0 0 0 0 0 1 "" 0 0

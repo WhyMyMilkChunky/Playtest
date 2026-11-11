@@ -1,0 +1,12 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop split_machine
+draft 0
+id split_machine
+authoring 1 0
+bounds -1.33 -0.02 -3.03 1.33 2.82 3.09
+piece body 0 1.4 0 2.6 2.8 6 prop_service_cabinet 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece base_skirt 0 0.09 0 2.64 0.18 6.04 prop_foundry_press 0.58 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece top_cap 0 2.73 0 2.64 0.16 6.04 prop_foundry_press 0.62 0.62 0.62 0 0 0 0 0 0 1 "" 0 0
+piece service_panel 0 1.6 3.035 1.85 1.35 0.09 prop_instrument_panel 0.9 0.9 0.9 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 1.4 0 2.6 2.8 6 machinery 1 1 1 1 0 0 0 0 0 1 "" 0 0

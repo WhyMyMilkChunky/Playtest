@@ -1,0 +1,34 @@
+# full-size editable cargo prop; dimensions are metres, labels retain their authored UVs.
+s3droom 4
+id rust_foundry_freight_container
+authoring 1 0
+ambience "" 0
+bounds -5.9 0 -1.7 5.9 3.26 1.7
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,cargo,large,editable
+rules 0 "" "" "" ""
+piece base 0 0.12 0 11.8 0.24 3.4 foundry_structure 0.4 0.43 0.44 1 0 0 0 0 0 1 "" 0 0
+piece shell 0 1.67 0 11.4 2.86 3.12 foundry_prop_freight_case 0.85 0.69 0.49 1 0 0 0 0 0 1 "" 0 0
+piece roof 0 3.18 0 11.8 0.16 3.4 foundry_structure 0.6 0.64 0.65 1 0 0 0 0 0 1 "" 0 0
+piece corner_0_0 -5.8 1.67 -1.6 0.2 2.86 0.2 foundry_structure 0.55 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece corner_0_1 -5.8 1.67 1.6 0.2 2.86 0.2 foundry_structure 0.55 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece corner_1_0 5.8 1.67 -1.6 0.2 2.86 0.2 foundry_structure 0.55 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece corner_1_1 5.8 1.67 1.6 0.2 2.86 0.2 foundry_structure 0.55 0.58 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_0_0 -4.7 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_0_1 -4.7 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_1_0 -3.1 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_1_1 -3.1 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_2_0 -1.6 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_2_1 -1.6 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_3_0 0 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_3_1 0 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_4_0 1.6 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_4_1 1.6 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_5_0 3.1 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_5_1 3.1 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_6_0 4.7 1.67 -1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece wall_rib_6_1 4.7 1.67 1.59 0.1 2.54 0.09 foundry_structure 0.55 0.59 0.58 0 0 0 0 0 0 1 "" 0 0
+piece end_door_0 5.73 1.67 -0.73 0.05 2.58 1.4 foundry_prop_freight_case 0.85 0.69 0.49 1 0 0 0 0 0 1 "" 0 0
+piece locking_bar_0 5.79 1.67 -0.73 0.07 2.1 0.07 foundry_structure 0.48 0.51 0.52 0 0 0 0 0 0 1 "" 0 0
+piece end_door_1 5.73 1.67 0.73 0.05 2.58 1.4 foundry_prop_freight_case 0.85 0.69 0.49 1 0 0 0 0 0 1 "" 0 0
+piece locking_bar_1 5.79 1.67 0.73 0.07 2.1 0.07 foundry_structure 0.48 0.51 0.52 0 0 0 0 0 0 1 "" 0 0
+piece manifest 2.3 1.85 -1.65 0.72 0.42 0.018 prop_facility_details_2 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/2a5b975a80a695d6.obj" 0 0

@@ -1,0 +1,9 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop dressed_panel
+draft 0
+id dressed_panel
+authoring 1 0
+bounds -0.52 -0.02 -0.0425 0.52 0.52 0.0425
+piece body 0 0.25 0 1 0.5 0.045 panel 0.5 0.54 0.57 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0.25 0 1 0.5 0.045 panel 0.5 0.54 0.57 0 0 0 0 0 0 1 "" 0 0

@@ -1,0 +1,12 @@
+# Reusable facility furniture. Open in Prop Workshop.
+s3droom 4
+id cryo_computer
+authoring 1 0
+ambience "" 0
+bounds -0.44999999999999996 0 -0.44999999999999996 0.44999999999999996 0.7875000000000001 0.44999999999999996
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 furniture
+rules 0 "" "" "" ""
+piece monitor_base 0.0 0.045 0.22499999999999998 0.47250000000000003 0.09 0.39 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_e06460cc5c133fb8.obj" 0 0
+piece monitor_stem 0.0 0.18 0.26249999999999996 0.1275 0.22499999999999998 0.12 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_fd8057f0c3091fd9.obj" 0 0
+piece monitor_body 0.0 0.51 0.22499999999999998 0.8400000000000001 0.54 0.3375 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_7b6eaaf7801ddeff.obj" 0 0
+piece display 0.0 0.51 0.048 0.795 0.495 0.018000000000000002 prop_facility_details_1 1 1 1 0 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_baba0d502cab567a.obj" 0 0

@@ -1,0 +1,15 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cryo_research_pallet_jack
+authoring 1 0
+ambience "" 0
+bounds -0.4 0 -1.12 0.4 1.635 0.735
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece fork_-0.29 -0.29 0.12 -0.36 0.22 0.15 1.52 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/4113ffe6d9e20f33.obj" 0 0
+piece fork_wheel_-0.29 -0.29 0.09 -0.97 0.18 0.1 0.18 prop_facility_details_1 0.74 0.76 0.75 1 0 0 90 0 0 1 "assets/models/props/facility_expansion/693f90aa637dc16f.obj" 0 0
+piece fork_0.29 0.29 0.12 -0.36 0.22 0.15 1.52 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/4113ffe6d9e20f33.obj" 0 0
+piece fork_wheel_0.29 0.29 0.09 -0.97 0.18 0.1 0.18 prop_facility_details_1 0.74 0.76 0.75 1 0 0 90 0 0 1 "assets/models/props/facility_expansion/693f90aa637dc16f.obj" 0 0
+piece hydraulic_body 0 0.34 0.47 0.72 0.55 0.53 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/85510e93188625cb.obj" 0 0
+piece handle_stem 0 0.98 0.56 0.07 1.16 0.07 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/816d03bc6d6049ab.obj" 0 0
+piece handle 0 1.59 0.56 0.68 0.09 0.12 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/ceb62ee8d369446c.obj" 0 0

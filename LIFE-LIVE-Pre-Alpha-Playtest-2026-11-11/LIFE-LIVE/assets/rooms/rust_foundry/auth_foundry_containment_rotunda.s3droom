@@ -1,0 +1,58 @@
+# Landmark module: fitted outer walls, protected approaches and connected interior routes.
+s3droom 4
+id auth_foundry_containment_rotunda
+authoring 0 0
+ambience "" 0.3
+bounds -19.0 0 -19.0 19.0 14 19.0
+metadata 1 0 6 0 0 0 3.8 0 99 1 4 1 1 0 authored,encounter,containment_rotunda,half_turn
+rules 4.5 "foundry_floor" "foundry_wall" "foundry_ceiling" "foundry_panel"
+piece floor 0 -0.25 0 38 0.5 38 foundry_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 14.25 0 38 0.5 38 foundry_ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -19.0 7.0 0 0.5 14 38 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_1 1 0 -19.0 0 0 8 5.5
+safe_zone arrival_1 -15.6 2.7 0 6 5.2 8.8
+piece portal_wall_2 19.0 7.0 0 0.5 14 38 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_2 2 0 19.0 0 0 8 5.5
+safe_zone arrival_2 15.6 2.7 0 6 5.2 8.8
+piece portal_wall_3 0 7.0 -19.0 38 14 0.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_3 3 0 0 0 -19.0 8 5.5
+safe_zone arrival_3 0 2.7 -15.6 8.8 5.2 6
+piece portal_wall_4 0 7.0 19.0 38 14 0.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_4 4 0 0 0 19.0 8 5.5
+safe_zone arrival_4 0 2.7 15.6 8.8 5.2 6
+piece pendant_0 -8.55 8.42 -8.17 2.4 0.18 0.6 emissive 0.8 0.81 0.76 0 0 0 0 0 0 1 "" 0 0
+piece hanger_0 -8.55 11.26 -8.17 0.09 5.48 0.09 foundry_machinery 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+light main_0 -8.55 8.2 -8.17 1 .96 .90 29 1.8 0 0 -1 0 -1 0 .28 0
+piece pendant_1 8.17 8.42 8.17 2.4 0.18 0.6 emissive 0.8 0.81 0.76 0 0 0 0 0 0 1 "" 0 0
+piece hanger_1 8.17 11.26 8.17 0.09 5.48 0.09 foundry_machinery 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+light main_1 8.17 8.2 8.17 1 .96 .90 29 1.8 0 0 -1 0 -1 0 .28 0
+piece pendant_2 0 8.42 0 2.4 0.18 0.6 emissive 0.8 0.81 0.76 0 0 0 0 0 0 1 "" 0 0
+piece hanger_2 0 11.26 0 0.09 5.48 0.09 foundry_machinery 0.88 0.88 0.88 0 0 0 0 0 0 1 "" 0 0
+light main_2 0 8.2 0 1 .96 .90 29 1.8 0 0 -1 0 -1 0 .28 0
+piece ring_x-1_a -9.2 3.25 -3.25 0.32 6.5 2.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_x-1_b -9.2 3.25 3.25 0.32 6.5 2.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_x-1_header -9.2 5.5 0 0.32 2.0 4 foundry_panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_z-1_a -3.25 3.25 -9.2 2.5 6.5 0.32 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_z-1_b 3.25 3.25 -9.2 2.5 6.5 0.32 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_z-1_header 0 5.5 -9.2 4 2.0 0.32 foundry_panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_corner_-1_-1 -6.85 3.25 -6.85 0.34 6.5 6.65 foundry_wall 0.88 0.88 0.88 1 0 -45 0 0 0 1 "" 0 0
+piece caster_-1_-1 -5.4 1.35 -5.4 2.4 2.7 2.4 prop_foundry_press 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_corner_-1_1 -6.85 3.25 6.85 0.34 6.5 6.65 foundry_wall 0.88 0.88 0.88 1 0 45 0 0 0 1 "" 0 0
+piece caster_-1_1 -5.4 1.35 5.4 2.4 2.7 2.4 prop_foundry_press 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_x1_a 9.2 3.25 -3.25 0.32 6.5 2.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_x1_b 9.2 3.25 3.25 0.32 6.5 2.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_x1_header 9.2 5.5 0 0.32 2.0 4 foundry_panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_z1_a -3.25 3.25 9.2 2.5 6.5 0.32 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_z1_b 3.25 3.25 9.2 2.5 6.5 0.32 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_z1_header 0 5.5 9.2 4 2.0 0.32 foundry_panel 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_corner_1_-1 6.85 3.25 -6.85 0.34 6.5 6.65 foundry_wall 0.88 0.88 0.88 1 0 45 0 0 0 1 "" 0 0
+piece caster_1_-1 5.4 1.35 -5.4 2.4 2.7 2.4 prop_foundry_press 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ring_corner_1_1 6.85 3.25 6.85 0.34 6.5 6.65 foundry_wall 0.88 0.88 0.88 1 0 -45 0 0 0 1 "" 0 0
+piece caster_1_1 5.4 1.35 5.4 2.4 2.7 2.4 prop_foundry_press 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance furniture_1_desk "assets/props/facility/rust_foundry/desk.s3dprop" -12.6 0 -10.5 1.8199999999999998 0.8190000000000001 1.04 1 0 "prop" 1 0
+prop_instance furniture_2_computer "assets/props/facility/rust_foundry/computer.s3dprop" -12.6 0.819 -10.5 0.8999999999999999 0.7875000000000001 0.8999999999999999 1 0 "prop" 1 0
+prop_instance furniture_3_chair "assets/props/facility/rust_foundry/chair.s3dprop" -12.6 0 -11.6 0.75 1.1625 0.75 1 180 "prop" 1 0
+prop_instance furniture_4_desk "assets/props/facility/rust_foundry/desk.s3dprop" 12.6 0 -10.5 1.8199999999999998 0.8190000000000001 1.04 1 0 "prop" 1 0
+prop_instance furniture_5_computer "assets/props/facility/rust_foundry/computer.s3dprop" 12.6 0.819 -10.5 0.8999999999999999 0.7875000000000001 0.8999999999999999 1 0 "prop" 1 0
+prop_instance furniture_6_chair "assets/props/facility/rust_foundry/chair.s3dprop" 12.6 0 -11.6 0.75 1.1625 0.75 1 180 "prop" 1 0
+light ring_interior 0 5.8 0 1 .96 .9 14 .8 0 0 -1 0 -1 0 .18 0

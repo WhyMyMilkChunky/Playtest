@@ -1,0 +1,51 @@
+# Editable encounter module; all four approaches retain protected walking space.
+s3droom 4
+id auth_foundry_freight_sorting
+authoring 0 0
+ambience "" 0.3
+bounds -19.0 0 -18.0 19.0 12 18.0
+metadata 1 0 4 0 0 0 1.35 0 99 1 4 1 1 0 authored,encounter,freight_sorting
+rules 4.5 "foundry_floor" "foundry_wall" "foundry_ceiling" "foundry_panel"
+piece floor 0 -0.25 0 38 0.5 36 foundry_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 12.25 0 38 0.5 36 foundry_ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -19.0 6.0 0 0.5 12 36 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_1 1 0 -19.0 0 0 10 6
+safe_zone entrance_1 -16.0 2.1 0 5.8 4 10
+piece portal_wall_2 19.0 6.0 0 0.5 12 36 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_2 2 0 19.0 0 0 10 6
+safe_zone entrance_2 16.0 2.1 0 5.8 4 10
+piece portal_wall_3 0 6.0 -18.0 38 12 0.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_3 3 0 0 0 -18.0 10 6
+safe_zone entrance_3 0 2.1 -15.0 10 4 5.8
+piece portal_wall_4 0 6.0 18.0 38 12 0.5 foundry_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_4 4 0 0 0 18.0 10 6
+safe_zone entrance_4 0 2.1 15.0 10 4 5.8
+piece pier_-17.9_-16.9 -17.9 6.0 -16.9 0.7 12 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_-17.9_16.9 -17.9 6.0 16.9 0.7 12 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_17.9_-16.9 17.9 6.0 -16.9 0.7 12 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_17.9_16.9 17.9 6.0 16.9 0.7 12 0.7 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece lamp_0 0 11.94 -9.0 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_0 0 11.7 -9.0 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+piece lamp_1 0 11.94 9.0 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_1 0 11.7 9.0 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+light accent -17.0 3 -16.0 1.0 0.3 0.08 10 .55 0 0 -1 0 -1 0 .15 0
+prop_instance freight_container_-1 "assets/props/facility/rust_foundry/freight_container.s3dprop" -8.7 0 7.7 11.8 3.26 3.4 1 90 "prop" 1 0
+prop_instance freight_cases_-1 "assets/props/facility/rust_foundry/bulk_crate_stack.s3dprop" 8.7 0 6.300000000000001 5.9 4.39 4.0 1 -8 "prop" 1 0
+prop_instance freight_scale_-1 "assets/props/facility/rust_foundry/weigh_station.s3dprop" -11 0 -10.8 1.4 1.805 1.1 1 180 "prop" 1 0
+prop_instance freight_pallet_jack_-1 "assets/props/facility/rust_foundry/pallet_jack.s3dprop" -8 0 -10.8 0.8 1.635 1.855 1 -22 "prop" 1 0
+piece freight_aisle_edge_-1 -4.6 0.012 0 0.08 0.024 23 foundry_panel 0.68 0.68 0.59 0 0 0 0 0 0 1 "" 0 0
+prop_instance freight_container_1 "assets/props/facility/rust_foundry/freight_container.s3dprop" 8.7 0 -7.7 11.8 3.26 3.4 1 90 "prop" 1 0
+prop_instance freight_cases_1 "assets/props/facility/rust_foundry/bulk_crate_stack.s3dprop" -8.7 0 -6.300000000000001 5.9 4.39 4.0 1 8 "prop" 1 0
+prop_instance freight_scale_1 "assets/props/facility/rust_foundry/weigh_station.s3dprop" 11 0 10.8 1.4 1.805 1.1 1 0 "prop" 1 0
+prop_instance freight_pallet_jack_1 "assets/props/facility/rust_foundry/pallet_jack.s3dprop" 8 0 10.8 0.8 1.635 1.855 1 22 "prop" 1 0
+piece freight_aisle_edge_1 4.6 0.012 0 0.08 0.024 23 foundry_panel 0.68 0.68 0.59 0 0 0 0 0 0 1 "" 0 0
+piece forge_feed_-1 -17.0 2.4 16.0 2.6 4.8 2.6 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece forge_warning_-1 -17.0 3.5 14.67 1.5 0.45 0.05 emissive 1.0 0.3 0.08 0 0 0 0 0 0 1 "" 0 0
+piece crane_rail_-1 -16.0 10.2 0 0.5 0.8 34 foundry_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_-1_-1 -16.0 11.3 -16.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_-1_1 -16.0 11.3 16.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece forge_feed_1 17.0 2.4 16.0 2.6 4.8 2.6 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece forge_warning_1 17.0 3.5 14.67 1.5 0.45 0.05 emissive 1.0 0.3 0.08 0 0 0 0 0 0 1 "" 0 0
+piece crane_rail_1 16.0 10.2 0 0.5 0.8 34 foundry_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_1_-1 16.0 11.3 -16.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece crane_hanger_1_1 16.0 11.3 16.0 0.12 1.4 0.12 foundry_machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0

@@ -1,0 +1,15 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop machine_block
+draft 0
+id machine_block
+authoring 1 0
+bounds -1.53 -0.02 -1.53 1.53 2.78 1.58
+piece body 0 1.375 0 3 2.75 3 prop_service_cabinet 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece base_skirt 0 0.09 0 3.04 0.18 3.04 prop_foundry_press 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece top_frame 0 2.69 0 3.04 0.14 3.04 prop_foundry_press 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece filter_-1.45 -1.45 1.55 0 0.14 1.5 2.1 prop_cable_harness 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece filter_1.45 1.45 1.55 0 0.14 1.5 2.1 prop_cable_harness 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece service_hatch 0 1.45 1.53 1.85 1.35 0.08 prop_service_cabinet 0.86 0.86 0.86 0 0 0 0 0 0 1 "" 0 0
+piece top_outlet 0.72 2.7 -0.65 0.38 0.14 0.38 prop_stainless_fittings 0.6 0.6 0.6 0 0 0 0 0 0 1 "builtin://architecture/coolant_canister" 0 0
+source_piece body 0 1.375 0 3 2.75 3 machinery 1 1 1 1 0 0 0 0 0 1 "" 0 0

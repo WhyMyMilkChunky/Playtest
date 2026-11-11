@@ -1,0 +1,11 @@
+# editable theme fixture. source_piece is the generated mounting contract.
+s3droom 5
+generated_prop wall_light_cryo
+draft 0
+id wall_light_cryo
+authoring 1 0
+bounds -0.27 -0.795 -0.005 0.27 0.795 0.195
+piece housing 0 0 0.075 0.50 1.55 0.12 panel 0.83 0.89 0.92 0 0 0 0 0 0 1 "" 0 0
+piece lens 0 0 0.17 0.27 1.26 0.04 emissive 1 1 1 0 0 0 0 0 0 1 "" 0 0
+source_piece housing 0 0 0.075 0.50 1.55 0.12 panel 0.83 0.89 0.92 0 0 0 0 0 0 1 "" 0 0
+source_piece lens 0 0 0.17 0.27 1.26 0.04 emissive 1 1 1 0 0 0 0 0 0 1 "" 0 0

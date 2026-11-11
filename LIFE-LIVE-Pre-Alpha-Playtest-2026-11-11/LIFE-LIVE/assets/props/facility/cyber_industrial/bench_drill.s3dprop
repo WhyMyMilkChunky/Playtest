@@ -1,0 +1,16 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cyber_industrial_bench_drill
+authoring 1 0
+ambience "" 0
+bounds -0.58 0 -0.46 0.58 2.04 0.46
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece cabinet 0 0.47 0 0.95 0.94 0.78 prop_facility_details_1 0.82 0.86 0.83 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/7adc03a538987084.obj" 0 0
+piece service 0 0.48 -0.403 0.7 0.63 0.018 prop_facility_details_2 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/1233e5eadc10947f.obj" 0 0
+piece worktop 0 0.99 0 1.16 0.1 0.92 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/bef1d6f460709b9a.obj" 0 0
+piece column 0 1.43 0.23 0.15 0.8 0.15 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/b651557e16ba7446.obj" 0 0
+piece motor_head 0 1.88 0.01 0.55 0.32 0.68 prop_facility_details_1 0.82 0.86 0.83 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/147ec8d2f5a1db65.obj" 0 0
+piece spindle 0 1.57 -0.18 0.08 0.35 0.08 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/63c88fd85e65b79d.obj" 0 0
+piece drill_table 0 1.29 -0.1 0.6 0.08 0.46 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/30be227202d7358a.obj" 0 0
+piece feed_lever 0.36 1.69 0.01 0.4 0.06 0.06 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/728ed7c751ec6f55.obj" 0 0

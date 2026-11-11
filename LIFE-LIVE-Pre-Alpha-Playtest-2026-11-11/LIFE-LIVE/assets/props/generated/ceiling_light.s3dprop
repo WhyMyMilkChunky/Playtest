@@ -1,0 +1,11 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop ceiling_light
+draft 0
+id ceiling_light
+authoring 1 0
+bounds -1.22 -0.2775 -0.24 1.22 0.005 0.24
+piece housing 0 -0.115 0 2.4 0.2 0.44 panel 0.48 0.51 0.54 0 0 0 0 0 0 1 "" 0 0
+piece lens 0 -0.235 0 2.15 0.045 0.24 emissive 1 1 1 0 0 0 0 0 0 1 "" 0 0
+source_piece housing 0 -0.115 0 2.4 0.2 0.44 panel 0.48 0.51 0.54 0 0 0 0 0 0 1 "" 0 0
+source_piece lens 0 -0.235 0 2.15 0.045 0.24 emissive 1 1 1 0 0 0 0 0 0 1 "" 0 0

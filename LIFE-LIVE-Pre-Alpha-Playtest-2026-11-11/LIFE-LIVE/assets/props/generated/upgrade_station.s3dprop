@@ -1,0 +1,29 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop upgrade_station
+draft 0
+id upgrade_station
+authoring 1 0
+bounds -2.07 -0.03 -0.895 2.07 3.04 1.51
+piece plinth 0 0.13 -0.1 4.1 0.26 1.55 prop_foundry_press 0.26 0.32 0.36 1 0 0 0 0 0 1 "" 0 0
+piece core 0 1.38 -0.28 2.75 2.76 0.82 prop_service_cabinet 0.34 0.4 0.44 1 0 0 0 0 0 1 "" 0 0
+piece pylon_-1 -1.66 1.5 -0.28 0.34 3.02 1.1 upgrade_station 0.2 0.28 0.33 1 0 0 0 0 0 1 "" 0 0
+piece beacon_-1 -1.66 2.65 0.3 0.18 0.52 0.08 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+piece pylon_1 1.66 1.5 -0.28 0.34 3.02 1.1 upgrade_station 0.2 0.28 0.33 1 0 0 0 0 0 1 "" 0 0
+piece beacon_1 1.66 2.65 0.3 0.18 0.52 0.08 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+piece canopy 0 2.9 -0.16 3.78 0.24 1.24 upgrade_station 0.24 0.31 0.35 1 0 0 0 0 0 1 "" 0 0
+piece terminal 0 0.791946 1.1 0.8 1.583892 0.78 terminal 1 1 1 1 0 0 0 0 0 1 "assets/models/props/terminal.obj" 0 0
+piece floor_signal_-1 0 0.025 0.58 2.4 0.05 0.09 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+piece floor_signal_0 0 0.025 1 2.9 0.05 0.09 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+piece floor_signal_1 0 0.025 1.42 2.4 0.05 0.09 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+source_piece plinth 0 0.13 -0.1 4.1 0.26 1.55 upgrade_station 0.26 0.32 0.36 1 0 0 0 0 0 1 "" 0 0
+source_piece core 0 1.38 -0.28 2.75 2.76 0.82 upgrade_station 0.34 0.4 0.44 1 0 0 0 0 0 1 "" 0 0
+source_piece pylon_-1 -1.66 1.5 -0.28 0.34 3.02 1.1 upgrade_station 0.2 0.28 0.33 1 0 0 0 0 0 1 "" 0 0
+source_piece beacon_-1 -1.66 2.65 0.3 0.18 0.52 0.08 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+source_piece pylon_1 1.66 1.5 -0.28 0.34 3.02 1.1 upgrade_station 0.2 0.28 0.33 1 0 0 0 0 0 1 "" 0 0
+source_piece beacon_1 1.66 2.65 0.3 0.18 0.52 0.08 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+source_piece canopy 0 2.9 -0.16 3.78 0.24 1.24 upgrade_station 0.24 0.31 0.35 1 0 0 0 0 0 1 "" 0 0
+source_piece terminal 0 0.791946 1.1 0.8 1.583892 0.78 terminal 1 1 1 1 0 0 0 0 0 1 "assets/models/props/terminal.obj" 0 0
+source_piece floor_signal_-1 0 0.025 0.58 2.4 0.05 0.09 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+source_piece floor_signal_0 0 0.025 1 2.9 0.05 0.09 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0
+source_piece floor_signal_1 0 0.025 1.42 2.4 0.05 0.09 upgrade_screen 0.12 0.88 1 0 0 0 0 0 0 1 "" 0 0

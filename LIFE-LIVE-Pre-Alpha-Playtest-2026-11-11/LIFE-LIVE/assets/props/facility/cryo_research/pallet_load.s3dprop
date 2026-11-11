@@ -1,0 +1,15 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cryo_research_pallet_load
+authoring 1 0
+ambience "" 0
+bounds -0.7 0 -0.58 0.7 1.22 0.58
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece runner_-0.48 -0.48 0.08 0 0.18 0.16 1.1 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/152af96b3087ac55.obj" 0 0
+piece runner_0.48 0.48 0.08 0 0.18 0.16 1.1 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/152af96b3087ac55.obj" 0 0
+piece deck 0 0.2 0 1.4 0.08 1.16 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/bd03895163ba130f.obj" 0 0
+piece case_3 -0.34 0.555 -0.24 0.61 0.63 0.48 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/89f11dc42545707d.obj" 0 0
+piece case_4 0.35 0.66 -0.24 0.61 0.84 0.48 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/a139b72451b093ba.obj" 0 0
+piece case_5 -0.31 0.73 0.29 0.61 0.98 0.48 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/97822bb3ea2d8243.obj" 0 0
+piece case_6 0.36 0.59 0.3 0.61 0.7 0.48 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/04d138b6a9f9e374.obj" 0 0

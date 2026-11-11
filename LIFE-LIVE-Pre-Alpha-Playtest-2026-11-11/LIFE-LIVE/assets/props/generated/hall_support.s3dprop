@@ -1,0 +1,9 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop hall_support
+draft 0
+id hall_support
+authoring 1 0
+bounds -0.295 -0.02 -0.295 0.295 6.02 0.295
+piece body 0 3 0 0.55 6 0.55 cyber_structure 1 1 1 1 0 0 0 0 0 1 "" 0 0
+source_piece body 0 3 0 0.55 6 0.55 cyber_structure 1 1 1 1 0 0 0 0 0 1 "" 0 0

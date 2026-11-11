@@ -1,0 +1,17 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cryo_research_pump_skid
+authoring 1 0
+ambience "" 0
+bounds -0.825 0 -0.51 0.825 1.375 0.51
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece skid 0 0.12 0 1.65 0.24 1.02 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/fa5f507b463b5018.obj" 0 0
+piece pump -0.4 0.65 0 0.64 0.84 0.64 prop_facility_details_1 0.88 0.95 0.98 1 90 0 0 0 0 1 "assets/models/props/facility_expansion/39cd2dc96a7b74de.obj" 0 0
+piece motor 0.35 0.65 0.06 0.6 0.86 0.6 prop_facility_details_1 0.88 0.95 0.98 1 90 0 0 0 0 1 "assets/models/props/facility_expansion/5440e49b3edcb70f.obj" 0 0
+piece shoe_-0.38 -0.38 0.3 0 0.55 0.12 0.65 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/0e31a45e22eac6e5.obj" 0 0
+piece shoe_0.38 0.38 0.3 0 0.55 0.12 0.65 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/0e31a45e22eac6e5.obj" 0 0
+piece coupling 0 0.65 0 0.27 0.3 0.3 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/55dab19ae81013a5.obj" 0 0
+piece riser -0.41 1.05 0.3 0.13 0.65 0.13 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/4c8ca8f5d3bf1374.obj" 0 0
+piece controls 0.43 1.08 0.17 0.55 0.35 0.35 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/6ffa9456829a9c21.obj" 0 0
+piece gauge 0.43 1.08 -0.018 0.4 0.23 0.018 prop_workshop_atlas 0.94 0.94 0.94 0 0 0 0 0 0 1 "assets/models/props/facility_expansion/50a805d5ecc0c908.obj" 0 0

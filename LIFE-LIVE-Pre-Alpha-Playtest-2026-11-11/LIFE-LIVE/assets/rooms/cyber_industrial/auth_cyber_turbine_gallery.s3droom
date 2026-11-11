@@ -1,0 +1,292 @@
+# Editable encounter module; all four approaches retain protected walking space.
+s3droom 4
+id auth_cyber_turbine_gallery
+authoring 0 0
+ambience "" 0.3
+bounds -18.0 0 -17.0 18.0 16 17.0
+metadata 3 0 5 0 0 0 2.0 0 99 1 4 1 1 0 authored,encounter,turbine_gallery
+rules 4.5 "floor" "wall" "ceiling" "panel"
+piece floor 0 -0.25 0 36 0.5 34 floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 16.25 0 36 0.5 34 ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection door_1 1 0 -18.0 0 0 10 6
+safe_zone entrance_1 -15.0 2.1 0 5.8 4 10
+connection door_2 2 0 18.0 0 0 10 6
+safe_zone entrance_2 15.0 2.1 0 5.8 4 10
+connection door_3 3 0 0 0 -17.0 10 6
+safe_zone entrance_3 0 2.1 -14.0 10 4 5.8
+connection door_4 4 0 0 0 17.0 10 6
+safe_zone entrance_4 0 2.1 14.0 10 4 5.8
+piece pier_-16.9_-15.9 -16.9 8.0 -15.9 0.7 16 0.7 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_-16.9_15.9 -16.9 8.0 15.9 0.7 16 0.7 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_16.9_-15.9 16.9 8.0 -15.9 0.7 16 0.7 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece pier_16.9_15.9 16.9 8.0 15.9 0.7 16 0.7 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece lamp_0 0 15.94 -8.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_0 0 15.7 -8.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+piece lamp_1 0 15.94 8.5 2.5 0.12 0.45 emissive 0.8 0.82 0.78 0 0 0 0 0 0 1 "" 0 0
+light white_1 0 15.7 8.5 1 .96 .90 24 1.8 0 0 -1 0 -1 0 .2 0
+light accent -16.0 3 -15.0 0.15 0.65 0.85 10 .55 0 0 -1 0 -1 0 .15 0
+piece server_recess_-1 -16.5 2.3 15.0 1.7 4.6 2.2 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece server_recess_1 16.5 2.3 15.0 1.7 4.6 2.2 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -18.0 8.0 0.0 0.5 16.0 34.0 wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_2 18.0 8.0 0.0 0.5 16.0 34.0 wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_3 0.0 8.0 -17.0 36.0 16.0 0.5 wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_4 0.0 8.0 17.0 36.0 16.0 0.5 wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_0 -14.5 0.24 -15.525 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_1 -14.5 0.54 -15.075 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_2 -14.5 0.8400000000000001 -14.625 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_3 -14.5 1.14 -14.175 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_4 -14.5 1.44 -13.725 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_5 -14.5 1.74 -13.275 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_6 -14.5 2.04 -12.825 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_7 -14.5 2.34 -12.375 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_8 -14.5 2.64 -11.925 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_9 -14.5 2.94 -11.475 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_10 -14.5 3.2399999999999998 -11.024999999999999 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_11 -14.5 3.54 -10.575 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_12 -14.5 3.84 -10.125 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_13 -14.5 4.140000000000001 -9.675 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_14 -14.5 4.44 -9.225 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_15 -14.5 4.74 -8.774999999999999 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_16 -14.5 5.04 -8.325 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_17 -14.5 5.340000000000001 -7.875 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_18 -14.5 5.640000000000001 -7.424999999999999 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_-1_19 -14.5 5.94 -6.975 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_top_0 -16.53 1.83 -14.625 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_mid_0 -16.53 1.31 -14.625 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_top_1 -16.53 3.33 -12.375 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_mid_1 -16.53 2.81 -12.375 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_top_2 -16.53 4.83 -10.125 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_mid_2 -16.53 4.3100000000000005 -10.125 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_top_3 -16.53 6.33 -7.875 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_mid_3 -16.53 5.8100000000000005 -7.875 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_post_0 -16.53 0.57 -15.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_post_1 -16.53 2.07 -13.5 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_post_2 -16.53 3.5699999999999994 -11.25 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_post_3 -16.53 5.069999999999999 -9.0 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_-1_post_4 -16.53 6.569999999999999 -6.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_stringer_-1_-1 -16.53 2.8 -11.25 0.16 0.22 10.816653826391969 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_top_0 -12.469999999999999 1.83 -14.625 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_mid_0 -12.469999999999999 1.31 -14.625 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_top_1 -12.469999999999999 3.33 -12.375 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_mid_1 -12.469999999999999 2.81 -12.375 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_top_2 -12.469999999999999 4.83 -10.125 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_mid_2 -12.469999999999999 4.3100000000000005 -10.125 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_top_3 -12.469999999999999 6.33 -7.875 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_mid_3 -12.469999999999999 5.8100000000000005 -7.875 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_post_0 -12.469999999999999 0.57 -15.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_post_1 -12.469999999999999 2.07 -13.5 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_post_2 -12.469999999999999 3.5699999999999994 -11.25 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_post_3 -12.469999999999999 5.069999999999999 -9.0 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_-1_1_post_4 -12.469999999999999 6.569999999999999 -6.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_stringer_-1_1 -12.469999999999999 2.8 -11.25 0.16 0.22 10.816653826391969 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_deck_-1 -14.5 5.94 4.325 4.2 0.12 22.15 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stringer_-1_-1 -16.51 5.68 4.325 0.18 0.4 22.15 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stringer_-1_1 -12.49 5.68 4.325 0.18 0.4 22.15 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_top_0 -12.47 7.08 -5.0525 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_mid_0 -12.47 6.5600000000000005 -5.0525 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_top_1 -12.47 7.08 -1.6574999999999998 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_mid_1 -12.47 6.5600000000000005 -1.6574999999999998 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_top_2 -12.47 7.08 1.7375000000000007 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_mid_2 -12.47 6.5600000000000005 1.7375000000000007 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_top_3 -12.47 7.08 5.1325 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_mid_3 -12.47 6.5600000000000005 5.1325 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_post_1 -12.47 6.57 -3.355 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_post_2 -12.47 6.57 0.040000000000000036 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_post_3 -12.47 6.57 3.4350000000000005 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_-1_post_4 -12.47 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_top_0 -12.47 7.08 10.95 0.14 0.12 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_mid_0 -12.47 6.5600000000000005 10.95 0.14 0.09 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_top_1 -12.47 7.08 13.870000000000001 0.14 0.12 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_mid_1 -12.47 6.5600000000000005 13.870000000000001 0.14 0.09 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_post_0 -12.47 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_post_1 -12.47 6.57 12.41 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_-1_post_2 -12.47 6.57 15.33 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_0 -16.53 7.08 -5.1728571428571435 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_0 -16.53 6.5600000000000005 -5.1728571428571435 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_1 -16.53 7.08 -2.0185714285714287 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_1 -16.53 6.5600000000000005 -2.0185714285714287 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_2 -16.53 7.08 1.1357142857142852 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_2 -16.53 6.5600000000000005 1.1357142857142852 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_3 -16.53 7.08 4.290000000000001 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_3 -16.53 6.5600000000000005 4.290000000000001 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_4 -16.53 7.08 7.444285714285712 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_4 -16.53 6.5600000000000005 7.444285714285712 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_5 -16.53 7.08 10.598571428571429 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_5 -16.53 6.5600000000000005 10.598571428571429 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_top_6 -16.53 7.08 13.752857142857142 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_mid_6 -16.53 6.5600000000000005 13.752857142857142 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_1 -16.53 6.57 -3.595714285714286 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_2 -16.53 6.57 -0.44142857142857217 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_3 -16.53 6.57 2.7128571428571426 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_4 -16.53 6.57 5.867142857142856 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_5 -16.53 6.57 9.02142857142857 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_6 -16.53 6.57 12.175714285714285 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_-1_post_7 -16.53 6.57 15.330000000000002 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_end_rail_-1_top_0 -13.485000000000001 7.08 15.33 1.8900000000000001 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 180.0 0 0 1 "" 0 0
+piece gallery_end_rail_-1_mid_0 -13.485000000000001 6.5600000000000005 15.33 1.8900000000000001 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 180.0 0 0 1 "" 0 0
+piece gallery_end_rail_-1_top_1 -15.515 7.08 15.33 1.8900000000000001 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 180.0 0 0 1 "" 0 0
+piece gallery_end_rail_-1_mid_1 -15.515 6.5600000000000005 15.33 1.8900000000000001 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 180.0 0 0 1 "" 0 0
+piece gallery_end_rail_-1_post_1 -14.5 6.57 15.33 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_wall_bracket_-1_0 -17.4 5.69 -5.35 1.6 0.34 0.32 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_wall_bracket_-1_1 -17.4 5.69 5.35 1.6 0.34 0.32 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_wall_bracket_-1_2 -17.4 5.69 13.9 1.6 0.34 0.32 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance gallery_workbay_-1_8.0 "assets/props/facility/cyber_industrial/comms_console.s3dprop" -14.5 0 8.0 1.8 1.67 0.895 1 -90 "prop" 1 0
+prop_instance gallery_workbay_-1_12.4 "assets/props/facility/cyber_industrial/comms_console.s3dprop" -14.5 0 12.4 1.8 1.67 0.895 1 -90 "prop" 1 0
+piece gallery_wall_light_-1 -17.74 3.1 9.5 0.1 0.2 1.25 emissive 0.92 0.94 0.9 0 0 0 0 0 0 1 "" 0 0
+light gallery_worklight_-1 -17.52 3.1 9.5 1 .97 .92 12 .85 1 1 0 0 .2 0 .12 0
+piece gallery_stair_1_0 14.5 0.24 -15.525 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_1 14.5 0.54 -15.075 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_2 14.5 0.8400000000000001 -14.625 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_3 14.5 1.14 -14.175 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_4 14.5 1.44 -13.725 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_5 14.5 1.74 -13.275 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_6 14.5 2.04 -12.825 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_7 14.5 2.34 -12.375 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_8 14.5 2.64 -11.925 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_9 14.5 2.94 -11.475 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_10 14.5 3.2399999999999998 -11.024999999999999 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_11 14.5 3.54 -10.575 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_12 14.5 3.84 -10.125 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_13 14.5 4.140000000000001 -9.675 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_14 14.5 4.44 -9.225 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_15 14.5 4.74 -8.774999999999999 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_16 14.5 5.04 -8.325 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_17 14.5 5.340000000000001 -7.875 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_18 14.5 5.640000000000001 -7.424999999999999 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_1_19 14.5 5.94 -6.975 4.2 0.12 0.45 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_top_0 12.469999999999999 1.83 -14.625 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_mid_0 12.469999999999999 1.31 -14.625 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_top_1 12.469999999999999 3.33 -12.375 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_mid_1 12.469999999999999 2.81 -12.375 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_top_2 12.469999999999999 4.83 -10.125 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_mid_2 12.469999999999999 4.3100000000000005 -10.125 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_top_3 12.469999999999999 6.33 -7.875 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_mid_3 12.469999999999999 5.8100000000000005 -7.875 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_post_0 12.469999999999999 0.57 -15.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_post_1 12.469999999999999 2.07 -13.5 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_post_2 12.469999999999999 3.5699999999999994 -11.25 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_post_3 12.469999999999999 5.069999999999999 -9.0 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_-1_post_4 12.469999999999999 6.569999999999999 -6.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_stringer_1_-1 12.469999999999999 2.8 -11.25 0.16 0.22 10.816653826391969 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_top_0 16.53 1.83 -14.625 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_mid_0 16.53 1.31 -14.625 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_top_1 16.53 3.33 -12.375 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_mid_1 16.53 2.81 -12.375 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_top_2 16.53 4.83 -10.125 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_mid_2 16.53 4.3100000000000005 -10.125 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_top_3 16.53 6.33 -7.875 0.14 0.12 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_mid_3 16.53 5.8100000000000005 -7.875 0.14 0.09 2.564163456597992 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_post_0 16.53 0.57 -15.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_post_1 16.53 2.07 -13.5 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_post_2 16.53 3.5699999999999994 -11.25 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_post_3 16.53 5.069999999999999 -9.0 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_rail_1_1_post_4 16.53 6.569999999999999 -6.75 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stair_stringer_1_1 16.53 2.8 -11.25 0.16 0.22 10.816653826391969 machinery 0.88 0.88 0.88 1 -33.690067525979785 0 0 0 0 1 "" 0 0
+piece gallery_deck_1 14.5 5.94 4.325 4.2 0.12 22.15 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stringer_1_-1 12.49 5.68 4.325 0.18 0.4 22.15 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_stringer_1_1 16.51 5.68 4.325 0.18 0.4 22.15 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_top_0 12.47 7.08 -5.0525 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_mid_0 12.47 6.5600000000000005 -5.0525 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_top_1 12.47 7.08 -1.6574999999999998 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_mid_1 12.47 6.5600000000000005 -1.6574999999999998 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_top_2 12.47 7.08 1.7375000000000007 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_mid_2 12.47 6.5600000000000005 1.7375000000000007 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_top_3 12.47 7.08 5.1325 0.14 0.12 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_mid_3 12.47 6.5600000000000005 5.1325 0.14 0.09 3.255 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_post_1 12.47 6.57 -3.355 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_post_2 12.47 6.57 0.040000000000000036 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_post_3 12.47 6.57 3.4350000000000005 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_front_rail_1_post_4 12.47 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_top_0 12.47 7.08 10.95 0.14 0.12 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_mid_0 12.47 6.5600000000000005 10.95 0.14 0.09 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_top_1 12.47 7.08 13.870000000000001 0.14 0.12 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_mid_1 12.47 6.5600000000000005 13.870000000000001 0.14 0.09 2.78 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_post_0 12.47 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_post_1 12.47 6.57 12.41 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_inner_back_rail_1_post_2 12.47 6.57 15.33 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_0 16.53 7.08 -5.1728571428571435 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_0 16.53 6.5600000000000005 -5.1728571428571435 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_1 16.53 7.08 -2.0185714285714287 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_1 16.53 6.5600000000000005 -2.0185714285714287 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_2 16.53 7.08 1.1357142857142852 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_2 16.53 6.5600000000000005 1.1357142857142852 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_3 16.53 7.08 4.290000000000001 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_3 16.53 6.5600000000000005 4.290000000000001 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_4 16.53 7.08 7.444285714285712 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_4 16.53 6.5600000000000005 7.444285714285712 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_5 16.53 7.08 10.598571428571429 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_5 16.53 6.5600000000000005 10.598571428571429 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_top_6 16.53 7.08 13.752857142857142 0.14 0.12 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_mid_6 16.53 6.5600000000000005 13.752857142857142 0.14 0.09 3.014285714285714 machinery 0.88 0.88 0.88 1 -0.0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_1 16.53 6.57 -3.595714285714286 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_2 16.53 6.57 -0.44142857142857217 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_3 16.53 6.57 2.7128571428571426 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_4 16.53 6.57 5.867142857142856 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_5 16.53 6.57 9.02142857142857 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_6 16.53 6.57 12.175714285714285 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_outer_rail_1_post_7 16.53 6.57 15.330000000000002 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_end_rail_1_top_0 13.485000000000001 7.08 15.33 1.8900000000000001 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_end_rail_1_mid_0 13.485000000000001 6.5600000000000005 15.33 1.8900000000000001 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_end_rail_1_top_1 15.515 7.08 15.33 1.8900000000000001 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_end_rail_1_mid_1 15.515 6.5600000000000005 15.33 1.8900000000000001 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_end_rail_1_post_1 14.5 6.57 15.33 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_wall_bracket_1_0 17.4 5.69 -5.35 1.6 0.34 0.32 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_wall_bracket_1_1 17.4 5.69 5.35 1.6 0.34 0.32 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_wall_bracket_1_2 17.4 5.69 13.9 1.6 0.34 0.32 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance gallery_workbay_1_8.0 "assets/props/facility/cyber_industrial/comms_console.s3dprop" 14.5 0 8.0 1.8 1.67 0.895 1 90 "prop" 1 0
+prop_instance gallery_workbay_1_12.4 "assets/props/facility/cyber_industrial/comms_console.s3dprop" 14.5 0 12.4 1.8 1.67 0.895 1 90 "prop" 1 0
+piece gallery_wall_light_1 17.74 3.1 9.5 0.1 0.2 1.25 emissive 0.92 0.94 0.9 0 0 0 0 0 0 1 "" 0 0
+light gallery_worklight_1 17.52 3.1 9.5 1 .97 .92 12 .85 1 -1 0 0 .2 0 .12 0
+piece inspection_bridge 0 5.94 8.16 24.8 0.12 2.8 cyber_catwalk_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_0 -10.91125 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_0 -10.91125 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_1 -7.79375 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_1 -7.79375 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_2 -4.6762500000000005 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_2 -4.6762500000000005 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_3 -1.5587499999999999 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_3 -1.5587499999999999 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_4 1.5587499999999999 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_4 1.5587499999999999 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_5 4.676250000000001 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_5 4.676250000000001 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_6 7.793750000000001 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_6 7.793750000000001 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_top_7 10.91125 7.08 6.83 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_mid_7 10.91125 6.5600000000000005 6.83 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_1 -9.352500000000001 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_2 -6.235 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_3 -3.1174999999999997 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_4 0.0 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_5 3.1174999999999997 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_6 6.235000000000001 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_-1_post_7 9.352500000000001 6.57 6.83 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_stringer_-1 0 5.68 6.8500000000000005 24.8 0.4 0.18 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_0 -10.91125 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_0 -10.91125 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_1 -7.79375 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_1 -7.79375 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_2 -4.6762500000000005 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_2 -4.6762500000000005 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_3 -1.5587499999999999 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_3 -1.5587499999999999 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_4 1.5587499999999999 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_4 1.5587499999999999 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_5 4.676250000000001 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_5 4.676250000000001 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_6 7.793750000000001 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_6 7.793750000000001 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_top_7 10.91125 7.08 9.49 2.9775 0.12 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_mid_7 10.91125 6.5600000000000005 9.49 2.9775 0.09 0.14 machinery 0.88 0.88 0.88 1 0 0 0.0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_1 -9.352500000000001 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_2 -6.235 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_3 -3.1174999999999997 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_4 0.0 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_5 3.1174999999999997 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_6 6.235000000000001 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_rail_1_post_7 9.352500000000001 6.57 9.49 0.14 1.14 0.14 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece gallery_bridge_stringer_1 0 5.68 9.47 24.8 0.4 0.18 machinery 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+prop_instance gallery_process_-1 "assets/props/facility/cyber_industrial/pump_skid.s3dprop" -7.3 0 -7 1.65 1.375 1.02 1 -25 "prop" 1 0
+prop_instance gallery_support_-1 "assets/props/facility/cyber_industrial/cable_reel.s3dprop" -9.7 0 -7.2 1.16 1.14 0.96 1 -10 "prop" 1 0
+prop_instance gallery_process_1 "assets/props/facility/cyber_industrial/pump_skid.s3dprop" 7.3 0 -7 1.65 1.375 1.02 1 25 "prop" 1 0
+prop_instance gallery_support_1 "assets/props/facility/cyber_industrial/cable_reel.s3dprop" 9.7 0 -7.2 1.16 1.14 0.96 1 10 "prop" 1 0

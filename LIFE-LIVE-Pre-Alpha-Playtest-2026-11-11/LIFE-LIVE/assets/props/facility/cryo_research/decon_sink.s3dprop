@@ -1,0 +1,17 @@
+# editable facility prop; front is -Z, origin is floor-centred.
+s3droom 4
+id cryo_research_decon_sink
+authoring 1 0
+ambience "" 0
+bounds -0.755 0 -0.47 0.755 1.59 0.47
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 facility,editable
+rules 0 "" "" "" ""
+piece pedestal 0 0.48 0.04 1.28 0.96 0.74 prop_facility_details_1 0.88 0.95 0.98 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/85f5358a1d4f9c42.obj" 0 0
+piece counter_side_-0.62 -0.62 1.01 0 0.27 0.1 0.94 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/0924e02fc4fb3ef5.obj" 0 0
+piece counter_side_0.62 0.62 1.01 0 0.27 0.1 0.94 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/0924e02fc4fb3ef5.obj" 0 0
+piece counter_end_-0.395 0 1.01 -0.395 0.97 0.1 0.15 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/ecb54a41ae5a493c.obj" 0 0
+piece counter_end_0.395 0 1.01 0.395 0.97 0.1 0.15 prop_facility_details_1 0.94 0.94 0.94 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/ecb54a41ae5a493c.obj" 0 0
+piece basin_floor 0 0.97 0 0.96 0.02 0.63 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/0931c455359e299c.obj" 0 0
+piece tap_riser 0.44 1.24 0.27 0.06 0.36 0.06 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/8f0191fa54e5a59b.obj" 0 0
+piece tap_spout 0.44 1.4 0.13 0.06 0.33 0.06 prop_facility_details_1 0.74 0.76 0.75 1 90 0 0 0 0 1 "assets/models/props/facility_expansion/9e7df8918e7f3ea7.obj" 0 0
+piece splashback 0 1.32 0.43 1.48 0.54 0.045 prop_facility_details_1 0.74 0.76 0.75 1 0 0 0 0 0 1 "assets/models/props/facility_expansion/c8aed9fcffee6872.obj" 0 0

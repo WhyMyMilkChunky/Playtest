@@ -1,0 +1,69 @@
+# dispatch desks face the staff aisles; records and waiting space have their own corners.
+s3droom 4
+id auth_cyber_dispatch_suite
+authoring 0 0
+ambience "" 0.3
+bounds -16 0 -14 16 8 14
+metadata 1 0 7 0 0 0 1.8 0 99 1 4 1 1 0 authored,purposeful,encounter,half_turn
+rules 4.5 "cyber_security_floor" "cyber_security_wall" "cyber_security_ceiling" "panel"
+piece floor 0 -0.2 0 32 0.4 28 cyber_security_floor 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece ceiling 0 8.2 0 32 0.4 28 cyber_security_ceiling 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+piece portal_wall_1 -16 4 0 0.45 8 28 cyber_security_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_1 1 0 -16 0 0 8 5.5
+piece portal_wall_2 16 4 0 0.45 8 28 cyber_security_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_2 2 0 16 0 0 8 5.5
+piece portal_wall_3 0 4 -14 32 8 0.45 cyber_security_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_3 3 0 0 0 -14 8 5.5
+piece portal_wall_4 0 4 14 32 8 0.45 cyber_security_wall 0.88 0.88 0.88 1 0 0 0 0 0 1 "" 0 0
+connection approach_4 4 0 0 0 14 8 5.5
+safe_zone cart_route_ns 0 1.8 0 8.4 3.4 24
+safe_zone cart_route_ew 0 1.8 0 28 3.4 8.4
+safe_zone approach_west -14.7 1.8 0 2.2 3.4 7.6
+safe_zone approach_east 14.7 1.8 0 2.2 3.4 7.6
+safe_zone approach_north 0 1.8 -12.7 7.6 3.4 2.2
+safe_zone approach_south 0 1.8 12.7 7.6 3.4 2.2
+piece aisle_edge_ns_-1_-1 -4.25 0.012 -9.2 0.125 0.024 8.4 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece aisle_edge_ew_-1_-1 -10.1 0.012 -4.25 11.3 0.024 0.125 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_bezel_-1_-1 -15.66 4.1 -7.2 0.2 0.28 1.55 panel 0.58 0.6 0.59 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_face_-1_-1 -15.540000000000001 4.1 -7.2 0.045 0.12 1.25 emissive 0.94 0.97 1 0 0 0 0 0 0 1 "" 0 0
+light bay_light_-1_-1 -15.44 4 -7.2 0.94 0.97 1 23 1.35 1 1 -.25 0 .45 1 .3 0
+piece aisle_edge_ns_-1_1 -4.25 0.012 9.2 0.125 0.024 8.4 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece aisle_edge_ew_-1_1 10.1 0.012 -4.25 11.3 0.024 0.125 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_bezel_-1_1 -15.66 4.1 7.2 0.2 0.28 1.55 panel 0.58 0.6 0.59 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_face_-1_1 -15.540000000000001 4.1 7.2 0.045 0.12 1.25 emissive 0.94 0.97 1 0 0 0 0 0 0 1 "" 0 0
+light bay_light_-1_1 -15.44 4 7.2 0.94 0.97 1 23 1.35 1 1 -.25 0 .45 1 .3 0
+piece aisle_edge_ns_1_-1 4.25 0.012 -9.2 0.125 0.024 8.4 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece aisle_edge_ew_1_-1 -10.1 0.012 4.25 11.3 0.024 0.125 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_bezel_1_-1 15.66 4.1 -7.2 0.2 0.28 1.55 panel 0.58 0.6 0.59 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_face_1_-1 15.540000000000001 4.1 -7.2 0.045 0.12 1.25 emissive 0.94 0.97 1 0 0 0 0 0 0 1 "" 0 0
+light bay_light_1_-1 15.44 4 -7.2 0.94 0.97 1 23 1.35 1 -1 -.25 0 .45 1 .3 0
+piece aisle_edge_ns_1_1 4.25 0.012 9.2 0.125 0.024 8.4 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece aisle_edge_ew_1_1 10.1 0.012 4.25 11.3 0.024 0.125 panel 0.54 0.57 0.55 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_bezel_1_1 15.66 4.1 7.2 0.2 0.28 1.55 panel 0.58 0.6 0.59 0 0 0 0 0 0 1 "" 0 0
+piece wall_lamp_face_1_1 15.540000000000001 4.1 7.2 0.045 0.12 1.25 emissive 0.94 0.97 1 0 0 0 0 0 0 1 "" 0 0
+light bay_light_1_1 15.44 4 7.2 0.94 0.97 1 23 1.35 1 -1 -.25 0 .45 1 .3 0
+prop_instance dispatch_left_desk "assets/props/facility/cyber_industrial/desk.s3dprop" -8 0 -7 1.82 0.819 1.04 1 180 "prop" 1 0
+prop_instance dispatch_left_screen "assets/props/facility/cyber_industrial/computer.s3dprop" -8 0.829 -7.04 0.9 0.7875 0.9 1 180 "prop" 1 0
+prop_instance dispatch_left_chair "assets/props/facility/cyber_industrial/chair.s3dprop" -7.92 0 -5.85 0.75 1.1625 0.75 1 0.0 "prop" 1 0
+prop_instance dispatch_right_desk "assets/props/facility/cyber_industrial/desk.s3dprop" 8 0 -7 1.82 0.819 1.04 1 180 "prop" 1 0
+prop_instance dispatch_right_screen "assets/props/facility/cyber_industrial/computer.s3dprop" 8 0.829 -7.04 0.9 0.7875 0.9 1 180 "prop" 1 0
+prop_instance dispatch_right_chair "assets/props/facility/cyber_industrial/chair.s3dprop" 8.08 0 -5.85 0.75 1.1625 0.75 1 0.0 "prop" 1 0
+prop_instance secure_records_right "assets/props/facility/cyber_industrial/filing_cabinet.s3dprop" -6.8 0 10.7 0.975 1.885 0.715 1 0 "prop" 1 0
+prop_instance records_station_desk "assets/props/facility/cyber_industrial/desk.s3dprop" -8 0 6.8 1.82 0.819 1.04 1 0 "prop" 1 0
+prop_instance records_station_screen "assets/props/facility/cyber_industrial/computer.s3dprop" -8 0.829 6.84 0.9 0.7875 0.9 1 0 "prop" 1 0
+prop_instance records_station_chair "assets/props/facility/cyber_industrial/chair.s3dprop" -7.92 0 5.65 0.75 1.1625 0.75 1 180.0 "prop" 1 0
+prop_instance staff_waiting "assets/props/facility/cyber_industrial/bench.s3dprop" 8.5 0 9.6 2.4 0.9375 0.75 1 0 "prop" 1 0
+prop_instance shift_records "assets/props/facility/cyber_industrial/filing_cabinet.s3dprop" 12.8 0 -8 0.975 1.885 0.715 1 180 "prop" 1 0
+piece records_boundary_east -5.2 0.7 9 0.22 1.4 5.2 panel 0.66 0.69 0.67 1 0 0 0 0 0 1 "" 0 0
+piece records_boundary_north -11 0.7 5 3 1.4 0.22 panel 0.66 0.69 0.67 1 0 0 0 0 0 1 "" 0 0
+piece reception_counter_top 9 1.11 5.6 5.4 0.14 0.85 prop_workbench_top 0.84 0.86 0.82 1 0 0 0 0 0 1 "" 0 0
+piece reception_counter_left 7.15 0.52 5.6 1.4 1.04 0.74 prop_service_cabinet 0.72 0.75 0.71 1 0 0 0 0 0 1 "" 0 0
+piece reception_counter_right 10.85 0.52 5.6 1.4 1.04 0.74 prop_service_cabinet 0.72 0.75 0.71 1 0 0 0 0 0 1 "" 0 0
+prop_instance dispatch_aux_left_chair "assets/props/facility/cyber_industrial/chair.s3dprop" -9.92 0 -5.85 0.75 1.1625 0.75 1 0.0 "prop" 1 0
+prop_instance dispatch_aux_right_desk "assets/props/facility/cyber_industrial/desk.s3dprop" 10 0 -7 1.82 0.819 1.04 1 180 "prop" 1 0
+prop_instance dispatch_aux_right_screen "assets/props/facility/cyber_industrial/computer.s3dprop" 10 0.829 -7.04 0.9 0.7875 0.9 1 180 "prop" 1 0
+prop_instance dispatch_aux_right_chair "assets/props/facility/cyber_industrial/chair.s3dprop" 10.08 0 -5.85 0.75 1.1625 0.75 1 0.0 "prop" 1 0
+prop_instance dispatch_comms "assets/props/facility/cyber_industrial/comms_console.s3dprop" -10 0 -7 1.8 1.67 0.895 1 180 "prop" 1 0
+prop_instance secure_tape_library "assets/props/facility/cyber_industrial/tape_library.s3dprop" -10.5 0 10.9 1.45 1.94 0.801 1 0 "prop" 1 0
+prop_instance drawing_archive "assets/props/facility/cyber_industrial/plan_cabinet.s3dprop" -12.8 0 10.9 1.8 1.24 0.99 1 0 "prop" 1 0
+prop_instance staff_water "assets/props/facility/cyber_industrial/water_station.s3dprop" 12.1 0 9.6 0.72 1.82 0.84 1 0 "prop" 1 0

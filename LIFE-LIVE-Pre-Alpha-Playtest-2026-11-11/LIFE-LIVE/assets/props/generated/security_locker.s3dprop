@@ -1,0 +1,16 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop security_locker
+draft 0
+id security_locker
+authoring 1 0
+bounds -0.72 -0.02 -0.42 0.72 2.52 0.5425
+piece body 0 1.25 0 1.4 2.5 0.8 prop_service_cabinet 1 1 1 1 0 0 0 0 0 1 "" 0 0
+piece plinth 0 0.07 0 1.42 0.14 0.82 prop_foundry_press 0.6 0.6 0.6 0 0 0 0 0 0 1 "" 0 0
+piece cap 0 2.44 0 1.42 0.14 0.82 prop_foundry_press 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece hinge_0.65 -0.65 0.65 0.43 0.075 0.22 0.075 prop_stainless_fittings 0.45 0.45 0.45 0 0 0 0 0 0 1 "" 0 0
+piece hinge_1.85 -0.65 1.85 0.43 0.075 0.22 0.075 prop_stainless_fittings 0.45 0.45 0.45 0 0 0 0 0 0 1 "" 0 0
+piece latch_recess 0.45 1.25 0.435 0.16 0.35 0.075 prop_workbench_top 0.6 0.6 0.6 0 0 0 0 0 0 1 "" 0 0
+piece handle 0.45 1.25 0.5 0.055 0.25 0.065 prop_stainless_fittings 0.65 0.65 0.65 0 0 0 0 0 0 1 "" 0 0
+piece breather 0 2.2 0.435 1.1 0.12 0.075 prop_cable_harness 0.5 0.5 0.5 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 1.25 0 1.4 2.5 0.8 locker 1 1 1 1 0 0 0 0 0 1 "" 0 0

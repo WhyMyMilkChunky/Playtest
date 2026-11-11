@@ -1,0 +1,198 @@
+# S3D procedural dungeon theme
+# Rooms, halls, props, materials, and lighting can be extended without changing C++.
+theme cyber_industrial Cyber Industrial Complex
+materials floor wall ceiling panel cyber_door_security cyber_door_security emissive
+architecture industrial
+detail_materials cyber_catwalk_floor cyber_stair_floor cyber_structure
+environment 0.018 0.026 0.045 0.045 0.070 0.100 0.220 0.820 1.000 1.000 0.240 0.560
+
+# room id role min_width min_depth max_width max_depth height weight cover main side dead_end vertical tags
+room entry_checkpoint entry 20 20 28 28 7.0 1.0 none 1 0 0 0 security,main
+room combat_standard combat 24 24 34 34 8.0 4.0 alternating 1 1 0 0 combat
+room combat_crossfire combat 26 22 38 32 9.0 2.8 heavy 1 1 0 0 combat,crossfire
+room combat_perimeter combat 28 24 40 36 10.0 2.2 perimeter 1 1 0 0 combat,flanking
+room combat_arena arena 32 32 46 46 18.0 1.8 heavy 1 1 0 1 combat,large,vertical
+room arena_overlook arena 34 30 46 42 18.0 1.4 alternating 1 1 0 1 combat,large,vertical,overlook
+room machine_chamber chamber 28 26 42 40 18.0 1.3 machine 1 1 0 1 large,utility
+room assembly_chamber chamber 30 28 44 40 18.0 1.2 structural 1 1 0 1 large,vertical,assembly
+room routing_room puzzle 22 22 30 30 8.0 1.2 puzzle 0 1 1 0 puzzle,power
+room routing_relay puzzle 24 20 34 28 9.0 1.0 puzzle 0 1 1 0 puzzle,research
+room secure_storage loot 20 20 28 28 7.0 1.4 perimeter 0 1 1 0 loot,storage
+room storage_loading loot 24 20 34 30 8.0 1.1 perimeter 0 1 1 0 loot,storage,loading
+room service_transition transition 20 20 28 30 9.0 1.5 sparse 1 1 0 0 service
+room transit_junction transition 24 22 34 34 9.0 1.3 sparse 1 1 0 0 transit,junction
+room hidden_cache secret 16 16 22 22 7.0 0.8 perimeter 0 1 1 0 secret,loot
+room boss_reactor boss 38 36 50 48 14.0 1.0 structural 1 0 1 1 boss,large
+room utility_power utility 22 22 30 30 8.0 1.5 machine 0 1 0 0 utility,power
+room utility_maintenance utility 20 18 30 26 8.0 1.4 sparse 0 1 0 0 utility,maintenance
+
+# room_style room_id silhouette facility_zone vertical_profile lighting_profile min_entrances max_entrances entrance_safe_depth
+room_style entry_checkpoint checkpoint security flat security 1 2 5.0
+room_style combat_standard stepped production flat cool 2 4 4.5
+room_style combat_crossfire split production flat warning 2 4 5.0
+room_style combat_perimeter rectangular transit sunken cool 2 4 5.0
+room_style combat_arena atrium transit multi warning 2 4 5.0
+room_style arena_overlook stepped production multi warning 2 4 5.5
+room_style machine_chamber split power catwalk cool 2 4 4.5
+room_style assembly_chamber atrium power catwalk cool 2 4 5.0
+room_style routing_room split power raised low_power 1 3 4.5
+room_style routing_relay checkpoint research raised low_power 1 3 4.5
+room_style secure_storage rectangular storage flat service 1 2 4.0
+room_style storage_loading stepped storage flat service 1 2 4.5
+room_style service_transition stepped transit raised service 1 4 4.0
+room_style transit_junction checkpoint transit flat security 2 4 5.0
+room_style hidden_cache rectangular maintenance flat low_power 1 1 3.5
+room_style boss_reactor reactor command raised reactor 1 3 6.0
+room_style utility_power split maintenance raised warning 1 3 4.5
+room_style utility_maintenance rectangular maintenance flat low_power 1 3 4.0
+
+
+# room_socket room_id side normalized_wall_offset maximum_width maximum_height
+# Sides are west/east/north/south. Offsets are a fraction of that wall's half-length.
+room_socket entry_checkpoint east 0.00 10.0 6.5
+room_socket entry_checkpoint south 0.00 10.0 6.5
+room_socket combat_standard west 0.00 12.0 7.5
+room_socket combat_standard east 0.00 12.0 7.5
+room_socket combat_standard north 0.00 12.0 7.5
+room_socket combat_standard south 0.00 12.0 7.5
+room_socket combat_crossfire west 0.00 10.0 8.0
+room_socket combat_crossfire east 0.00 10.0 8.0
+room_socket combat_crossfire north 0.00 10.0 8.0
+room_socket combat_crossfire south 0.00 10.0 8.0
+room_socket combat_perimeter west 0.00 10.0 8.0
+room_socket combat_perimeter east 0.00 10.0 8.0
+room_socket combat_perimeter north 0.00 10.0 8.0
+room_socket combat_perimeter south 0.00 10.0 8.0
+room_socket combat_arena west 0.00 12.0 8.0
+room_socket combat_arena east 0.00 12.0 8.0
+room_socket combat_arena north 0.00 12.0 8.0
+room_socket combat_arena south 0.00 12.0 8.0
+room_socket arena_overlook west 0.00 12.0 8.0
+room_socket arena_overlook east 0.00 12.0 8.0
+room_socket arena_overlook north 0.00 12.0 8.0
+room_socket arena_overlook south 0.00 12.0 8.0
+room_socket machine_chamber west 0.00 12.0 8.0
+room_socket machine_chamber east 0.00 12.0 8.0
+room_socket machine_chamber north 0.00 12.0 8.0
+room_socket machine_chamber south 0.00 12.0 8.0
+room_socket assembly_chamber west 0.00 12.0 8.0
+room_socket assembly_chamber east 0.00 12.0 8.0
+room_socket assembly_chamber north 0.00 12.0 8.0
+room_socket assembly_chamber south 0.00 12.0 8.0
+room_socket routing_room west 0.00 8.0 7.0
+room_socket routing_room east 0.00 8.0 7.0
+room_socket routing_room north 0.00 8.0 7.0
+room_socket routing_relay west 0.00 8.0 7.0
+room_socket routing_relay east 0.00 8.0 7.0
+room_socket routing_relay north 0.00 8.0 7.0
+room_socket secure_storage west 0.00 8.0 6.5
+room_socket secure_storage east 0.00 8.0 6.5
+room_socket storage_loading west 0.00 8.0 7.0
+room_socket storage_loading east 0.00 8.0 7.0
+room_socket service_transition west 0.00 10.0 8.0
+room_socket service_transition east 0.00 10.0 8.0
+room_socket service_transition north 0.00 10.0 8.0
+room_socket service_transition south 0.00 10.0 8.0
+room_socket transit_junction west 0.00 10.0 8.0
+room_socket transit_junction east 0.00 10.0 8.0
+room_socket transit_junction north 0.00 10.0 8.0
+room_socket transit_junction south 0.00 10.0 8.0
+room_socket hidden_cache north 0.00 6.0 6.0
+room_socket boss_reactor west 0.00 12.0 9.0
+room_socket boss_reactor east 0.00 12.0 9.0
+room_socket boss_reactor north 0.00 12.0 9.0
+room_socket utility_power west 0.00 8.0 7.0
+room_socket utility_power east 0.00 8.0 7.0
+room_socket utility_power north 0.00 8.0 7.0
+room_socket utility_maintenance west 0.00 8.0 7.0
+room_socket utility_maintenance east 0.00 8.0 7.0
+room_socket utility_maintenance north 0.00 8.0 7.0
+
+# hall id shape width height weight combat_capable allows_elevation
+hall industrial_l l_shaped 7.0 5.5 3.0 1 1
+hall security_boulevard wide 10.0 6.5 1.0 1 1
+hall service_corridor service 5.5 5.0 1.8 0 0
+hall segmented_transfer segmented 8.0 6.0 1.4 1 1
+hall industrial_passage industrial 12.0 7.5 0.8 1 1
+hall freight_lift lift 7.0 7.0 1.0 0 1
+
+# hall_style hall_id cover_profile junction_capable support_spacing
+hall_style industrial_l sparse 0 8.0
+hall_style security_boulevard alternating 1 7.0
+hall_style service_corridor none 0 5.0
+hall_style segmented_transfer sparse 1 7.0
+hall_style industrial_passage alternating 1 8.0
+hall_style freight_lift none 0 6.0
+
+# Believable facility circulation rules used when assigning destinations.
+adjacency security transit 2.5
+adjacency transit production 2.2
+adjacency production maintenance 1.8
+adjacency production storage 2.0
+adjacency maintenance power 2.4
+adjacency power research 1.8
+adjacency research command 2.2
+
+# prop id category material min_size_xyz max_size_xyz weight cover_value solid
+prop cover_crate cover crate 1.5 1.1 1.5 2.4 1.5 2.4 3.0 0.8 1
+prop low_barrier cover crate 2.4 0.8 0.8 3.6 1.2 1.2 1.4 0.6 1
+prop security_locker floor locker 1.2 2.2 0.7 1.6 2.8 0.9 1.2 0.1 1
+prop floor_console floor machinery 1.4 1.0 0.7 2.4 1.5 1.0 1.6 0.2 1
+prop pipe_bank wall pipes 2.5 1.5 0.4 4.0 2.4 0.6 1.5 0.0 0
+prop wall_duct wall pipes 2.0 1.0 0.3 5.0 1.8 0.5 1.1 0.0 0
+prop machine_block structural machinery 2.0 2.0 2.0 4.0 3.5 4.0 1.8 1.0 1
+prop support_column structural machinery 0.8 3.0 0.8 1.2 5.0 1.2 1.3 0.8 1
+# Extra reusable area layouts. Textures express room purpose within every theme.
+room service_workshop utility 22 18 32 26 8.0 1.5 sparse 0 1 0 0 utility,maintenance,workshop
+room process_gallery combat 26 20 38 28 10.0 1.8 alternating 1 1 0 0 combat,production,gallery
+room freight_staging loot 22 20 34 30 8.0 1.2 perimeter 0 1 1 0 loot,storage,staging
+room containment_annex puzzle 24 22 34 30 9.0 1.1 puzzle 0 1 1 0 puzzle,research,annex
+room_style service_workshop rectangular maintenance raised service 1 3 4.5
+room_style process_gallery stepped production flat cool 2 4 5.0
+room_style freight_staging split storage flat service 1 2 4.5
+room_style containment_annex checkpoint research raised low_power 1 3 4.5
+room_socket service_workshop west 0.00 8.0 7.0
+room_socket service_workshop east 0.00 8.0 7.0
+room_socket service_workshop north 0.00 8.0 7.0
+room_socket process_gallery west 0.00 10.0 8.0
+room_socket process_gallery east 0.00 10.0 8.0
+room_socket process_gallery north 0.00 10.0 8.0
+room_socket process_gallery south 0.00 10.0 8.0
+room_socket freight_staging west 0.00 8.0 7.0
+room_socket freight_staging east 0.00 8.0 7.0
+room_socket containment_annex west 0.00 8.0 7.0
+room_socket containment_annex east 0.00 8.0 7.0
+room_socket containment_annex north 0.00 8.0 7.0
+
+# Room-purpose palettes: floor, wall, ceiling, service panel.
+room_materials entry_checkpoint cyber_security_floor cyber_security_wall cyber_security_ceiling panel
+room_materials combat_standard cyber_production_floor cyber_production_wall cyber_production_ceiling panel
+room_materials combat_crossfire cyber_security_floor cyber_security_wall cyber_security_ceiling panel
+room_materials combat_perimeter cyber_transit_floor cyber_transit_wall cyber_transit_ceiling panel
+room_materials combat_arena cyber_production_floor cyber_production_wall cyber_production_ceiling panel
+room_materials arena_overlook cyber_security_floor cyber_security_wall cyber_security_ceiling panel
+room_materials machine_chamber cyber_power_floor cyber_power_wall cyber_power_ceiling panel
+room_materials assembly_chamber cyber_production_floor cyber_production_wall cyber_service_ceiling panel
+room_materials routing_room cyber_power_floor cyber_power_wall cyber_power_ceiling panel
+room_materials routing_relay cyber_security_floor cyber_security_wall cyber_security_ceiling panel
+room_materials secure_storage cyber_storage_floor cyber_storage_wall cyber_storage_ceiling panel
+room_materials storage_loading cyber_storage_floor cyber_service_wall cyber_storage_ceiling panel
+room_materials service_transition cyber_transit_floor cyber_transit_wall cyber_transit_ceiling panel
+room_materials transit_junction cyber_transit_floor cyber_security_wall cyber_transit_ceiling panel
+room_materials hidden_cache cyber_service_floor cyber_service_wall cyber_service_ceiling panel
+room_materials boss_reactor cyber_power_floor cyber_security_wall cyber_power_ceiling panel
+room_materials utility_power cyber_power_floor cyber_power_wall cyber_power_ceiling panel
+room_materials utility_maintenance cyber_service_floor cyber_service_wall cyber_service_ceiling panel
+
+# Corridors keep a coherent palette for their entire route, including elbows.
+hall_materials industrial_l cyber_transit_floor cyber_production_wall cyber_transit_ceiling cyber_structure
+hall_materials security_boulevard cyber_security_floor cyber_security_wall cyber_security_ceiling cyber_structure
+hall_materials service_corridor cyber_service_floor cyber_service_wall cyber_service_ceiling cyber_structure
+hall_materials segmented_transfer cyber_transit_floor cyber_transit_wall cyber_transit_ceiling cyber_structure
+hall_materials industrial_passage cyber_production_floor cyber_production_wall cyber_production_ceiling cyber_structure
+hall_materials freight_lift cyber_transit_floor cyber_transit_wall cyber_transit_ceiling cyber_structure
+
+room_materials service_workshop cyber_service_floor cyber_service_wall cyber_service_ceiling panel
+room_materials process_gallery cyber_production_floor cyber_production_wall cyber_transit_ceiling panel
+room_materials freight_staging cyber_storage_floor cyber_storage_wall cyber_service_ceiling panel
+room_materials containment_annex cyber_security_floor cyber_production_wall cyber_power_ceiling panel

@@ -1,0 +1,21 @@
+# Auxiliary control console; instruments and CRT, without disk readers.
+s3droom 4
+id control_console_3
+authoring 1 0
+ambience "" 0
+bounds -1.55 0 -.60 1.55 1.70 .60
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 command_console
+rules 0 "" "" "" ""
+piece plinth 0 0.06 0 3.02 0.12 0.94 prop_workshop_atlas 0.45 0.47 0.46 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_76f50c088c52a476.obj" 0 0
+piece cabinet 0 0.53 0 2.9 0.82 0.88 prop_workshop_atlas 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_74e1abc13aa1591c.obj" 0 0
+piece worktop 0 1 0 3.04 0.12 1.04 prop_control_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_4db76567f0d7e273.obj" 0 0
+piece deck_0 -0.97 1.14 0.015 0.64 0.06 0.76 prop_control_details 0.96 0.96 0.94 1 15 0 0 0 0 1 "assets/models/props/texel_uv/prop_3f3617b33919c6c1.obj" 0 0
+piece instrument_bank_0 -0.97 1.36 -0.34 0.64 0.38 0.3 prop_furniture_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_a964459b9c644623.obj" 0 0
+piece drawer_0 -0.97 0.55 0.451 0.63 0.64 0.035 prop_furniture_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_ef7b6ed31da4a360.obj" 0 0
+piece deck_1 -0.25 1.14 0.015 0.64 0.06 0.76 prop_control_details 0.96 0.96 0.94 1 15 0 0 0 0 1 "assets/models/props/texel_uv/prop_3f3617b33919c6c1.obj" 0 0
+piece instrument_bank_1 -0.25 1.36 -0.34 0.64 0.38 0.3 prop_furniture_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_a964459b9c644623.obj" 0 0
+piece drawer_1 -0.25 0.55 0.451 0.63 0.64 0.035 prop_furniture_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_ef7b6ed31da4a360.obj" 0 0
+piece deck_2 0.47 1.14 0.015 0.64 0.06 0.76 prop_control_details 0.96 0.96 0.94 1 15 0 0 0 0 1 "assets/models/props/texel_uv/prop_3f3617b33919c6c1.obj" 0 0
+piece instrument_bank_2 0.47 1.36 -0.34 0.64 0.38 0.3 prop_furniture_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_a964459b9c644623.obj" 0 0
+piece drawer_2 0.47 0.55 0.451 0.63 0.64 0.035 prop_furniture_details 0.88 0.88 0.88 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_ef7b6ed31da4a360.obj" 0 0
+piece status_housing 1.12 1.39 -0.31 0.56 0.44 0.3 prop_office_atlas 0.96 0.96 0.93 1 0 0 0 0 0 1 "assets/models/props/texel_uv/prop_5a3da52197477631.obj" 0 0

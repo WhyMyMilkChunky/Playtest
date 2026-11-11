@@ -1,0 +1,19 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop foundry_gantry_carriage
+draft 0
+id foundry_gantry_carriage
+authoring 1 0
+bounds -1.03 -2.733289 -0.57 1.03 -0.54 0.57
+piece bogie 0 -0.67 0 2.02 0.22 0.42 prop_foundry_press 0.64 0.64 0.64 0 0 0 0 0 0 1 "" 0 0
+piece trolley 0 -0.95 0 1.8 0.42 1.1 prop_foundry_press 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+piece drop 0 -1.65 0 0.12 0.98 0.12 prop_stainless_fittings 0.52 0.52 0.52 0 0 0 0 0 0 1 "" 0 0
+piece lifting_block 0 -2.17 0 0.52 0.24 0.36 prop_foundry_press 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+piece hook_stem -0.12 -2.46 0 0.11 0.34 0.16 foundry_structure 0.55 0.55 0.55 0 0 0 0 0 0 1 "" 0 0
+piece hook_jaw 0.025 -2.6 0 0.31 0.11 0.16 foundry_structure 0.55 0.55 0.55 0 0 0 24 0 0 1 "" 0 0
+source_piece bogie 0 -0.67 0 2.02 0.22 0.42 foundry_structure 0.64 0.64 0.64 0 0 0 0 0 0 1 "" 0 0
+source_piece trolley 0 -0.95 0 1.8 0.42 1.1 foundry_structure 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+source_piece drop 0 -1.65 0 0.12 0.98 0.12 foundry_structure 0.52 0.52 0.52 0 0 0 0 0 0 1 "" 0 0
+source_piece lifting_block 0 -2.17 0 0.52 0.24 0.36 foundry_structure 0.76 0.76 0.76 0 0 0 0 0 0 1 "" 0 0
+source_piece hook_stem -0.12 -2.46 0 0.11 0.34 0.16 foundry_structure 0.55 0.55 0.55 0 0 0 0 0 0 1 "" 0 0
+source_piece hook_jaw 0.025 -2.6 0 0.31 0.11 0.16 foundry_structure 0.55 0.55 0.55 0 0 0 24 0 0 1 "" 0 0

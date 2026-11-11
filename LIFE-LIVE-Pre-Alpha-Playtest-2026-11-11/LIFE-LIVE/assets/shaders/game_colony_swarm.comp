@@ -1,0 +1,225 @@
+#version 460 core
+#include "include/game_colony_frame.glsl"
+
+layout(local_size_x = 64) in;
+const float COLONY_DEATH_SECONDS = 1.8;
+S3D_RESOURCE(0, 1) layout(std430) writeonly buffer ColonyOutput { ColonyPose outputPoses[]; };
+S3D_RESOURCE(0, 2) layout(std430) readonly buffer ColonySeeds { vec4 seeds[]; };
+S3D_RESOURCE(0, 3) layout(std430) readonly buffer ColonyLoose { ColonyPose loosePoses[]; };
+S3D_RESOURCE(0, 4) layout(std430) readonly buffer ColonySupport { uint supportCells[]; };
+
+float Hash(float p) { return fract(sin(p * 127.1 + 311.7) * 43758.5453); }
+float Curl(float seed) { return sin(eyeTime.w * .47 + seed) * .65 + sin(eyeTime.w * .83 + seed * .31) * .25; }
+vec3 SafeDirection(vec3 p, vec3 fallback) { return dot(p, p) > .0000001 ? normalize(p) : fallback; }
+vec3 RotateY(vec3 p, float angle)
+{
+	float c = cos(angle), s = sin(angle);
+	return vec3(c * p.x + s * p.z, p.y, -s * p.x + c * p.z);
+}
+
+uint Support(vec3 p)
+{
+	ivec3 cell = ivec3(floor((p - vec3(-.84, -.07, -.63)) / .07));
+	if (any(lessThan(cell, ivec3(0))) || any(greaterThanEqual(cell, ivec3(24, 34, 18)))) return 0u;
+	int index = (cell.y * 18 + cell.z) * 24 + cell.x;
+	return (supportCells[index / 4] >> uint((index % 4) * 8)) & 255u;
+}
+
+struct ColonyPath
+{
+	vec3 center, axis, right, across;
+	vec4 seed;
+	float halfLength, radius, turnRate, angularSpeed, stray;
+};
+
+ColonyPath BuildColonyPath(vec4 seed, vec3 first, vec3 last, float radius)
+{
+	ColonyPath path;
+	path.center = (first + last) * .5;
+	path.axis = normalize(last - first);
+	vec3 reference = abs(path.axis.z) < .9 ? vec3(0, 0, 1) : vec3(1, 0, 0);
+	path.right = normalize(cross(path.axis, reference));
+	path.across = cross(path.right, path.axis);
+	path.seed = seed;
+	path.halfLength = length(last - first) * .5;
+	path.radius = radius;
+	path.turnRate = mix(.045, .12, Hash(seed.y * 63.0));
+	path.angularSpeed = mix(.7, 1.9, Hash(seed.z * 91.0)) * (seed.y < .5 ? -1.0 : 1.0);
+	path.stray = smoothstep(.86, 1.0, Hash(seed.z * 123.0)) * .12;
+	return path;
+}
+
+vec3 FollowColonyPath(ColonyPath path, float time, out vec3 normal)
+{
+	vec4 seed = path.seed;
+	float turn = fract(seed.z + time * path.turnRate);
+	float along = -cos(turn * 6.2831853) * (path.halfLength + path.radius);
+	float height = clamp(along, -path.halfLength, path.halfLength), cap = along - height;
+	float ring = sqrt(max(path.radius * path.radius - cap * cap, .00001));
+	float angle = seed.y * 6.2831853 + time * path.angularSpeed +
+		sin(along * 9.0 + time * .7 + seed.z * 23.0) * .95 + sin(time * .8 + seed.y * 31.0) * .65;
+	vec3 radial = path.right * cos(angle) + path.across * sin(angle);
+	vec3 skin = path.axis * cap + radial * ring;
+	normal = SafeDirection(skin, radial);
+	float mound = .10 * sin(angle * 2.0 + along * 5.0 - time * .28 + seed.x * .74) +
+		.06 * sin(angle * 3.0 - along * 9.0 + time * .38);
+	float weave = sin(angle * 5.0 + along * 13.0 - time * 1.1) * .045;
+	float depth = seed.w < 0.0 ? -seed.w : seed.w + mound + path.stray + weave;
+	return path.center + path.axis * height + skin * depth;
+}
+
+vec3 CrawlPoint(vec4 seed, float time, vec3 first, vec3 last, float radius, out vec3 normal)
+{
+	return FollowColonyPath(BuildColonyPath(seed, first, last, radius), time, normal);
+}
+
+vec3 Climb(vec3 target, float progress, float side, float phase, int section)
+{
+	float angle = phase * 6.2831853;
+	vec3 foot = vec3(side * .18, .008, -.08);
+	vec3 start = foot + vec3(cos(angle), 0, sin(angle)) * mix(.25, .60, fract(phase * 7.1));
+	if (target.y < .28) return mix(start, target, progress);
+	bool arm = section >= 5 && section <= 8;
+	bool forearm = section == 6 || section == 8;
+	vec3 hip = vec3(side * .11, min(.94, target.y), -.14);
+	vec3 chest = vec3(0, arm ? 1.50 : min(1.50, target.y), -.23);
+	float armSide = target.x < 0.0 ? -1.0 : 1.0;
+	vec3 shoulder = vec3(armSide * .30, 1.64, -.08);
+	vec3 elbow = vec3(armSide * .49, 1.28, -.07);
+	vec3 p;
+	if (progress < .18) p = mix(start, foot, progress / .18);
+	else if (section >= 9 || (target.y < 1.05 && !arm)) p = mix(foot, target, (progress - .18) / .82);
+	else if (progress < .40) p = mix(foot, hip, (progress - .18) / .22);
+	else if (progress < .62) p = mix(hip, chest, (progress - .40) / .22);
+	else if (arm && progress < .78) p = mix(chest, shoulder, (progress - .62) / .16);
+	else if (forearm && progress < .90) p = mix(shoulder, elbow, (progress - .78) / .12);
+	else if (forearm) p = mix(elbow, target, (progress - .90) / .10);
+	else if (arm) p = mix(shoulder, target, (progress - .78) / .22);
+	else p = mix(chest, target, (progress - .62) / .38);
+	p.x += sin(progress * 17.0 + phase * 31.0) * sin(progress * 3.14159265) * .025;
+	return p;
+}
+
+#include "include/game_colony_spine.glsl"
+
+void main()
+{
+	uint index = gl_GlobalInvocationID.x, attached = uint(counts.w);
+	if (index >= attached + uint(counts.x)) return;
+	if (index >= attached)
+	{
+		ColonyPose loose = loosePoses[index - attached];
+		loose.parameters.z = loose.parameters.z > .5 ? clamp(loose.gait.w + Curl(loose.parameters.y) * .25, -1.5, 1.5) : 100.0;
+		loose.parameters.w = 1.0;
+		outputPoses[index] = loose;
+		return;
+	}
+	if (counts.y > .5 && motion.w >= COLONY_DEATH_SECONDS)
+	{
+		outputPoses[index] = ColonyPose(mat4(1), vec4(0, 0, 100, 1), vec4(0));
+		return;
+	}
+	vec4 seed = seeds[30u + index];
+	int section = int(seed.x);
+	float random = Hash(float(index) + 9.0), size = mix(.105, .165, Hash(float(index) + 71.0));
+	float poseTime = counts.y > .5 ? eyeTime.w - motion.w : eyeTime.w;
+	vec3 normal, nextNormal;
+	vec3 point = CrawlPoint(seed, poseTime, sectionFirst[section].xyz, sectionLast[section].xyz,
+		sectionFirst[section].w, normal);
+	vec3 next = CrawlPoint(seed, poseTime + .018, sectionFirst[section].xyz, sectionLast[section].xyz,
+		sectionFirst[section].w, nextNormal);
+	float surfaceSpeed = length(next - point) / .018;
+	// the rest anatomy gives a stable clock; multiplying absolute time by a bending limb's speed jumps phase.
+	float pathSpeed = length(seeds[section * 2 + 1].xyz - seeds[section * 2].xyz) * 2.0 *
+		mix(.045, .12, Hash(seed.y * 63.0)) + seeds[section * 2].w * mix(.7, 1.9, Hash(seed.z * 91.0));
+	float strideRate = clamp(pathSpeed / (size * .50), 1.4, 9.0);
+	vec4 anchorSeed = seed; anchorSeed.w = -.55;
+	vec3 anchorNormal;
+	vec3 anchor = CrawlPoint(anchorSeed, poseTime, seeds[section * 2].xyz, seeds[section * 2 + 1].xyz,
+		seeds[section * 2].w, anchorNormal);
+	uint cell = Support(anchor), kind = cell & 3u;
+	float nearest = 1e10;
+	for (int i = 0; i < COLONY_WOUND_COUNT; ++i)
+		if (holeFirst[i * 3].w > .001) nearest = min(nearest, ColonyHoleDistance(point, i));
+	bool visible = kind != 0u && nearest >= 0.0;
+	float worldSpace = 0.0;
+	float clinging = 1.0, spineFloor = .008;
+	if (kind == 2u)
+	{
+		float age = max(0.0, eyeTime.w - sectionLast[section].w);
+		if (sectionLast[section].w < 0.0 || age >= 1.35)
+		{
+			outputPoses[index] = ColonyPose(mat4(1), vec4(1, random * 100.0, 100, 1), vec4(0));
+			return;
+		}
+		visible = visible && age < 1.35;
+		point = CrawlPoint(seed, sectionLast[section].w, fallenFirst[section].xyz, fallenLast[section].xyz,
+			fallenFirst[section].w, normal);
+		normal = RotateY(normal, fallenOrigin[section].w);
+		point = RotateY(point, fallenOrigin[section].w) + fallenOrigin[section].xyz;
+		float direction = Hash(float(index) + 19.0) * 6.2831853;
+		vec3 velocity = vec3(cos(direction), .5, sin(direction)) * mix(.6, 1.7, random);
+		point += velocity * age; point.y -= age * age * 9.0;
+		float floor = fallenLast[section].w + .003;
+		if (point.y <= floor) { point.y = floor; normal = vec3(0, 1, 0); }
+		next = point + SafeDirection(velocity * vec3(1, 0, 1), vec3(0, 0, 1)) * .02;
+		size *= 1.0 - smoothstep(.75, 1.35, age);
+		worldSpace = 1.0;
+		clinging = 0.0;
+		spineFloor = floor;
+	}
+	else if (counts.y < .5)
+	{
+		float growing = kind == 3u ? float(cell >> 2u) / 63.0 : 1.0;
+		float armTravel = section >= 5 && section <= 8 ? .9 : 0.0;
+		float initial = clamp((motion.z * 4.5 - random * .45) /
+			(.65 + max(point.y, .1) + armTravel), 0.0, 1.0);
+		float progress = min(growing, initial);
+		clinging = smoothstep(.84, 1.0, progress);
+		if (progress < 1.0)
+		{
+			float side = seed.y < .5 ? -1.0 : 1.0;
+			next = Climb(next, min(1.0, progress + .008), side, seed.z, section);
+			point = Climb(point, progress, side, seed.z, section);
+			normal = progress < .19 ? vec3(0, 1, 0) : SafeDirection(mix(vec3(0, 0, -1), normal, smoothstep(.82, 1.0, progress)), vec3(0, 0, -1));
+		}
+	}
+	else
+	{
+		float age = max(0.0, motion.w);
+		clinging = 1.0 - smoothstep(0.0, .18, age);
+		float armTravel = section >= 5 && section <= 8 ? .9 : 0.0;
+		float initial = clamp((motion.z * 4.5 - random * .45) /
+			(.65 + max(point.y, .1) + armTravel), 0.0, 1.0);
+		float progress = min(kind == 3u ? float(cell >> 2u) / 63.0 : 1.0, initial);
+		if (progress < 1.0) point = Climb(point, progress, seed.y < .5 ? -1.0 : 1.0, seed.z, section);
+
+		// the existing swarm becomes the burst; no cpu readback or extra draw per bug.
+		float angle = Hash(float(index) + 217.0) * 6.2831853;
+		vec3 radial = SafeDirection(point * vec3(1, 0, 1), vec3(cos(angle), 0, sin(angle)));
+		vec3 velocity = SafeDirection(radial * .65 +
+			vec3(cos(angle), mix(-.25, 1.15, random), sin(angle)), vec3(0, 1, 0));
+		velocity *= mix(3.2, 7.8, Hash(float(index) + 43.0));
+		float spread = age / (1.0 + age * 1.2);
+		point += vec3(velocity.x * spread, velocity.y * age - 7.5 * age * age, velocity.z * spread);
+		normal = RotateY(normal, age * (random - .5) * 20.0);
+		if (point.y < .012) { point.y = .012; normal = vec3(0, 1, 0); }
+		next = point + SafeDirection(velocity * vec3(1, 0, 1), vec3(0, 0, 1)) * .02;
+		size *= 1.0 - smoothstep(1.1, COLONY_DEATH_SECONDS, age);
+		visible = visible && (kind == 1u || kind == 3u) && age < COLONY_DEATH_SECONDS;
+	}
+	vec3 tangent = next - point;
+	tangent -= normal * dot(tangent, normal);
+	tangent = SafeDirection(tangent, normalize(cross(normal, abs(normal.y) < .9 ? vec3(0, 1, 0) : vec3(0, 0, 1))));
+	vec3 right = normalize(cross(normal, tangent));
+	ColonyPose pose;
+	size = max(size, .001);
+	pose.world = mat4(vec4(right * size, 0), vec4(normal * size, 0), vec4(tangent * size, 0), vec4(point, 1));
+	pose.parameters = vec4(worldSpace, random * 100.0, visible ? Curl(random * 100.0) : 100.0,
+		mix(.65, 1.0, smoothstep(0.0, .045, nearest)));
+	pose.gait = vec4(poseTime * strideRate + random * 17.0,
+		counts.y > .5 || kind == 2u ? .35 : clamp(surfaceSpeed / max(size, .001), .15, 1.0),
+		.08 + .30 * smoothstep(.65, .98, Hash(float(index) + 177.0)), 0);
+	if (visible) BuildColonySpine(index, pose, seed, poseTime, surfaceSpeed, clinging, nearest, spineFloor);
+	outputPoses[index] = pose;
+}

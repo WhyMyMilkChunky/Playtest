@@ -1,0 +1,19 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop advertisement_dispenser
+draft 0
+id advertisement_dispenser
+authoring 1 0
+bounds -0.845 -1.17 -0.01 0.845 1.17 0.69
+piece body 0 0 0.27 1.65 2.3 0.52 panel 0.31 0.34 0.36 1 0 0 0 0 0 1 "" 0 0
+piece face -0.12 0.34 0.55 1.13 1.13 0.01 ad_screen_sumpbrau 1 1 1 0 0 0 0 0 0 1 "assets/models/props/advertisement_face.obj" 0 0
+piece tray 0 -0.72 0.56 1.13 0.26 0.09 panel 0.06 0.07 0.08 0 0 0 0 0 0 1 "" 0 0
+piece lip 0 -0.88 0.59 1.23 0.07 0.16 panel 0.52 0.53 0.54 0 0 0 0 0 0 1 "" 0 0
+piece button_0 0.64 0.12 0.56 0.12 0.12 0.08 panel 0.62 0.67 0.58 0 0 0 0 0 0 1 "" 0 0
+piece button_1 0.64 -0.13 0.56 0.12 0.12 0.08 panel 0.62 0.67 0.58 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0 0.27 1.65 2.3 0.52 panel 0.31 0.34 0.36 1 0 0 0 0 0 1 "" 0 0
+source_piece face -0.12 0.34 0.55 1.13 1.13 0.01 ad_screen_sumpbrau 1 1 1 0 0 0 0 0 0 1 "assets/models/props/advertisement_face.obj" 0 0
+source_piece tray 0 -0.72 0.56 1.13 0.26 0.09 panel 0.06 0.07 0.08 0 0 0 0 0 0 1 "" 0 0
+source_piece lip 0 -0.88 0.59 1.23 0.07 0.16 panel 0.52 0.53 0.54 0 0 0 0 0 0 1 "" 0 0
+source_piece button_0 0.64 0.12 0.56 0.12 0.12 0.08 panel 0.62 0.67 0.58 0 0 0 0 0 0 1 "" 0 0
+source_piece button_1 0.64 -0.13 0.56 0.12 0.12 0.08 panel 0.62 0.67 0.58 0 0 0 0 0 0 1 "" 0 0

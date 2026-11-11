@@ -1,0 +1,9 @@
+# Editable procedural design. Keep source_piece records as the original reference.
+s3droom 5
+generated_prop service_pipe
+draft 0
+id service_pipe
+authoring 1 0
+bounds -3.02 -0.02 -0.16 3.02 0.3 0.16
+piece body 0 0.14 0 6 0.28 0.28 pipes 1 1 1 0 0 0 0 0 0 1 "" 0 0
+source_piece body 0 0.14 0 6 0.28 0.28 pipes 1 1 1 0 0 0 0 0 0 1 "" 0 0

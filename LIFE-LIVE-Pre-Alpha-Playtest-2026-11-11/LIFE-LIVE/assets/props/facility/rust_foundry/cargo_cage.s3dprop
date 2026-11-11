@@ -1,0 +1,18 @@
+# Reusable facility furniture. Open in Prop Workshop.
+s3droom 4
+id foundry_cargo_cage
+authoring 1 0
+ambience "" 0
+bounds -1.8 0 -1.5 1.8 3.2 1.5
+metadata 1 0 2 0 0 0 1 0 99 0 0 0 0 0 furniture
+rules 0 "" "" "" ""
+piece pallet 0 0.05 0 3.5 0.1 2.9 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_3d3c63ff4fc8fbfc.obj" 0 0
+piece cargo 0 1.45 0 3.18 2.8 2.58 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_b6d224735df8b0bd.obj" 0 0
+piece corner_-1.72_-1.42 -1.72 1.6 -1.42 0.16 3.2 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_dbac38bd36d48558.obj" 0 0
+piece corner_-1.72_1.42 -1.72 1.6 1.42 0.16 3.2 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_eb6cfecfa9ecb4ef.obj" 0 0
+piece corner_1.72_-1.42 1.72 1.6 -1.42 0.16 3.2 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_b18f270ea83267d8.obj" 0 0
+piece corner_1.72_1.42 1.72 1.6 1.42 0.16 3.2 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_e172034be5d7c7df.obj" 0 0
+piece rail_0.12_-1.42 0 0.12 -1.42 3.6 0.18 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_c0a4154fc661ab40.obj" 0 0
+piece rail_0.12_1.42 0 0.12 1.42 3.6 0.18 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_2ca4aba3e1f219ad.obj" 0 0
+piece rail_3.08_-1.42 0 3.08 -1.42 3.6 0.18 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_c00072cd297fe60d.obj" 0 0
+piece rail_3.08_1.42 0 3.08 1.42 3.6 0.18 0.16 prop_facility_details_1 0.85 0.85 0.85 1 0 0 0 0 0 1 "assets/models/props/texel_uv/facility_900f874ef4624985.obj" 0 0
